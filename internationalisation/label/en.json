@@ -1,0 +1,103 @@
+{
+	"static": {},
+	"dynamic": {},
+	"plugin": {
+		"datatable": {
+			"decimal": ".",
+			"emptyTable": "No data available in table",
+			"info": "Showing _START_ to _END_ of _TOTAL_ entries",
+			"infoEmpty": "Showing 0 to 0 of 0 entries",
+			"infoFiltered": "(filtered from _MAX_ total entries)",
+			"infoPostFix": "",
+			"thousands": ",",
+			"lengthMenu": "Show _MENU_ entries",
+			"loadingRecords": "Loading...",
+			"processing": "Processing...",
+			"search": "Search:",
+			"zeroRecords": "No matching records found",
+			"paginate": {
+				"first": "First",
+				"last": "Last",
+				"next": "Next",
+				"previous": "Previous"
+			},
+			"aria": {
+				"sortAscending": ": activate to sort column ascending",
+				"sortDescending": ": activate to sort column descending"
+			}
+		},
+		"daterangepicker": {
+			"format": "DD/MM/YYYY HH:mm:ss",
+			"separator": " - ",
+			"applyLabel": "Apply",
+			"cancelLabel": "Cancel",
+			"fromLabel": "From",
+			"toLabel": "To",
+			"customRangeLabel": "Custom",
+			"weekLabel": "W",
+			"daysOfWeek": [
+				"Su",
+				"Mo",
+				"Tu",
+				"We",
+				"Th",
+				"Fr",
+				"Sa"
+			],
+			"monthNames": [
+				"January",
+				"February",
+				"March",
+				"April",
+				"May",
+				"June",
+				"July",
+				"August",
+				"September",
+				"October",
+				"November",
+				"December"
+			],
+			"firstDay": 1
+		}
+	},
+	"social": {
+		"youtube": "Follow us on Youtube",
+		"twitter": "Follow us on Twitter",
+		"facebook": "Like us on Facebook",
+		"instagram": "Follow us on Instagram",
+		"github": "Follow us on GitHub",
+		"linkedin": "Follow us on LinkedIn"
+	},
+	"contact": {
+		"address": "<b>Central Statistics Office,</b><br> Skehard Road, Cork T12 X00E, Ireland"
+	},
+	"entity": {
+		"home": {
+			"title": "CSO Interactive Data Visualisation Hub",
+			"pageTitle": "Interactive Data Visualisations | CSO Ireland",
+			"explanation": "This hub presents a visual way to engage with CSO statistics. Through these visualisation apps you can interact with CSO statistics on a number of themes and topics such as house prices, baby names, vehicle licensing trends, key economic figures and more. Explore local and regional census data in the Census Mapping app or learn about regional agriculture in AgriMap. Click on each app to learn more about it.",
+			"metaDescription": "Interact with CSO Ireland’s statistics through our themed visualisation apps for inflation, economy, Census statistics, baby names, house prices and more"
+		},
+		"cpi": {
+			"title": "Inflation Dashboard",
+			"pageTitle": "Inflation Dashboard",
+			"explanation": "",
+			"metaDescription": ""
+		},
+		"censusMapping": {
+			"title": "Census Mapping",
+			"pageTitle": "Census Local Statistics interactive mapping app | CSO Ireland",
+			"explanation": "Previously known as SAPmap (Small Area Population map), this app allows users to explore census data in a location of interest by using the address search facility or by pinpointing a location on the map. Users can investigate data at different levels of geography by selecting their preferred geographic boundary to access all of the 2016 census tables that have been produced for that area.<br><br>For demonstrations on how to use the features of this Census Mapping app, please visit the <a href=\"https://www.cso.ie/en/interactivezone/visualisationtools/censusmappingresources/\" target=\"_blank\">Census Mapping Resources</a> page on the CSO website.",
+			"metaDescription": "Explore local, regional and small area population statistics based on Ireland census data through our interactive Census mapping app"
+		}
+	},
+	"frequency": {
+		"TLIST(Q1)": "Quarterly",
+		"TLIST(A1)": "Annual",
+		"TLIST(H1)": "Half Yearly",
+		"TLIST(M1)": "Monthly",
+		"TLIST(W1)": "Weekly",
+		"TLIST(D1)": "Daily"
+	}
+}

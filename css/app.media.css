@@ -1,0 +1,57 @@
+/*******************************************************************************
+Application - Media
+*******************************************************************************/
+
+/* 
+* Bootstrap fix for printing modal in isolation over multiple pages
+*/
+
+@media print {
+    .modal, .modal * {
+        overflow: visible !important;
+    }
+    .modal {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        visibility: visible !important;
+    }
+    .modal-dialog {
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+    }
+    .modal-backdrop.show {
+        opacity: 0;
+    }
+    #return-to-top {
+        display: none;
+    }
+}
+
+/*** Extra small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap ***/
+ #body [name=full-screen-wrapper] {
+    display: none
+}
+
+ /*Small devices (landscape phones, 576px and up)*/
+ @media (min-width: 576px) { 
+    #body [name=full-screen-wrapper] {
+        display: none
+    }
+   
+ } 
+
+/* Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }*/
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    #body [name=full-screen-wrapper] {
+        display: block
+    }
+    
+  } 

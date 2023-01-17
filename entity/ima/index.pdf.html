@@ -1,0 +1,65 @@
+<!-- Page specific CSS -->
+<!-- Use inline style so that style changes cause any cache of the page to be invalidated -->
+<style>
+    /*******************************************************************************
+Custom CSS application specific
+*******************************************************************************/
+
+    @media print {
+
+        #cookie {
+            display: none;
+        }
+
+        .pdf-indicator-wrapper .table {
+            page-break-inside: avoid;
+        }
+
+
+        .pdf-indicator-wrapper {
+            page-break-after: always;
+        }
+
+        .all-data .pdf-indicator-wrapper {
+            page-break-after: avoid;
+            page-break-inside: avoid;
+        }
+
+        .pxwidget .pxwidget-canvas-wrapper {
+            height: auto !important;
+        }
+
+        .pxwidget {
+            margin-bottom: 40px 0px;
+        }
+
+        h2[name="theme-break"] {
+            page-break-before: always;
+        }
+
+        .table {
+            margin-top: 60px;
+        }
+
+    }
+
+</style>
+<div id="visual-ima-pdf-header" class="d-flex justify-content-between mb-4 align-items-end">
+    <img name="logo" class="img-responsive" style="max-height: 100px" alt="Central Statistics Office, Ireland" src="https://cdn.cso.ie/static/img/cso_logo_312_x_108_96dpi.png">
+    <span>
+        <h1 name="title" class="text-primary mb-0"></h1>
+        <span class="text-right">
+            <h4 name="region"></h4>
+            <h5 name="theme"></h5>
+        </span>
+
+    </span>
+
+</div>
+
+<div id="visual-ima-pdf-indicators" class="">
+    <div name="indicator"></div>
+</div>
+
+<script src="entity/ima/js/ima.pdf.js"></script>
+<script src="entity/ima/js/ima.pdf.library.js"></script>

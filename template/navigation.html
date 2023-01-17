@@ -1,0 +1,68 @@
+<!-- Nav Item - Dashboard -->
+<li class="nav-item">
+    <a class="nav-link pb-1" name="home" href="?body=entity/home">
+        <i class="fas fa-home text-light"></i>
+        <span label="home"></span></a>
+</li>
+
+<li class="nav-item" style="display: none;">
+    <div class="dropdown no-arrow nav-link py-1">
+        <a class="dropdown-toggle text-light font-weight-normal" name="lng-selected" href="#" role="button" id="visual-language-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-globe text-light"></i><span name="selected-lng-name"></span>
+        </a>
+        <div class="dropdown-menu shadow animated--fade-in" aria-labelledby="visual-language-dropdown">
+            <a name="lng-toggle" iso-code="en" iso-name="English" class="dropdown-item" href="#">English <i name="lng-selected-icon" class="far fa-check-circle text-dark" style="display: none;"></i></a>
+            <div class="dropdown-divider"></div>
+            <a name="lng-toggle" iso-code="ga" iso-name="Gaeilge" class="dropdown-item" href="#">Gaeilge <i name="lng-selected-icon" class="far fa-check-circle text-dark" style="display: none;"></i></a>
+        </div>
+    </div>
+</li>
+
+<!-- Divider -->
+<hr class="sidebar-divider">
+
+<div name="entity-navigation">
+
+
+</div>
+
+
+
+<!-- Sidebar Toggler (Sidebar) -->
+<div class="text-center d-none d-md-inline">
+    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+</div>
+
+<div name="templates" style="display: none;">
+    <div name="heading" class="sidebar-heading text-light"> </div>
+
+    <li name="navigation-link" class="nav-item">
+        <a class="nav-link" href="">
+            <i class="text-light"></i>
+            <span></span></a>
+    </li>
+
+    <li name="navigation-link-collapse" class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="" aria-expanded="true" aria-controls="">
+            <i class="text-light"></i>
+            <span name="navigation-link-collapse-text"></span>
+        </a>
+        <div id="" class="collapse" aria-labelledby="" data-parent="#navigation">
+            <div class="bg-white py-2 collapse-inner rounded"></div>
+        </div>
+    </li>
+
+    <h6 name="heading-collapse" class="collapse-header text-dark"></h6>
+
+    <a name="navigation-collapse-entity-link" class="collapse-item" href=""></a>
+
+    <div name="navigation-collapse-divider" class="collapse-divider"></div>
+
+    <hr name="navigation-divider" class="sidebar-divider d-none d-md-block">
+
+</div>
+<!-- CSS file for Navigation page-->
+<link rel="stylesheet" href="template/css/navigation.css">
+<!-- JS file for Navigation page-->
+<script src="template/js/navigation.library.js"></script>
+<script src="template/js/navigation.js"></script>

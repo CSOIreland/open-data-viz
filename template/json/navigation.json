@@ -1,0 +1,14 @@
+[
+    {
+        "label": "Apps",
+        "links": [
+            {
+                "label": "Consumer Price Index",
+                "icon": "fas fa-chart-line",
+                "path": "entity/cpi",
+                "name": "cpi",
+                "menu": []
+            }
+        ]
+    }
+]

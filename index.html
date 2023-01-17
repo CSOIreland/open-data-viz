@@ -1,1 +1,354 @@
-<p>Hello World</p>
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- **************************************************************************** -->
+    <!-- Title -->
+    <!-- **************************************************************************** -->
+
+    <title>Interactive Data Visualisations | CSO Ireland</title>
+
+    <!-- **************************************************************************** -->
+    <!-- Meta -->
+    <!-- **************************************************************************** -->
+
+    <meta charset="UTF-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+
+    <!-- Favicons - https://realfavicongenerator.net -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.cso.ie/static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.cso.ie/static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.cso.ie/static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://cdn.cso.ie/static/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://cdn.cso.ie/static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https://cdn.cso.ie/static/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="image/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GLH4R9F7F9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GLH4R9F7F9', {
+            "send_page_view": false
+        });
+
+        gtag('consent', 'default', {
+            'analytics_storage': 'denied'
+        });
+    </script>
+
+    <!-- **************************************************************************** -->
+    <!-- Resources - API - Dependency -->
+    <!-- **************************************************************************** -->
+
+    <!-- JQuery 3.X - https://github.com/jquery/jquery/ -->
+    <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap - https://github.com/twbs/bootstrap/ -->
+    <link href="https://cdn.jsdelivr.net/gh/twbs/bootstrap@v4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/FezVrasta/popper.js@v1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/twbs/bootstrap@v4.5.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- URI.js - https://github.com/medialize/URI.js/ -->
+    <script src="https://cdn.jsdelivr.net/gh/medialize/URI.js@v1.19.2/src/URI.min.js"></script>
+
+    <!-- ClipboardJS - https://github.com/zenorocha/clipboard.js/ -->
+    <script src="https://cdn.jsdelivr.net/gh/zenorocha/clipboard.js@v2.0.4/dist/clipboard.min.js"></script>
+
+    <!-- **************************************************************************** -->
+    <!-- Resources - API -->
+    <!-- **************************************************************************** -->
+
+    <!-- API Constant -->
+    <script src="https://cdn.jsdelivr.net/gh/CSOIreland/Client-API-Library@4.2.1/src/js/api.constant.min.js"></script>
+
+    <!-- API Configuration -->
+    <script src="https://cdn.jsdelivr.net/gh/CSOIreland/Client-API-Library@4.2.1/src/js/api.config.min.js"></script>
+
+    <!-- API Library 
+    <script src="https://cdn.jsdelivr.net/gh/CSOIreland/Client-API-Library@4.2.1/src/js/api.library.min.js"></script>-->
+    <script src="js/api.library.js"></script>
+
+    <!-- API Plugin -->
+    <link href="https://cdn.jsdelivr.net/gh/CSOIreland/Client-API-Library@4.2.1/src/css/api.plugin.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/CSOIreland/Client-API-Library@4.2.1/src/js/api.plugin.min.js"></script>
+
+    <!-- API Plugin - Drag n Drop -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CSOIreland/Client-API-Library/src/css/api.plugin.dragndrop.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/CSOIreland/Client-API-Library/src/js/api.plugin.dragndrop.min.js"></script>
+
+    <!-- **************************************************************************** -->
+    <!-- Resurces - App - Dependency -->
+    <!-- **************************************************************************** -->
+
+    <!-- Font-awesome - https://github.com/FortAwesome/Font-Awesome/-->
+    <link href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@6.1.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Cookie Consent plugin - https://github.com/osano/cookieconsent/ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/osano/cookieconsent@3.1.1/build/cookieconsent.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/osano/cookieconsent@3.1.1/build/cookieconsent.min.js"></script>
+
+    <!-- JS-Cookie - https://github.com/js-cookie/js-cookie -->
+    <script src="https://cdn.jsdelivr.net/gh/js-cookie/js-cookie@v2.2.1/src/js.cookie.min.js"></script>
+
+    <!-- **************************************************************************** -->
+    <!-- Resurces - App - Optional -->
+    <!-- **************************************************************************** -->
+
+    <!-- Google - Charts - https://developers.google.com/chart/-->
+    <!--
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    -->
+
+    <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiZ08zWrHKTxtaTnqcC0YeInpMmqrv5yY&libraries=places&callback=initMap" async></script>
+ -->
+    <!-- Bootstrap Toggle - https://github.com/CSOIreland/bootstrap-toggle/ -->
+    <link href="https://cdn.jsdelivr.net/gh/CSOIreland/bootstrap-toggle@2.2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/CSOIreland/bootstrap-toggle@2.2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    <!-- Bootstrap Pagination - https://github.com/josecebe/twbs-pagination/ -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/gh/josecebe/twbs-pagination@v1.4.1/jquery.twbsPagination.min.js"></script>
+    -->
+
+    <!-- MomentJS - https://github.com/moment/moment/ -->
+
+    <script src="https://cdn.jsdelivr.net/gh/moment/moment@v2.24.0/min/moment-with-locales.min.js"></script>
+
+
+    <!-- Editable-table (archived, no version) - https://github.com/mindmup/editable-table -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/gh/mindmup/editable-table/mindmup-editabletable.min.js"></script>
+    -->
+
+    <!-- Date Range Picker - https://github.com/dangrossman/daterangepicker/ -->
+    <!--
+    <link href="https://cdn.jsdelivr.net/gh/dangrossman/daterangepicker@v3.0.5/daterangepicker.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/dangrossman/daterangepicker@v3.0.5/daterangepicker.min.js"></script>
+    -->
+
+    <!--Highcharts - https://www.jsdelivr.com/package/npm/highcharts/ -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/highcharts@7.2.0/highcharts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highcharts@7.2.0/modules/series-label.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highcharts@7.2.0/modules/exporting.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highcharts@7.2.0/modules/export-data.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highcharts@7.2.0/modules/map.min.js"></script>
+    -->
+
+    <!-- JQuery Validate - https://github.com/jquery-validation/jquery-validation/ -->
+
+    <script src="https://cdn.jsdelivr.net/gh/jquery-validation/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/jquery-validation/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+
+
+    <!-- JSON-Stat - https://github.com/badosa/JSON-stat/ -->
+    <script src="https://cdn.jsdelivr.net/gh/badosa/JSON-stat@v0.13.3/json-stat.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/combine/npm/jsonstat-toolkit@1.4.2,npm/jsonstat-euro@2.0.0"></script>
+
+    <!-- PapaParse CSV - https://github.com/mholt/PapaParse/ -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/gh/mholt/PapaParse@5.1.0/papaparse.min.js"></script>
+    -->
+
+    <!-- Select2 - https://github.com/select2/select2/ 
+
+    <link href="https://cdn.jsdelivr.net/gh/select2/select2@4.0.11/dist/css/select2.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/select2/select2@4.0.11/dist/js/select2.min.js"></script>
+-->
+    <!-- Select2 updated - https://select2.org/getting-started/installation -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- Datatables - https://datatables.net/ powered by ClooudFlare -->
+
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+
+    <!-- Datatables - Bootstrap -->
+
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+
+
+    <!-- Datatables - Extension - Buttons -->
+
+    <link href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.bootstrap4.min.css" rel="stylesheet">
+    <script src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.bootstrap4.min.js"></script>
+
+
+    <!-- Datatables - Extension - Buttons - Print -->
+
+    <script src="https://cdn.datatables.net/buttons/1.6.0/js/buttons.print.min.js"></script>
+
+
+    <!-- Datatables - Extension - Buttons - HTML (dependency on JSZip & PDFMake) -->
+
+    <script src="https://cdn.jsdelivr.net/gh/Stuk/jszip@v3.2.2/dist/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/bpampuch/pdfmake@0.1.61/build/pdfmake.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/bpampuch/pdfmake@0.1.61/build/vfs_fonts.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.0/js/buttons.html5.min.js"></script>
+
+
+    <!-- Datatables - Extension - Responsive -->
+
+    <link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap4.min.css" rel="stylesheet">
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap4.min.js"></script>
+
+
+    <!-- Datatables - Sorting - Datetime Moment -->
+
+    <script src="//cdn.datatables.net/plug-ins/1.10.20/sorting/datetime-moment.js"></script>
+
+
+    <!-- Datatables - Sorting - Natural -->
+
+    <script src="https://cdn.datatables.net/plug-ins/1.10.20/sorting/natural.js"></script>
+
+
+    <!-- TinyMCE - https://www.tiny.cloud/get-tiny/self-hosted/ -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/gh/CSOIreland/Client-API-Library/src/js/tinymce/tinymce.min.js"></script>
+    -->
+
+    <!-- jquery.easing - https://github.com/gdsmith/jquery.easing -->
+    <script src="https://cdn.jsdelivr.net/gh/gdsmith/jquery.easing@1.4.0/jquery.easing.min.js"></script>
+
+    <!-- ChartJS - https://github.com/chartjs/Chart.js/-->
+    <script src="https://cdn.jsdelivr.net/gh/chartjs/Chart.js@v2.9.3/dist/Chart.min.js"></script>
+    <!--ChartJS stacking percentage - https://github.com/y-takey/chartjs-plugin-stacked100-->
+    <script src="https://cdn.jsdelivr.net/gh/y-takey/chartjs-plugin-stacked100@v0.7.1/src/index.min.js"></script>
+    <!--ChartJS chartjs-plugin-colorschemes - https://github.com/nagix/chartjs-plugin-colorschemes-->
+    <script src="https://cdn.jsdelivr.net/gh/nagix/chartjs-plugin-colorschemes@v0.4.0/dist/chartjs-plugin-colorschemes.min.js"></script>
+
+    <!--  PxWidget -https://github.com/CSOIreland/PxWidget  -->
+    <script src="https://cdn.jsdelivr.net/gh/CSOIreland/PxWidget@2.4.5/js/isogram.min.js"></script>
+
+    <!-- Leaflet - https://leafletjs.com/ -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- Turf - https://turfjs.org/ -->
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.3.0/turf.min.js"></script>
+    <!-- Load Esri Leaflet Vector from CDN -->
+    <script src="https://unpkg.com/esri-leaflet-vector@3.1.0/dist/esri-leaflet-vector.js" integrity="sha512-AAcPGWoYOQ7VoaC13L/rv6GwvzEzyknHQlrtdJSGD6cSzuKXDYILZqUhugbJFZhM+bEXH2Ah7mA1OxPFElQmNQ==" crossorigin=""></script>
+    <!-- Esri Leaflet https://github.com/Esri/esri-leaflet-->
+    <script src="https://cdn.jsdelivr.net/gh/Esri/esri-leaflet@v3.0.3/dist/esri-leaflet.min.js"></script>
+
+    <!--Esri Leaflet Vector Tile Plugin https://github.com/Esri/esri-leaflet-vector-->
+    <!--ArcGIS  developer account with API key needed https://developers.arcgis.com/-->
+    <!--https://developers.arcgis.com/pricing/-->
+    <script src="https://cdn.jsdelivr.net/gh/Esri/esri-leaflet-vector@v3.1.1/dist/esri-leaflet-vector.min.js"></script>
+
+    <!-- Leaflet.EasyButton https://github.com/CliffCloud/Leaflet.EasyButton-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CliffCloud/Leaflet.EasyButton@v2.4.0/src/easy-button.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/CliffCloud/Leaflet.EasyButton@v2.4.0/src/easy-button.min.js"></script>
+
+    <!-- jQuery Fullscreen Plugin https://github.com/code-lts/jquery-fullscreen-plugin-->
+    <script src="https://cdn.jsdelivr.net/gh/code-lts/jquery-fullscreen-plugin@v1.1.5/jquery.fullscreen-min.js"></script>
+
+    <script src="https://code.highcharts.com/9.0.0/highcharts.js"></script>
+    <script src="https://code.highcharts.com/9.0.0/modules/heatmap.js"></script>
+    <script src="https://code.highcharts.com/9.0.0/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/9.0.0/modules/export-data.js"></script>
+    <!-- **************************************************************************** -->
+    <!-- Resources - Application -->
+    <!-- **************************************************************************** -->
+
+    <!-- Add CSS resources as you need 
+    <link rel="stylesheet" href="css/app.bootstrap.guideline.css">
+    -->
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.bootstrap.override.css">
+    <link rel="stylesheet" href="css/app.library.css">
+    <link rel="stylesheet" href="css/app.media.css">
+
+    <!-- Add JS resources as you need -->
+    <script src="js/app.constant.js"></script>
+    <script src="js/app.config.js"></script>
+    <script src="js/app.label.js"></script>
+    <script src="js/app.global.js"></script>
+    <script src="js/app.plugin.js"></script>
+    <script src="js/app.library.js"></script>
+
+
+
+    <!-- App - PrismJS - 1.17.1 - https://prismjs.com/download.html#themes=prism&languages=markup+http+json+pcaxis&plugins=line-numbers -->
+    <link href="css/app.prism.css" rel="stylesheet">
+    <script src="js/app.prism.js"></script>
+
+</head>
+
+<!-- **************************************************************************** -->
+<!-- Body -->
+<!-- **************************************************************************** -->
+
+<body>
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gray-dark sidebar sidebar-dark accordion" id="navigation">
+
+
+        </ul>
+        <!-- End of Sidebar -->
+
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+                <div id="header"></div>
+
+                <!-- Begin Entity Content -->
+                <div id="body" class="container-fluid p-sm-2 p-md-3 mt-2">
+
+
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+
+        </div>
+        <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- API - Plugin - Return To Top -->
+    <a href="#" id="return-to-top">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </a>
+
+    <div id="footer">
+    </div>
+    <div id="cookie"></div>
+
+
+    <div id="modal"></div>
+
+    <div id="template" style="display: none;"></div>
+
+    <div id="spinner"></div>
+
+
+    <!-- JS file for Index page-->
+    <script src="index.js"></script>
+
+</body>
+
+</html>

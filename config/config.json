@@ -1,0 +1,242 @@
+{
+	"title": "data-viz",
+	"beta": true,
+	"language": {
+		"available": [
+			{
+				"iso": {
+					"code": "en",
+					"name": "English"
+				}
+			},
+			{
+				"iso": {
+					"code": "en",
+					"name": "English"
+				}
+			}
+		],
+		"iso": {
+			"code": "en",
+			"name": "English"
+		}
+	},
+	"url": {
+		"api": {
+			"pxStat": {
+				"application": "https://data.cso.ie/table/",
+				"jsonrpc": "https://ws.cso.ie/public/api.jsonrpc",
+				"restful": "https://ws.cso.ie/public/api.restful"
+			},
+			"pdf": {
+				"jsonrpc": "https://pdf.cso.ie/api.jsonrpc"
+			}
+		},
+		"header": {
+			"logo": {
+				"alt": "CSOIreland, data-viz",
+				"src": "https://dev-visual.cso.ie/roched/data-viz/image/logo.png"
+			}
+		},
+		"application": "https://dev-visual.cso.ie/roched/branches/0.0.1/"
+	},
+	"mask": {
+		"datetime": {
+			"ajax": "YYYY-MM-DDTHH:mm:ss",
+			"display": "DD/MM/YYYY HH:mm:ss",
+			"file": "YYYYMMDDTHHMMss",
+			"dateRangePicker": "DD/MM/YYYY HH:mm"
+		},
+		"date": {
+			"ajax": "YYYY-MM-DD",
+			"display": "DD/MM/YYYY",
+			"dateRangePicker": "DD/MM/YYYY"
+		},
+		"time": {
+			"display": "HH:mm:ss"
+		}
+	},
+	"template": {
+		"footer": {
+			"contact": {
+				"address": "Central Statistics Office, Skehard Road, Cork T12 X00E, Ireland",
+				"phone": "(+353) 21 453 5000",
+				"email": "digitalcomms@cso.ie"
+			},
+			"social": [
+				{
+					"label": "youtube",
+					"icon": "fab fa-youtube",
+					"url": "https://www.youtube.com/user/CSOIrelandMedia"
+				},
+				{
+					"label": "twitter",
+					"icon": "fab fa-twitter",
+					"url": "https://twitter.com/csoIreland"
+				},
+				{
+					"label": "facebook",
+					"icon": "fab fa-facebook",
+					"url": "https://www.facebook.com/CSOIreland"
+				},
+				{
+					"label": "instagram",
+					"icon": "fab fa-instagram",
+					"url": "https://www.instagram.com/csoireland/"
+				},
+				{
+					"label": "linkedin",
+					"icon": "fab fa-linkedin-in",
+					"url": "https://ie.linkedin.com/company/csoireland"
+				},
+				{
+					"label": "github",
+					"icon": "fab fa-github",
+					"url": "https://github.com/CSOIreland/PxStat"
+				}
+			],
+			"links": [
+				{
+					"text": "CSO.ie",
+					"url": "https://www.cso.ie"
+				}
+			],
+			"watermark": {
+				"src": "https://cdn.cso.ie/static/img/cso_logo_white_transparent.png",
+				"alt": "CSO.ie",
+				"url": "https://www.cso.ie"
+			}
+		}
+	},
+	"plugin": {
+		"chartJs": {
+			"chart": {
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": true,
+						"text": []
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {
+							"label": null
+						}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								}
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": null,
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								}
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": null
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"elements": {
+						"line": {
+							"tension": 0.4
+						}
+					}
+				},
+				"colours": [
+					"#405381",
+					"#5BC1A5",
+					"#FCBE72",
+					"#0091AB",
+					"#90989F",
+					"#3D5999",
+					"#C6CC5C",
+					"#579599",
+					"#FBAA34",
+					"#007780",
+					"#B9BEC3",
+					"#00AF86",
+					"#6BC2C2",
+					"#00758C",
+					"#FCB053",
+					"#6A7794",
+					"#A3CCC1",
+					"#F68B58",
+					"#36A0B3"
+				]
+			}
+		},
+		"sharethis": {
+			"apiURL": "https://platform-api.sharethis.com/js/sharethis.js#property={0}&product=sticky-share-buttons",
+			"apiKey": "6024fbb3724c390011e3ee45"
+		},
+		"jscookie": {
+			"session": {
+				"path": "/",
+				"secure": "true"
+			},
+			"persistent": {
+				"path": "/",
+				"secure": "true",
+				"expires": 365
+			}
+		},
+		"datatable": {
+			"lengthMenu": [
+				[
+					10,
+					25,
+					50,
+					100,
+					-1
+				],
+				[
+					10,
+					25,
+					50,
+					100,
+					"All"
+				]
+			],
+			"responsive": true,
+			"fixedHeader": true,
+			"dom": "fltip",
+			"deferRender": true
+		}
+	}
+}

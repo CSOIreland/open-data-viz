@@ -1,0 +1,150 @@
+{
+	"title": "CSO Visual",
+	"beta": true,
+	"language": {
+		"available": [
+			{
+				"iso": {
+					"code": "en",
+					"name": "English"
+				}
+			},
+			{
+				"iso": {
+					"code": "en",
+					"name": "English"
+				}
+			}
+		],
+		"iso": {
+			"code": "en",
+			"name": "English"
+		}
+	},
+	"url": {
+		"api": {
+			"pxStat": {
+				"application": "https://data.cso.ie/table/",
+				"jsonrpc": "https://ws.cso.ie/public/api.jsonrpc",
+				"restful": "https://ws.cso.ie/public/api.restful"
+			},
+			"pdf": {
+				"jsonrpc": "https://pdf.cso.ie/api.jsonrpc"
+			}
+		},
+		"header": {
+			"logo": {
+				"alt": "Central Statistics Office, Ireland",
+				"src": "https://cdn.cso.ie/static/img/cso_logo.png"
+			}
+		},
+		"application": "https://visual.cso.ie/"
+	},
+	"mask": {
+		"datetime": {
+			"ajax": "YYYY-MM-DDTHH:mm:ss",
+			"display": "DD/MM/YYYY HH:mm:ss",
+			"file": "YYYYMMDDTHHMMss",
+			"dateRangePicker": "DD/MM/YYYY HH:mm"
+		},
+		"date": {
+			"ajax": "YYYY-MM-DD",
+			"display": "DD/MM/YYYY",
+			"dateRangePicker": "DD/MM/YYYY"
+		},
+		"time": {
+			"display": "HH:mm:ss"
+		}
+	},
+	"template": {
+		"footer": {
+			"contact": {
+				"address": "Central Statistics Office, Skehard Road, Cork T12 X00E, Ireland",
+				"phone": "(+353) 21 453 5000",
+				"email": "digitalcomms@cso.ie"
+			},
+			"social": [
+				{
+					"label": "youtube",
+					"icon": "fab fa-youtube",
+					"url": "https://www.youtube.com/user/CSOIrelandMedia"
+				},
+				{
+					"label": "twitter",
+					"icon": "fab fa-twitter",
+					"url": "https://twitter.com/csoIreland"
+				},
+				{
+					"label": "facebook",
+					"icon": "fab fa-facebook",
+					"url": "https://www.facebook.com/CSOIreland"
+				},
+				{
+					"label": "instagram",
+					"icon": "fab fa-instagram",
+					"url": "https://www.instagram.com/csoireland/"
+				},
+				{
+					"label": "linkedin",
+					"icon": "fab fa-linkedin-in",
+					"url": "https://ie.linkedin.com/company/csoireland"
+				},
+				{
+					"label": "github",
+					"icon": "fab fa-github",
+					"url": "https://github.com/CSOIreland/PxStat"
+				}
+			],
+			"links": [
+				{
+					"text": "CSO.ie",
+					"url": "https://www.cso.ie"
+				}
+			],
+			"watermark": {
+				"src": "https://cdn.cso.ie/static/img/cso_logo_white_transparent.png",
+				"alt": "CSO.ie",
+				"url": "https://www.cso.ie"
+			}
+		}
+	},
+	"plugin": {
+		"sharethis": {
+			"apiURL": "https://platform-api.sharethis.com/js/sharethis.js#property={0}&product=sticky-share-buttons",
+			"apiKey": "6024fbb3724c390011e3ee45"
+		},
+		"jscookie": {
+			"session": {
+				"path": "/",
+				"secure": "true"
+			},
+			"persistent": {
+				"path": "/",
+				"secure": "true",
+				"expires": 365
+			}
+		},
+		"datatable": {
+			"lengthMenu": [
+				[
+					10,
+					25,
+					50,
+					100,
+					-1
+				],
+				[
+					10,
+					25,
+					50,
+					100,
+					"All"
+				]
+			],
+			"responsive": true,
+			"fixedHeader": true,
+			"dom": "fltip",
+			"deferRender": true
+		}
+	}
+}

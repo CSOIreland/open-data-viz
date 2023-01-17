@@ -1,0 +1,13 @@
+/*******************************************************************************
+Custom CSS application specific
+*******************************************************************************/
+.scroll {
+    height: auto;
+    max-height: 400px;
+    overflow-x: hidden;
+}
+
+.pxwidget {
+    background-color: #fff;
+    position: relative;
+}
