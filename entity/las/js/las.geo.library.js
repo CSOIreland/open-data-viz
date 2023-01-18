@@ -3,10 +3,10 @@ Application - Geo
 *******************************************************************************/
 app = app || {};
 
-app.ima.geo = {};
-app.ima.geo.ajax = {};
+app.las.geo = {};
+app.las.geo.ajax = {};
 
-app.ima.geo.getFeaturesForSelect = function (geoJson) {
+app.las.geo.getFeaturesForSelect = function (geoJson) {
     var allAreas = [];
     $.each(geoJson.features, function (index, value) {
         allAreas.push({
@@ -33,7 +33,7 @@ app.ima.geo.getFeaturesForSelect = function (geoJson) {
     return allAreas;
 };
 
-app.ima.geo.getMaxBounds = function (geoJson) {
+app.las.geo.getMaxBounds = function (geoJson) {
     var enveloped = turf.envelope(geoJson);
     var height = (enveloped.bbox[1] - enveloped.bbox[3]);
     var width = (enveloped.bbox[0] - enveloped.bbox[2]);
@@ -43,7 +43,7 @@ app.ima.geo.getMaxBounds = function (geoJson) {
     ];
 };
 
-app.ima.geo.getFeaturesInRadius = function (geoJson, coordinates, buffer) {
+app.las.geo.getFeaturesInRadius = function (geoJson, coordinates, buffer) {
     var buffered = turf.buffer(turf.point([coordinates.longitude, coordinates.latitude]), buffer);
     var features = [];
 
@@ -55,7 +55,7 @@ app.ima.geo.getFeaturesInRadius = function (geoJson, coordinates, buffer) {
     return features
 };
 
-app.ima.geo.getFeatureFromCoordinates = function (geoJson, coordinates) {
+app.las.geo.getFeatureFromCoordinates = function (geoJson, coordinates) {
     var feature = null;
     var points = turf.points([
         [coordinates.longitude, coordinates.latitude] //must be long/lat for turf
@@ -87,21 +87,21 @@ app.ima.geo.getFeatureFromCoordinates = function (geoJson, coordinates) {
 
 };
 
-app.ima.isInGeoJSON = function (geoJson, coordinates) {
+app.las.isInGeoJSON = function (geoJson, coordinates) {
     var points = turf.points([
         [coordinates.longitude, coordinates.latitude] //must be long/lat for turf
     ]);
     return turf.pointsWithinPolygon(points, geoJson).features.length ? true : false;
 };
 
-app.ima.geo.getCurrentPosition = function (callbackOnSuccess) {
+app.las.geo.getCurrentPosition = function (callbackOnSuccess) {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(callbackOnSuccess, app.ima.geo.getCurrentPositioCallbackOnError);
+        navigator.geolocation.getCurrentPosition(callbackOnSuccess, app.las.geo.getCurrentPositioCallbackOnError);
     } else {
         api.modal.error("Geolocation is not available. Please ensure your device supports Geolocation and that you have allowed access to your location.")
     }
 };
 
-app.ima.geo.getCurrentPositioCallbackOnError = function () {
+app.las.geo.getCurrentPositioCallbackOnError = function () {
     api.modal.error("Geolocation is not available. Please ensure your device supports Geolocation and that you have allowed access to your location.")
 };

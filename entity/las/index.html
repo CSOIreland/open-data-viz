@@ -1,6 +1,6 @@
-<div id="visual-ima">
+<div id="visual-las">
     <div name="heading"></div>
-    <div id="visual-ima-selections" class="row">
+    <div id="visual-las-boundary-select" class="row">
         <div class="col-lg-4" name="boundaries-col">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -12,7 +12,7 @@
         </div>
 
     </div>
-    <div class="row" id="visual-ima-map-wrapper">
+    <div class="row" id="visual-las-map-wrapper">
         <div class="col">
 
             <div class="card border-primary rounded-0">
@@ -21,25 +21,25 @@
                     <div class="p-2">
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link active" id="visual-ima-search-tab" data-toggle="tab" href="#visual-ima-search-content" role="tab" aria-controls="visual-sapmap-search-content" aria-selected="true" label="search"></a>
+                                <a class="nav-link active" id="visual-las-search-tab" data-toggle="tab" href="#visual-las-search-content" role="tab" aria-controls="visual-sapmap-search-content" aria-selected="true" label="search"></a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="visual-ima-select-tab" data-toggle="tab" href="#visual-ima-select-content" role="tab" aria-controls="visual-sapmap-select-content" aria-selected="false" label="pick-an-area"></a>
+                                <a class="nav-link" id="visual-las-select-tab" data-toggle="tab" href="#visual-las-select-content" role="tab" aria-controls="visual-sapmap-select-content" aria-selected="false" label="pick-an-area"></a>
                             </li>
                         </ul>
                         <div class="tab-content">
-                            <div class="tab-pane fade show active" id="visual-ima-search-content" role="tabpanel" aria-labelledby="visual-sapmap-search-tab">
-                                <input id="visual-ima-map-wrapper-search" type="search" name="search" class="form-control my-2" autocomplete="false" placeholder="Search for an address or eircode...">
+                            <div class="tab-pane fade show active" id="visual-las-search-content" role="tabpanel" aria-labelledby="visual-sapmap-search-tab">
+                                <input id="visual-las-map-wrapper-search" type="search" name="search" class="form-control my-2" autocomplete="false" placeholder="Search for an address or eircode...">
                                 <button class="btn btn-outline-secondary" name="my-location" type="button"><i class="fas fa-map-marker-alt"></i> <span label="use-my-location"></span></button>
                             </div>
-                            <div class="tab-pane fade mt-2" id="visual-ima-select-content" role="tabpanel" aria-labelledby="visual-sapmap-select-tab">
+                            <div class="tab-pane fade mt-2" id="visual-las-select-content" role="tabpanel" aria-labelledby="visual-sapmap-select-tab">
                                 <select name="select-area"></select>
                             </div>
 
                         </div>
                     </div>
 
-                    <div id="visual-ima-map" style="height: 700px"></div>
+                    <div id="visual-las-map" style="height: 700px"></div>
 
                 </div>
 
@@ -48,7 +48,7 @@
     </div>
 
 
-    <div id="visual-ima-themes" class="row mt-4" style="display: none;">
+    <div id="visual-las-themes" class="row mt-4" style="display: none;">
         <div class="col">
 
             <div class="card">
@@ -75,7 +75,7 @@
 
 </div>
 
-<div id="visual-ima-theme-modal" class="modal" tabindex="-1" role="dialog">
+<div id="visual-las-theme-modal" class="modal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header d-flex justify-content-between pb-1">
@@ -84,8 +84,6 @@
                     <p class="text-muted mb-0"><span name="boundary"></span>: <span name="single-area-name"></span></p>
                 </span>
                 <span>
-                    <button type="button" class="btn btn-primary btn-sm" name="download-pdf-data"><i class="fas fa-download"></i> <span label="download-pdf"></span></button>
-
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -102,7 +100,7 @@
     </div>
 </div>
 
-<div id="visual-ima-all-themes-modal" class="modal" tabindex="-1" role="dialog">
+<div id="visual-las-all-themes-modal" class="modal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header d-flex justify-content-between pb-1">
@@ -111,8 +109,6 @@
                     <p class="text-muted mb-0"><span name="boundary"></span>: <span name="single-area-name"></span></p>
                 </span>
                 <span>
-                    <button type="button" name="download-all-pdf-data" class="btn btn-primary btn-sm"><i class="fas fa-download"></i> <span label="download-pdf"></span></button>
-
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -130,7 +126,7 @@
 </div>
 
 
-<div id="visual-ima-templates" style="display: none;">
+<div id="visual-las-templates" style="display: none;">
     <div name="theme" class="col my-2" theme="">
         <div class="card h-100 mw-20" name="theme-card">
             <div class="card-header">
@@ -149,13 +145,13 @@
     </div>
 
     <!-- <div name="theme-indicator-card" class="card shadow-lg mb-2">
-        <div class="card-header bg-info text-light p-2">
-
-        </div>
-        <div class="card-body">
-
-        </div>
-    </div> -->
+            <div class="card-header bg-info text-light p-2">
+    
+            </div>
+            <div class="card-body">
+    
+            </div>
+        </div> -->
 
     <div name="theme-indicator-card" class="card mb-2">
         <div name="indicator-title" class="card-header bg-info text-light border-0">
@@ -326,4 +322,10 @@
     </div>
 
 </div>
-</div>
+<!-- Page specific CSS -->
+<link rel="stylesheet" href="entity/las/css/las.css">
+<!-- Page specific JS -->
+<script src="entity/las/js/las.library.js"></script>
+<script src="entity/las/js/las.theme.library.js"></script>
+<script src="entity/las/js/las.geo.library.js"></script>
+<script src="entity/las/js/las.js"></script>

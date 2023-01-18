@@ -1,0 +1,10 @@
+#visual-las-map-wrapper .dataTables_wrapper .dt-buttons {
+    float: left;
+}
+
+
+@media (min-width: 1200px) {
+    #visual-las-coa .pxwidget .pxwidget-canvas-wrapper {
+        height: 60vh;
+    }
+}

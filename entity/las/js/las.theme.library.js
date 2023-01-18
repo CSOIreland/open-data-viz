@@ -2,55 +2,54 @@
 Custom JS application specific ima.theme.library.js
 *******************************************************************************/
 //#region Namespaces definitions
-app.ima.theme = {};
+app.las.theme = {};
 //#endregion
 
-app.ima.theme.buildThemes = function () {
-    if (!app.ima.config.themes.length) {
-        $("#visual-ima-themes").remove();
+app.las.theme.buildThemes = function () {
+    if (!app.las.config.themes.length) {
+        $("#visual-las-themes").remove();
         return
     }
-    $.each(app.ima.config.themes, function (index, value) {
-        var theme = $("#visual-ima-templates").find("[name=theme]").clone();
+    $.each(app.las.config.themes, function (index, value) {
+        var theme = $("#visual-las-templates").find("[name=theme]").clone();
         theme.find("[name=theme-title]").text(value.title);
         theme.find("[name='theme-card'] a").attr("theme", index);
         theme.find("[name='theme-card']").attr("colour", value.colour);
         theme.find(".card").addClass("border-" + value.colour);
         theme.find("[name=icon-heading]").addClass("text-" + value.colour);
         theme.find("[name=icon-heading]").find("i").addClass(value.icon);
-        $("#visual-ima-themes").find("[name=themes]").append(theme);
+        $("#visual-las-themes").find("[name=themes]").append(theme);
     });
 };
 
-app.ima.theme.renderTheme = function (theme) {
-    $("#visual-ima-theme-modal").find("[name=theme-title]").html(app.ima.config.themes[theme].title);
+app.las.theme.renderTheme = function (theme) {
+    $("#visual-las-theme-modal").find("[name=theme-title]").html(app.las.config.themes[theme].title);
     var indicators = [];
-    api.ajax.config(app.ima.config.themes[theme].config, function (config) {
+    api.ajax.config(app.las.config.themes[theme].config, function (config) {
         indicators = config;
     }, { async: false });
 
-    $("#visual-ima-theme-modal").find("[name=boundary]").html($("#visual-ima-selections").find("[name=boundaries]").find('option:selected').text());
-    var requestedFeature = app.ima.goTo.guid || app.ima.featureRequested;
-    var area = $.grep(app.ima.allAreas, function (element, index) {
+    $("#visual-las-theme-modal").find("[name=boundary]").html($("#visual-las-boundary-select").find("[name=boundaries]").find('option:selected').text());
+    var requestedFeature = app.las.goTo.guid || app.las.featureRequested;
+    var area = $.grep(app.las.allAreas, function (element, index) {
         return element.id == requestedFeature;
     });
 
-    $("#visual-ima-theme-modal").find("[name=single-area-name]").html(area[0].text);
+    $("#visual-las-theme-modal").find("[name=single-area-name]").html(area[0].text);
 
-    $("#visual-ima-theme-modal").find("[name=download-pdf-data]").attr("theme", theme).attr("guid", requestedFeature).attr("area-name", area[0].text);
 
-    $("#visual-ima-theme-modal").modal("show").on('hide.bs.modal', function (e) {
-        $("#visual-ima-theme-modal .modal-body").empty();
-        history.replaceState({}, '', "?body=" + api.uri.getParam("body") + "&boundary=" + $("#visual-ima-selections").find("[name=boundaries]").val() + "&guid=" + requestedFeature);
+    $("#visual-las-theme-modal").modal("show").on('hide.bs.modal', function (e) {
+        $("#visual-las-theme-modal .modal-body").empty();
+        history.replaceState({}, '', "?body=" + api.uri.getParam("body") + "&boundary=" + $("#visual-las-boundary-select").find("[name=boundaries]").val() + "&guid=" + requestedFeature);
         //Link for sharing
         $(".sharethis-sticky-share-buttons").attr("data-url", window.location.href);
     });
 
-    history.replaceState({}, '', "?body=" + api.uri.getParam("body") + "&boundary=" + $("#visual-ima-selections").find("[name=boundaries]").val() + "&guid=" + requestedFeature + "&theme=" + theme);
+    history.replaceState({}, '', "?body=" + api.uri.getParam("body") + "&boundary=" + $("#visual-las-boundary-select").find("[name=boundaries]").val() + "&guid=" + requestedFeature + "&theme=" + theme);
     //Link for sharing
     $(".sharethis-sticky-share-buttons").attr("data-url", window.location.href);
     $.each(indicators, function (index, value) {
-        var indicatorCard = $("#visual-ima-templates").find("[name=theme-indicator-card]").clone();
+        var indicatorCard = $("#visual-las-templates").find("[name=theme-indicator-card]").clone();
 
         indicatorCard.find("[name=chart-tab]").attr("id", "theme-indicator-chart-tab-" + theme + "-" + index);
         indicatorCard.find("[name=chart-tab]").attr("href", "#theme-indicator-chart-content-" + theme + "-" + index).attr("aria-controls", "theme-indicator-chart-content-" + theme + "-" + index);
@@ -88,7 +87,7 @@ app.ima.theme.renderTheme = function (theme) {
 
         indicatorCard.find("[name=snippet-table-collapse]").find("[name=download-table-snippet-button]").attr("id", "theme-indicator-accordion-table-download-button-" + theme + "-" + index);
 
-        if (app.ima.timeSeries && value.timeSeries) {
+        if (app.las.timeSeries && value.timeSeries) {
             indicatorCard.find("[name=time-series-collapse]").append(
                 $("<div>", {
                     "id": "sapmap-pxwidget-time-series-indicator-" + theme + "-" + index,
@@ -117,7 +116,7 @@ app.ima.theme.renderTheme = function (theme) {
         );
 
         indicatorCard.find("[name=indicator-title]").html(value.title);
-        $("#visual-ima-theme-modal .modal-body").append(indicatorCard);
+        $("#visual-las-theme-modal .modal-body").append(indicatorCard);
 
         $('#' + "theme-indicator-accordion-" + theme + "-" + index).on('hidden.bs.collapse', function (e) {
             var heading = $("#" + e.target.id).attr("heading");
@@ -130,7 +129,7 @@ app.ima.theme.renderTheme = function (theme) {
             var heading = $("#" + e.target.id).attr("heading");
             if (heading) {
                 $(heading).find("[name=accordion-icon]").removeClass().addClass("fas fa-sm fa-minus-circle");
-                $('#visual-ima-theme-modal').animate({
+                $('#visual-las-theme-modal').animate({
                     scrollTop: '+=' + $(heading)[0].getBoundingClientRect().top
                 },
                     1000);
@@ -138,18 +137,18 @@ app.ima.theme.renderTheme = function (theme) {
         });
 
 
-        var indicatorTable = value.boundaries[$("#visual-ima-selections").find("[name=boundaries]").val()].matrix;
+        var indicatorTable = value.boundaries[$("#visual-las-boundary-select").find("[name=boundaries]").val()].matrix;
 
         var chartConfig = $.extend(true, {}, value.chart);
         chartConfig.metadata.api.query.data.params.matrix = indicatorTable;
         chartConfig.link = value.chart.link + indicatorTable;
-        var classificationCode = $("#visual-ima-selections").find("[name=boundaries]").val();
+        var classificationCode = $("#visual-las-boundary-select").find("[name=boundaries]").val();
         $.each(chartConfig.data.datasets, function (indexDataset, valueDataset) {
             valueDataset.api.query.data.params.id.push(classificationCode);
             valueDataset.api.query.data.params.dimension[classificationCode] = {
                 "category": {
                     "index": [
-                        app.ima.featureRequested || api.uri.getParam("guid")
+                        app.las.featureRequested || api.uri.getParam("guid")
                     ]
                 }
             };
@@ -162,8 +161,8 @@ app.ima.theme.renderTheme = function (theme) {
             "sapmap-pxwidget-chart-indicator-" + theme + "-" + index,
             chartConfig
         );
-        var snippetChart = app.ima.snippetCode;
-        snippetChart = snippetChart.sprintf([C_APP_URL_PXWIDGET_ISOGRAM_2_4_2, "chart", app.library.utility.randomGenerator('pxwidget'), JSON.stringify(chartConfig)]);
+        var snippetChart = app.las.snippetCode;
+        snippetChart = snippetChart.sprintf([C_APP_URL_PXWIDGET_ISOGRAM_1_1_2, "chart", app.library.utility.randomGenerator('pxwidget'), JSON.stringify(chartConfig)]);
         $("#theme-indicator-accordion-chart-embed-code-" + theme + "-" + index).text(snippetChart.trim());
 
         $("#theme-indicator-accordion-chart-download-button-" + theme + "-" + index).once("click", function () {
@@ -179,7 +178,7 @@ app.ima.theme.renderTheme = function (theme) {
         tableConfig.data.api.query.data.params.dimension[classificationCode] = {
             "category": {
                 "index": [
-                    app.ima.featureRequested || api.uri.getParam("guid")
+                    app.las.featureRequested || api.uri.getParam("guid")
                 ]
             }
         };
@@ -229,7 +228,7 @@ app.ima.theme.renderTheme = function (theme) {
             })
         });
 
-        var snippetTable = app.ima.snippetCode;
+        var snippetTable = app.las.snippetCode;
         snippetTable = snippetTable.sprintf([C_APP_URL_PXWIDGET_ISOGRAM_2_4_2, "table", app.library.utility.randomGenerator('pxwidget'), JSON.stringify(tableConfig)]);
         $("#theme-indicator-accordion-table-embed-code-" + theme + "-" + index).text(snippetTable.trim());
 
@@ -243,57 +242,56 @@ app.ima.theme.renderTheme = function (theme) {
     });
 };
 
-app.ima.theme.selectAllThemes = function () {
-    $("#visual-ima-all-themes-modal").find("[name=theme-title]").html("All Data");
-    //api.content.load('#visual-ima-all-themes-modal .modal-body', app.ima.config.allThemes.path);
-    var area = $.grep(app.ima.allAreas, function (element, index) {
-        return element.id == (app.ima.featureRequested || api.uri.getParam("guid"));
+app.las.theme.selectAllThemes = function () {
+    $("#visual-las-all-themes-modal").find("[name=theme-title]").html("All Data");
+    //api.content.load('#visual-las-all-themes-modal .modal-body', app.las.config.allThemes.path);
+    var area = $.grep(app.las.allAreas, function (element, index) {
+        return element.id == (app.las.featureRequested || api.uri.getParam("guid"));
     });
-    $.each(app.ima.config.themes, function (index, value) {
+    $.each(app.las.config.themes, function (index, value) {
         api.ajax.config(value.config, function (config) {
-            app.ima.theme.renderAllData(value.title, config, index, area[0].text);
+            app.las.theme.renderAllData(value.title, config, index, area[0].text);
         }, { async: false });
     });
 
-    $("#visual-ima-all-themes-modal").find("[name=boundary]").html($("#visual-ima-selections").find("[name=boundaries]").find('option:selected').text());
-    $("#visual-ima-all-themes-modal").find("[name=download-all-pdf-data]").attr("guid", app.ima.featureRequested || api.uri.getParam("guid")).attr("area-name", area[0].text);
+    $("#visual-las-all-themes-modal").find("[name=boundary]").html($("#visual-las-boundary-select").find("[name=boundaries]").find('option:selected').text());
 
-    $("#visual-ima-all-themes-modal").find("[name=single-area-name]").html(area[0].text);
-    $("#visual-ima-all-themes-modal").modal("show").on('hide.bs.modal', function (e) {
-        $("#visual-ima-all-themes-modal .modal-body").empty();
-        history.replaceState({}, '', "?body=" + api.uri.getParam("body") + "&boundary=" + $("#visual-ima-selections").find("[name=boundaries]").val() + "&guid=" + (app.ima.featureRequested || api.uri.getParam("guid")));
+    $("#visual-las-all-themes-modal").find("[name=single-area-name]").html(area[0].text);
+    $("#visual-las-all-themes-modal").modal("show").on('hide.bs.modal', function (e) {
+        $("#visual-las-all-themes-modal .modal-body").empty();
+        history.replaceState({}, '', "?body=" + api.uri.getParam("body") + "&boundary=" + $("#visual-las-boundary-select").find("[name=boundaries]").val() + "&guid=" + (app.las.featureRequested || api.uri.getParam("guid")));
     });
 
-    history.replaceState({}, '', "?body=" + api.uri.getParam("body") + "&boundary=" + $("#visual-ima-selections").find("[name=boundaries]").val() + "&guid=" + (app.ima.featureRequested || api.uri.getParam("guid")) + "&theme=all");
+    history.replaceState({}, '', "?body=" + api.uri.getParam("body") + "&boundary=" + $("#visual-las-boundary-select").find("[name=boundaries]").val() + "&guid=" + (app.las.featureRequested || api.uri.getParam("guid")) + "&theme=all");
     //Link for sharing
     $(".sharethis-sticky-share-buttons").attr("data-url", window.location.href);
 };
 
-app.ima.theme.renderAllData = function (title, indicators, index, area) {
-    var themeWrapper = $("#visual-ima-templates").find("[name=all-themes-theme-wrapper]").clone();
+app.las.theme.renderAllData = function (title, indicators, index, area) {
+    var themeWrapper = $("#visual-las-templates").find("[name=all-themes-theme-wrapper]").clone();
     themeWrapper.find("[name=theme-title]").html(title);
     themeWrapper.attr("theme", "theme-" + index)
-    $("#visual-ima-all-themes-modal").find(".modal-body").append(themeWrapper);
+    $("#visual-las-all-themes-modal").find(".modal-body").append(themeWrapper);
 
-    var classificationCode = $("#visual-ima-selections").find("[name=boundaries]").val();
+    var classificationCode = $("#visual-las-boundary-select").find("[name=boundaries]").val();
 
     $.each(indicators, function (indexIndicator, value) {
-        var indicatorCard = $("#visual-ima-templates").find("[name=all-themes-theme-indicator]").clone();
-        indicatorCard.attr("id", "visual-ima-all-data-indicator-" + index + "-" + indexIndicator);
+        var indicatorCard = $("#visual-las-templates").find("[name=all-themes-theme-indicator]").clone();
+        indicatorCard.attr("id", "visual-las-all-data-indicator-" + index + "-" + indexIndicator);
         indicatorCard.find(".card-header").html(value.title)
         indicatorCard.find(".card-body [name=table-wrapper]").append($("<div>", {
             "id": "sapmap-pxwidget-allthemes-table-indicator-" + index + "-" + indexIndicator,
             "class": "pxwidget"
         }));
-        $("#visual-ima-all-themes-modal").find("[name=all-themes-theme-wrapper][theme=theme-" + index + "]").append(indicatorCard)
+        $("#visual-las-all-themes-modal").find("[name=all-themes-theme-wrapper][theme=theme-" + index + "]").append(indicatorCard)
         var tableConfig = $.extend(true, {}, value.table);
-        var indicatorTable = value.boundaries[$("#visual-ima-selections").find("[name=boundaries]").val()].matrix;
+        var indicatorTable = value.boundaries[$("#visual-las-boundary-select").find("[name=boundaries]").val()].matrix;
         tableConfig.link = value.chart.link + indicatorTable;
         tableConfig.data.api.query.data.params.id.push(classificationCode);
         tableConfig.data.api.query.data.params.dimension[classificationCode] = {
             "category": {
                 "index": [
-                    app.ima.featureRequested || api.uri.getParam("guid")
+                    app.las.featureRequested || api.uri.getParam("guid")
                 ]
             }
         };
@@ -307,7 +305,7 @@ app.ima.theme.renderAllData = function (title, indicators, index, area) {
 
         //Download click event
 
-        $("#visual-ima-all-data-indicator-" + index + "-" + indexIndicator).find("[name=download-dataset-format]").once("click", function (e) {
+        $("#visual-las-all-data-indicator-" + index + "-" + indexIndicator).find("[name=download-dataset-format]").once("click", function (e) {
             e.preventDefault();
             var downloadConfig = $.extend(true, {}, tableConfig);
             downloadConfig.data.api.query.data.params.extension.format.type = $(this).attr("frm-type");

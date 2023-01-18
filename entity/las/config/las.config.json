@@ -1,0 +1,40 @@
+{
+    "title": "Local Area Statistics",
+    "autoComplete": {
+        "key": "AIzaSyAiZ08zWrHKTxtaTnqcC0YeInpMmqrv5yY"
+    },
+    "baseMap": {
+        "leaflet": {
+            "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            "options": {
+                "attribution": "&copy; <a target=\"_blank\" href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a>"
+            }
+        },
+        "esri": {
+            "baseMapOSI": {
+                "url": "https://tiles.arcgis.com/tiles/uWTLlTypaM5QTKd2/arcgis/rest/services/Basemap%20Public/MapServer",
+                "minNativeZoom": 9
+            },
+            "saletileLayer": {
+                "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                "attribution": "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
+            }
+        }
+    },
+    "boundaries": [
+        {
+            "name": "Assembly Area",
+            "classification": "AA",
+            "url": "https://ws-data.nisra.gov.uk/public/api.static/PxStat.Data.GeoMap_API.Read/354d95ccf10bb6bda73e67ecae6cdadd",
+            "weight": 1
+        }
+    ],
+    "themes": [
+        {
+            "title": "Hospital Activity",
+            "colour": "primary",
+            "icon": "fas fa-address-card",
+            "config": "entity/las/config/theme/hospitalactivity.config.json"
+        }
+    ]
+}

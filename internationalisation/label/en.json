@@ -1,5 +1,15 @@
 {
-	"static": {},
+	"static": {
+		"boundary": "Boundary",
+		"chart": "Chart",
+		"table": "Table",
+		"search": "Search",
+		"pick-an-area": "Pick an area",
+		"snippet-code": "Snippet Code",
+		"use-my-location": "Use my location",
+		"view-all-data": "View All Data",
+		"widget": "Widget"
+	},
 	"dynamic": {},
 	"plugin": {
 		"datatable": {
@@ -90,6 +100,12 @@
 			"pageTitle": "Census Local Statistics interactive mapping app | CSO Ireland",
 			"explanation": "Previously known as SAPmap (Small Area Population map), this app allows users to explore census data in a location of interest by using the address search facility or by pinpointing a location on the map. Users can investigate data at different levels of geography by selecting their preferred geographic boundary to access all of the 2016 census tables that have been produced for that area.<br><br>For demonstrations on how to use the features of this Census Mapping app, please visit the <a href=\"https://www.cso.ie/en/interactivezone/visualisationtools/censusmappingresources/\" target=\"_blank\">Census Mapping Resources</a> page on the CSO website.",
 			"metaDescription": "Explore local, regional and small area population statistics based on Ireland census data through our interactive Census mapping app"
+		},
+		"las": {
+			"title": "Local Area Statistics",
+			"pageTitle": "Local Area Statistics | CSO Ireland",
+			"explanation": "Local Area Statistics",
+			"metaDescription": "Local Area Statistics"
 		}
 	},
 	"frequency": {
