@@ -50,7 +50,7 @@ app.las.theme.renderTheme = function (theme) {
     $(".sharethis-sticky-share-buttons").attr("data-url", window.location.href);
     $.each(indicators, function (index, value) {
         var indicatorCard = $("#visual-las-templates").find("[name=theme-indicator-card]").clone();
-
+        indicatorCard.attr("id", "theme-indicator-chart-card-" + theme + "-" + index);
         indicatorCard.find("[name=chart-tab]").attr("id", "theme-indicator-chart-tab-" + theme + "-" + index);
         indicatorCard.find("[name=chart-tab]").attr("href", "#theme-indicator-chart-content-" + theme + "-" + index).attr("aria-controls", "theme-indicator-chart-content-" + theme + "-" + index);
         indicatorCard.find("[name=chart-content]").attr("id", "theme-indicator-chart-content-" + theme + "-" + index);
@@ -138,107 +138,113 @@ app.las.theme.renderTheme = function (theme) {
 
 
         var indicatorTable = value.boundaries[$("#visual-las-boundary-select").find("[name=boundaries]").val()].matrix;
+        if (indicatorTable) {
+            var chartConfig = $.extend(true, {}, value.chart);
+            chartConfig.metadata.api.query.data.params.matrix = indicatorTable;
+            chartConfig.link = value.chart.link + indicatorTable;
+            var classificationCode = $("#visual-las-boundary-select").find("[name=boundaries]").val();
+            $.each(chartConfig.data.datasets, function (indexDataset, valueDataset) {
+                valueDataset.api.query.data.params.id.push(classificationCode);
+                valueDataset.api.query.data.params.dimension[classificationCode] = {
+                    "category": {
+                        "index": [
+                            app.las.featureRequested || api.uri.getParam("guid")
+                        ]
+                    }
+                };
+                valueDataset.api.query.data.params.extension.matrix = indicatorTable;
 
-        var chartConfig = $.extend(true, {}, value.chart);
-        chartConfig.metadata.api.query.data.params.matrix = indicatorTable;
-        chartConfig.link = value.chart.link + indicatorTable;
-        var classificationCode = $("#visual-las-boundary-select").find("[name=boundaries]").val();
-        $.each(chartConfig.data.datasets, function (indexDataset, valueDataset) {
-            valueDataset.api.query.data.params.id.push(classificationCode);
-            valueDataset.api.query.data.params.dimension[classificationCode] = {
+            });
+
+            pxWidget.draw.init(
+                'chart',
+                "sapmap-pxwidget-chart-indicator-" + theme + "-" + index,
+                chartConfig
+            );
+            var snippetChart = app.las.snippetCode;
+            snippetChart = snippetChart.sprintf([C_APP_URL_PXWIDGET_ISOGRAM_1_1_2, "chart", app.library.utility.randomGenerator('pxwidget'), JSON.stringify(chartConfig)]);
+            $("#theme-indicator-accordion-chart-embed-code-" + theme + "-" + index).text(snippetChart.trim());
+
+            $("#theme-indicator-accordion-chart-download-button-" + theme + "-" + index).once("click", function () {
+                // Download the snippet file
+                app.library.utility.download(value.title.replace(/ /g, "_").toLowerCase() + "_" + area[0].text.replace(/ /g, "_").toLowerCase() + '.' + moment(Date.now()).format(app.config.mask.datetime.file), $("#theme-indicator-accordion-chart-embed-code-" + theme + "-" + index).text(), "html", "text/html");
+            });
+
+            new ClipboardJS("#theme-indicator-accordion-chart-embed-button-" + theme + "-" + index);
+
+            var tableConfig = $.extend(true, {}, value.table);
+            tableConfig.link = value.chart.link + indicatorTable;
+            tableConfig.data.api.query.data.params.id.push(classificationCode);
+            tableConfig.data.api.query.data.params.dimension[classificationCode] = {
                 "category": {
                     "index": [
                         app.las.featureRequested || api.uri.getParam("guid")
                     ]
                 }
             };
-            valueDataset.api.query.data.params.extension.matrix = indicatorTable;
+            tableConfig.data.api.query.data.params.extension.matrix = indicatorTable;
 
-        });
+            //if we have to manually hide columns because we only have one row in the table, we then need to dynamically add the region code to our array
+            if (tableConfig.hiddenDimensions && tableConfig.hiddenDimensions.length) {
+                tableConfig.hiddenDimensions.push(classificationCode)
+            };
 
-        pxWidget.draw.init(
-            'chart',
-            "sapmap-pxwidget-chart-indicator-" + theme + "-" + index,
-            chartConfig
-        );
-        var snippetChart = app.las.snippetCode;
-        snippetChart = snippetChart.sprintf([C_APP_URL_PXWIDGET_ISOGRAM_1_1_2, "chart", app.library.utility.randomGenerator('pxwidget'), JSON.stringify(chartConfig)]);
-        $("#theme-indicator-accordion-chart-embed-code-" + theme + "-" + index).text(snippetChart.trim());
+            pxWidget.draw.init(
+                'table',
+                "sapmap-pxwidget-table-indicator-" + theme + "-" + index,
+                tableConfig
+            );
+            //Download click event
 
-        $("#theme-indicator-accordion-chart-download-button-" + theme + "-" + index).once("click", function () {
-            // Download the snippet file
-            app.library.utility.download(value.title.replace(/ /g, "_").toLowerCase() + "_" + area[0].text.replace(/ /g, "_").toLowerCase() + '.' + moment(Date.now()).format(app.config.mask.datetime.file), $("#theme-indicator-accordion-chart-embed-code-" + theme + "-" + index).text(), "html", "text/html");
-        });
+            $("#theme-indicator-table-content-" + theme + "-" + index).find("[name=download-dataset-format]").once("click", function (e) {
+                e.preventDefault();
+                var downloadConfig = $.extend(true, {}, tableConfig);
+                downloadConfig.data.api.query.data.params.extension.format.type = $(this).attr("frm-type");
+                downloadConfig.data.api.query.data.params.extension.format.version = $(this).attr("frm-version");
+                var fileExtension = null;
+                var mimeType = null;
+                var isBase64 = null;
 
-        new ClipboardJS("#theme-indicator-accordion-chart-embed-button-" + theme + "-" + index);
+                switch ($(this).attr("frm-type")) {
+                    case "CSV":
+                        fileExtension = "csv";
+                        mimeType = "text/csv";
+                        isBase64 = false;
+                        break;
+                    case "XLSX":
+                        fileExtension = "xlsx";
+                        mimeType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+                        isBase64 = true;
+                        break;
 
-        var tableConfig = $.extend(true, {}, value.table);
-        tableConfig.link = value.chart.link + indicatorTable;
-        tableConfig.data.api.query.data.params.id.push(classificationCode);
-        tableConfig.data.api.query.data.params.dimension[classificationCode] = {
-            "category": {
-                "index": [
-                    app.las.featureRequested || api.uri.getParam("guid")
-                ]
-            }
-        };
-        tableConfig.data.api.query.data.params.extension.matrix = indicatorTable;
+                }
 
-        //if we have to manually hide columns because we only have one row in the table, we then need to dynamically add the region code to our array
-        if (tableConfig.hiddenDimensions && tableConfig.hiddenDimensions.length) {
-            tableConfig.hiddenDimensions.push(classificationCode)
-        };
+                app.library.pxStat.downloadData(downloadConfig.data.api.query.data.params, {
+                    "format": $(this).attr("frm-type"),
+                    "fileName": value.title.replace(/ /g, "_").toLowerCase() + "_" + area[0].text.replace(/ /g, "_").toLowerCase(),
+                    "fileExtension": fileExtension,
+                    "mimeType": mimeType,
+                    "isBase64": isBase64
+                })
+            });
 
-        pxWidget.draw.init(
-            'table',
-            "sapmap-pxwidget-table-indicator-" + theme + "-" + index,
-            tableConfig
-        );
-        //Download click event
+            var snippetTable = app.las.snippetCode;
+            snippetTable = snippetTable.sprintf([C_APP_URL_PXWIDGET_ISOGRAM_2_4_2, "table", app.library.utility.randomGenerator('pxwidget'), JSON.stringify(tableConfig)]);
+            $("#theme-indicator-accordion-table-embed-code-" + theme + "-" + index).text(snippetTable.trim());
 
-        $("#theme-indicator-table-content-" + theme + "-" + index).find("[name=download-dataset-format]").once("click", function (e) {
-            e.preventDefault();
-            var downloadConfig = $.extend(true, {}, tableConfig);
-            downloadConfig.data.api.query.data.params.extension.format.type = $(this).attr("frm-type");
-            downloadConfig.data.api.query.data.params.extension.format.version = $(this).attr("frm-version");
-            var fileExtension = null;
-            var mimeType = null;
-            var isBase64 = null;
+            $("#theme-indicator-accordion-table-download-button-" + theme + "-" + index).once("click", function () {
+                // Download the data
+                app.library.utility.download(value.title.replace(/ /g, "_").toLowerCase() + "_" + area[0].text.replace(/ /g, "_").toLowerCase() + '.' + moment(Date.now()).format(app.config.mask.datetime.file), $("#theme-indicator-accordion-table-embed-code-" + theme + "-" + index).text(), "html", "text/html");
+            });
 
-            switch ($(this).attr("frm-type")) {
-                case "CSV":
-                    fileExtension = "csv";
-                    mimeType = "text/csv";
-                    isBase64 = false;
-                    break;
-                case "XLSX":
-                    fileExtension = "xlsx";
-                    mimeType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
-                    isBase64 = true;
-                    break;
+            new ClipboardJS("#theme-indicator-accordion-table-embed-button-" + theme + "-" + index);
+            Prism.highlightAll();
+        }
+        else {
+            //indicator not available for this geography
+            $("#theme-indicator-chart-card-" + theme + "-" + index).find(".card-body").html("Not available for this region")
+        }
 
-            }
-
-            app.library.pxStat.downloadData(downloadConfig.data.api.query.data.params, {
-                "format": $(this).attr("frm-type"),
-                "fileName": value.title.replace(/ /g, "_").toLowerCase() + "_" + area[0].text.replace(/ /g, "_").toLowerCase(),
-                "fileExtension": fileExtension,
-                "mimeType": mimeType,
-                "isBase64": isBase64
-            })
-        });
-
-        var snippetTable = app.las.snippetCode;
-        snippetTable = snippetTable.sprintf([C_APP_URL_PXWIDGET_ISOGRAM_2_4_2, "table", app.library.utility.randomGenerator('pxwidget'), JSON.stringify(tableConfig)]);
-        $("#theme-indicator-accordion-table-embed-code-" + theme + "-" + index).text(snippetTable.trim());
-
-        $("#theme-indicator-accordion-table-download-button-" + theme + "-" + index).once("click", function () {
-            // Download the data
-            app.library.utility.download(value.title.replace(/ /g, "_").toLowerCase() + "_" + area[0].text.replace(/ /g, "_").toLowerCase() + '.' + moment(Date.now()).format(app.config.mask.datetime.file), $("#theme-indicator-accordion-table-embed-code-" + theme + "-" + index).text(), "html", "text/html");
-        });
-
-        new ClipboardJS("#theme-indicator-accordion-table-embed-button-" + theme + "-" + index);
-        Prism.highlightAll();
     });
 };
 
@@ -286,55 +292,61 @@ app.las.theme.renderAllData = function (title, indicators, index, area) {
         $("#visual-las-all-themes-modal").find("[name=all-themes-theme-wrapper][theme=theme-" + index + "]").append(indicatorCard)
         var tableConfig = $.extend(true, {}, value.table);
         var indicatorTable = value.boundaries[$("#visual-las-boundary-select").find("[name=boundaries]").val()].matrix;
-        tableConfig.link = value.chart.link + indicatorTable;
-        tableConfig.data.api.query.data.params.id.push(classificationCode);
-        tableConfig.data.api.query.data.params.dimension[classificationCode] = {
-            "category": {
-                "index": [
-                    app.las.featureRequested || api.uri.getParam("guid")
-                ]
-            }
-        };
-        tableConfig.data.api.query.data.params.extension.matrix = indicatorTable;
+        if (indicatorTable) {
+            tableConfig.link = value.chart.link + indicatorTable;
+            tableConfig.data.api.query.data.params.id.push(classificationCode);
+            tableConfig.data.api.query.data.params.dimension[classificationCode] = {
+                "category": {
+                    "index": [
+                        app.las.featureRequested || api.uri.getParam("guid")
+                    ]
+                }
+            };
+            tableConfig.data.api.query.data.params.extension.matrix = indicatorTable;
 
-        pxWidget.draw.init(
-            'table',
-            "sapmap-pxwidget-allthemes-table-indicator-" + index + "-" + indexIndicator,
-            tableConfig
-        );
+            pxWidget.draw.init(
+                'table',
+                "sapmap-pxwidget-allthemes-table-indicator-" + index + "-" + indexIndicator,
+                tableConfig
+            );
 
-        //Download click event
+            //Download click event
 
-        $("#visual-las-all-data-indicator-" + index + "-" + indexIndicator).find("[name=download-dataset-format]").once("click", function (e) {
-            e.preventDefault();
-            var downloadConfig = $.extend(true, {}, tableConfig);
-            downloadConfig.data.api.query.data.params.extension.format.type = $(this).attr("frm-type");
-            downloadConfig.data.api.query.data.params.extension.format.version = $(this).attr("frm-version");
-            var fileExtension = null;
-            var mimeType = null;
-            var isBase64 = null;
+            $("#visual-las-all-data-indicator-" + index + "-" + indexIndicator).find("[name=download-dataset-format]").once("click", function (e) {
+                e.preventDefault();
+                var downloadConfig = $.extend(true, {}, tableConfig);
+                downloadConfig.data.api.query.data.params.extension.format.type = $(this).attr("frm-type");
+                downloadConfig.data.api.query.data.params.extension.format.version = $(this).attr("frm-version");
+                var fileExtension = null;
+                var mimeType = null;
+                var isBase64 = null;
 
-            switch ($(this).attr("frm-type")) {
-                case "CSV":
-                    fileExtension = "csv";
-                    mimeType = "text/csv";
-                    isBase64 = false;
-                    break;
-                case "XLSX":
-                    fileExtension = "xlsx";
-                    mimeType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
-                    isBase64 = true;
-                    break;
+                switch ($(this).attr("frm-type")) {
+                    case "CSV":
+                        fileExtension = "csv";
+                        mimeType = "text/csv";
+                        isBase64 = false;
+                        break;
+                    case "XLSX":
+                        fileExtension = "xlsx";
+                        mimeType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+                        isBase64 = true;
+                        break;
 
-            }
+                }
 
-            app.library.pxStat.downloadData(downloadConfig.data.api.query.data.params, {
-                "format": $(this).attr("frm-type"),
-                "fileName": value.title.replace(/ /g, "_").toLowerCase() + "_" + area.replace(/ /g, "_").toLowerCase(),
-                "fileExtension": fileExtension,
-                "mimeType": mimeType,
-                "isBase64": isBase64
-            })
-        });
+                app.library.pxStat.downloadData(downloadConfig.data.api.query.data.params, {
+                    "format": $(this).attr("frm-type"),
+                    "fileName": value.title.replace(/ /g, "_").toLowerCase() + "_" + area.replace(/ /g, "_").toLowerCase(),
+                    "fileExtension": fileExtension,
+                    "mimeType": mimeType,
+                    "isBase64": isBase64
+                })
+            });
+        }
+        else {
+            $("#visual-las-all-data-indicator-" + index + "-" + indexIndicator).find(".card-body").html("Not available for this region");
+        }
+
     });
 };
