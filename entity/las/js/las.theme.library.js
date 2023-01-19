@@ -242,7 +242,7 @@ app.las.theme.renderTheme = function (theme) {
         }
         else {
             //indicator not available for this geography
-            $("#theme-indicator-chart-card-" + theme + "-" + index).find(".card-body").html("Not available for this region")
+            //  $("#theme-indicator-chart-card-" + theme + "-" + index).find(".card-body").html("Not available for this region")
         }
 
     });
@@ -345,7 +345,7 @@ app.las.theme.renderAllData = function (title, indicators, index, area) {
             });
         }
         else {
-            $("#visual-las-all-data-indicator-" + index + "-" + indexIndicator).find(".card-body").html("Not available for this region");
+            // $("#visual-las-all-data-indicator-" + index + "-" + indexIndicator).find(".card-body").html("Not available for this region");
         }
 
     });

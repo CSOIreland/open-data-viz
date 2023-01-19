@@ -20,6 +20,9 @@ $(document).ready(function () {
         "async": false,
         "error": function (jqXHR, textStatus, errorThrown) {
             api.modal.exception(app.label.static["api-ajax-exception"]);
+        },
+        "success": function () {
+
         }
     });
 
@@ -82,6 +85,7 @@ $(document).ready(function () {
     $("#visual-las-themes").find("[name='theme-card'] a").once("click", function (e) {
         e.preventDefault();
         app.las.theme.renderTheme($(this).attr("theme"));
+        debugger
     });
 
     $("#visual-las-themes").find("[name=all-data]").once("click", app.las.theme.selectAllThemes);
