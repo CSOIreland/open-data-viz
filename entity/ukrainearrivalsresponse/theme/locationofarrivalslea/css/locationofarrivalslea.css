@@ -1,0 +1,7 @@
+/*******************************************************************************
+Custom CSS application specific
+*******************************************************************************/
+
+#visual-ukraine-arrivals-location-of-arrivals-lea-chart-container .pxwidget-canvas-wrapper {
+    height: 35vh;
+}

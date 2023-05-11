@@ -1,0 +1,315 @@
+{
+    "numArrivalsLea": {
+        "query": {
+            "class": "query",
+            "id": [
+                "STATISTIC",
+                "TLIST(D1)",
+                "C03877V04628"
+            ],
+            "dimension": {
+                "STATISTIC": {
+                    "category": {
+                        "index": []
+                    }
+                },
+                "TLIST(D1)": {
+                    "category": {
+                        "index": []
+                    }
+                },
+                "C03877V04628": {
+                    "category": {
+                        "index": []
+                    }
+                }
+            },
+            "extension": {
+                "pivot": null,
+                "codes": false,
+                "language": {
+                    "code": "en"
+                },
+                "format": {
+                    "type": "JSON-stat",
+                    "version": "2.0"
+                },
+                "matrix": "UA05"
+            },
+            "version": "2.0"
+        }
+    },
+    "map": {
+        "locationOfArrivals": {
+            "autoupdate": true,
+            "mapDimension": "C03877V04628",
+            "copyright": true,
+            "link": "https://data.cso.ie/table/UA05",
+            "title": null,
+            "borders": true,
+            "colorScale": "red",
+            "fullScreen": {
+                "title": "View Fullscreen",
+                "titleCancel": "Exit Fullscreen"
+            },
+            "data": {
+                "datasets": [
+                    {
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "TLIST(D1)"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA05C01"
+                                                    ]
+                                                }
+                                            },
+                                            "TLIST(D1)": {
+                                                "category": {
+                                                    "index": []
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA05"
+                                        },
+                                        "version": "2.0",
+                                        "m2m": false
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "fluidTime": [
+                            0
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA05",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "options": {
+                "mode": "q"
+            },
+            "baseMap": {
+                "leaflet": [],
+                "esri": [
+                    {
+                        "url": "https://utility.arcgis.com/usrsvcs/servers/88f1db9e4ae04df69e499223b8295843/rest/services/MapGeniePremiumWM/MapServer"
+                    }
+                ]
+            }
+        }
+    },
+    "table": {
+        "locationOfArrivals": {
+            "autoupdate": true,
+            "fluidTime": [
+                0
+            ],
+            "copyright": true,
+            "title": "",
+            "link": "https://data.cso.ie/table/UA34",
+            "pivot": null,
+            "hideColumns": [
+                "STATISTIC",
+                "UNIT"
+            ],
+            "internationalisation": {
+                "unit": "Unit",
+                "value": "Value"
+            },
+            "defaultContent": "..",
+            "data": {
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadDataset",
+                            "params": {
+                                "class": "query",
+                                "id": [
+                                    "TLIST(D1)",
+                                    "C03788V04538"
+                                ],
+                                "dimension": {
+                                    "TLIST(D1)": {
+                                        "category": {
+                                            "index": [
+                                                "2023M02D13"
+                                            ]
+                                        }
+                                    },
+                                    "C03788V04538": {
+                                        "category": {
+                                            "index": [
+                                                "2ae19629-1450-13a3-e055-000000000001",
+                                                "2ae19629-1451-13a3-e055-000000000001",
+                                                "2ae19629-1448-13a3-e055-000000000001",
+                                                "2ae19629-143d-13a3-e055-000000000001",
+                                                "2ae19629-1452-13a3-e055-000000000001",
+                                                "2ae19629-144f-13a3-e055-000000000001",
+                                                "2ae19629-1453-13a3-e055-000000000001",
+                                                "2ae19629-1455-13a3-e055-000000000001",
+                                                "2ae19629-1456-13a3-e055-000000000001",
+                                                "2ae19629-1454-13a3-e055-000000000001",
+                                                "2ae19629-1441-13a3-e055-000000000001",
+                                                "2ae19629-1442-13a3-e055-000000000001",
+                                                "2ae19629-1440-13a3-e055-000000000001",
+                                                "2ae19629-143f-13a3-e055-000000000001",
+                                                "2ae19629-143e-13a3-e055-000000000001",
+                                                "2ae19629-1444-13a3-e055-000000000001",
+                                                "2ae19629-1445-13a3-e055-000000000001",
+                                                "2ae19629-1443-13a3-e055-000000000001",
+                                                "2ae19629-1446-13a3-e055-000000000001",
+                                                "2ae19629-1447-13a3-e055-000000000001",
+                                                "2ae19629-1449-13a3-e055-000000000001",
+                                                "2ae19629-144a-13a3-e055-000000000001",
+                                                "2ae19629-144b-13a3-e055-000000000001",
+                                                "2ae19629-144e-13a3-e055-000000000001",
+                                                "2ae19629-144c-13a3-e055-000000000001",
+                                                "2ae19629-144d-13a3-e055-000000000001"
+                                            ]
+                                        }
+                                    }
+                                },
+                                "extension": {
+                                    "pivot": null,
+                                    "codes": false,
+                                    "language": {
+                                        "code": "en"
+                                    },
+                                    "format": {
+                                        "type": "JSON-stat",
+                                        "version": "2.0"
+                                    },
+                                    "matrix": "UA34"
+                                },
+                                "version": "2.0",
+                                "m2m": false
+                            }
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "metadata": {
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA34",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "options": {
+                "language": {
+                    "decimal": ".",
+                    "emptyTable": "No data available in table",
+                    "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+                    "infoEmpty": "Showing 0 to 0 of 0 entries",
+                    "infoFiltered": "(filtered from _MAX_ total entries)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Show _MENU_ entries",
+                    "loadingRecords": "Loading...",
+                    "processing": "Processing...",
+                    "search": "Search:",
+                    "zeroRecords": "No matching records found",
+                    "paginate": {
+                        "first": "First",
+                        "last": "Last",
+                        "next": "Next",
+                        "previous": "Previous"
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                },
+                "search": {
+                    "search": ""
+                },
+                "dom": "Bt",
+                "responsive": true,
+                "buttons": [
+                    {
+                        "extend": "csv",
+                        "text": "Download CSV",
+                        "className": "export-button",
+                        "title": "UA34.20230302T110304",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    },
+                    {
+                        "extend": "print",
+                        "text": "Print",
+                        "className": "export-button",
+                        "title": "",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    }
+                ],
+                "order": [
+                    [
+                        4,
+                        "desc"
+                    ]
+                ],
+                "paging": false
+            }
+        }
+    }
+}

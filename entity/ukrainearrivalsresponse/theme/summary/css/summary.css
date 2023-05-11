@@ -1,0 +1,7 @@
+/*******************************************************************************
+Custom CSS application specific
+*******************************************************************************/
+
+#visual-ukraine-arrivals-summary-metrics-percentage-chart-content .pxwidget-canvas-wrapper {
+    height: 30vh;
+}

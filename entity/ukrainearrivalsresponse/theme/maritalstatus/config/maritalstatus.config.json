@@ -1,0 +1,1340 @@
+{
+    "chart": {
+        "maritalStatusMalesCumulative": {
+            "autoupdate": true,
+            "type": "horizontalBar",
+            "copyright": true,
+            "link": "https://data.cso.ie/table/UA35",
+            "sort": false,
+            "metadata": {
+                "xAxis": {
+                    "TLIST(W1)": [
+                        "2023M02D19"
+                    ],
+                    "role": "time"
+                },
+                "fluidTime": [
+                    0
+                ],
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA35",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "data": {
+                "labels": [],
+                "datasets": [
+                    {
+                        "label": "Single",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "C02199V02655",
+                                            "C04103V04867"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA35C02"
+                                                    ]
+                                                }
+                                            },
+                                            "C02199V02655": {
+                                                "category": {
+                                                    "index": [
+                                                        "1"
+                                                    ]
+                                                }
+                                            },
+                                            "C04103V04867": {
+                                                "category": {
+                                                    "index": [
+                                                        "10"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA35",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    },
+                    {
+                        "label": "Married or cohabiting",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "C02199V02655",
+                                            "C04103V04867"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA35C02"
+                                                    ]
+                                                }
+                                            },
+                                            "C02199V02655": {
+                                                "category": {
+                                                    "index": [
+                                                        "1"
+                                                    ]
+                                                }
+                                            },
+                                            "C04103V04867": {
+                                                "category": {
+                                                    "index": [
+                                                        "20"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA35",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    },
+                    {
+                        "label": "Divorced, widowed or other",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "C02199V02655",
+                                            "C04103V04867"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA35C02"
+                                                    ]
+                                                }
+                                            },
+                                            "C02199V02655": {
+                                                "category": {
+                                                    "index": [
+                                                        "1"
+                                                    ]
+                                                }
+                                            },
+                                            "C04103V04867": {
+                                                "category": {
+                                                    "index": [
+                                                        "30"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA35",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    }
+                ],
+                "null": ".."
+            },
+            "options": {
+                "responsive": true,
+                "maintainAspectRatio": false,
+                "title": {
+                    "display": true,
+                    "text": [
+                        ""
+                    ]
+                },
+                "tooltips": {
+                    "mode": "index",
+                    "callbacks": {}
+                },
+                "hover": {
+                    "mode": "nearest",
+                    "intersect": true
+                },
+                "scales": {
+                    "xAxes": [
+                        {
+                            "ticks": {
+                                "beginAtZero": true,
+                                "maxTicksLimit": null
+                            },
+                            "gridLines": {
+                                "display": false
+                            },
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": true
+                        }
+                    ],
+                    "yAxes": [
+                        {
+                            "display": true,
+                            "position": "left",
+                            "id": "y-axis-1",
+                            "ticks": {
+                                "beginAtZero": false
+                            },
+                            "callback": null,
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": true
+                        }
+                    ]
+                },
+                "plugins": {
+                    "stacked100": {
+                        "enable": false
+                    },
+                    "colorschemes": {
+                        "scheme": [
+                            "#405381",
+                            "#5BC1A5",
+                            "#FCBE72",
+                            "#0091AB",
+                            "#90989F",
+                            "#3D5999",
+                            "#C6CC5C",
+                            "#579599",
+                            "#FBAA34",
+                            "#007780",
+                            "#B9BEC3",
+                            "#00AF86",
+                            "#6BC2C2",
+                            "#00758C",
+                            "#FCB053",
+                            "#6A7794",
+                            "#A3CCC1",
+                            "#F68B58",
+                            "#36A0B3"
+                        ]
+                    }
+                },
+                "legend": {
+                    "display": true,
+                    "position": "bottom"
+                },
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": "2023-03-01T11:00:00Z",
+                "layout": {
+                    "padding": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 22
+                    }
+                }
+            },
+            "plugins": [
+                {}
+            ]
+        },
+        "maritalStatusFemalesCumulative": {
+            "autoupdate": true,
+            "type": "horizontalBar",
+            "copyright": true,
+            "link": "https://data.cso.ie/table/UA35",
+            "sort": false,
+            "metadata": {
+                "xAxis": {
+                    "TLIST(W1)": [
+                        "2023M02D19"
+                    ],
+                    "role": "time"
+                },
+                "fluidTime": [
+                    0
+                ],
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA35",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "data": {
+                "labels": [],
+                "datasets": [
+                    {
+                        "label": "Single",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "C02199V02655",
+                                            "C04103V04867"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA35C02"
+                                                    ]
+                                                }
+                                            },
+                                            "C02199V02655": {
+                                                "category": {
+                                                    "index": [
+                                                        "2"
+                                                    ]
+                                                }
+                                            },
+                                            "C04103V04867": {
+                                                "category": {
+                                                    "index": [
+                                                        "10"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA35",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    },
+                    {
+                        "label": "Married or cohabiting",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "C02199V02655",
+                                            "C04103V04867"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA35C02"
+                                                    ]
+                                                }
+                                            },
+                                            "C02199V02655": {
+                                                "category": {
+                                                    "index": [
+                                                        "2"
+                                                    ]
+                                                }
+                                            },
+                                            "C04103V04867": {
+                                                "category": {
+                                                    "index": [
+                                                        "20"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA35",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    },
+                    {
+                        "label": "Divorced, widowed or other",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "C02199V02655",
+                                            "C04103V04867"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA35C02"
+                                                    ]
+                                                }
+                                            },
+                                            "C02199V02655": {
+                                                "category": {
+                                                    "index": [
+                                                        "2"
+                                                    ]
+                                                }
+                                            },
+                                            "C04103V04867": {
+                                                "category": {
+                                                    "index": [
+                                                        "30"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA35",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    }
+                ],
+                "null": ".."
+            },
+            "options": {
+                "responsive": true,
+                "maintainAspectRatio": false,
+                "title": {
+                    "display": true,
+                    "text": [
+                        ""
+                    ]
+                },
+                "tooltips": {
+                    "mode": "index",
+                    "callbacks": {}
+                },
+                "hover": {
+                    "mode": "nearest",
+                    "intersect": true
+                },
+                "scales": {
+                    "xAxes": [
+                        {
+                            "ticks": {
+                                "beginAtZero": true,
+                                "maxTicksLimit": null
+                            },
+                            "gridLines": {
+                                "display": false
+                            },
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": true
+                        }
+                    ],
+                    "yAxes": [
+                        {
+                            "display": true,
+                            "position": "left",
+                            "id": "y-axis-1",
+                            "ticks": {
+                                "beginAtZero": false
+                            },
+                            "callback": null,
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": true
+                        }
+                    ]
+                },
+                "plugins": {
+                    "stacked100": {
+                        "enable": false
+                    },
+                    "colorschemes": {
+                        "scheme": [
+                            "#405381",
+                            "#5BC1A5",
+                            "#FCBE72",
+                            "#0091AB",
+                            "#90989F",
+                            "#3D5999",
+                            "#C6CC5C",
+                            "#579599",
+                            "#FBAA34",
+                            "#007780",
+                            "#B9BEC3",
+                            "#00AF86",
+                            "#6BC2C2",
+                            "#00758C",
+                            "#FCB053",
+                            "#6A7794",
+                            "#A3CCC1",
+                            "#F68B58",
+                            "#36A0B3"
+                        ]
+                    }
+                },
+                "legend": {
+                    "display": true,
+                    "position": "bottom"
+                },
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": "2023-03-01T11:00:00Z",
+                "layout": {
+                    "padding": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 22
+                    }
+                }
+            },
+            "plugins": [
+                {}
+            ]
+        },
+        "maritalStatusMalesByArrival": {
+            "autoupdate": true,
+            "type": "line",
+            "copyright": true,
+            "link": "https://data.cso.ie/table/UA35",
+            "sort": false,
+            "metadata": {
+                "xAxis": {
+                    "TLIST(W1)": [],
+                    "role": "time"
+                },
+                "fluidTime": [],
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA35",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "data": {
+                "labels": [],
+                "datasets": [
+                    {
+                        "label": "Single",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "C02199V02655",
+                                            "C04103V04867"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA35C01"
+                                                    ]
+                                                }
+                                            },
+                                            "C02199V02655": {
+                                                "category": {
+                                                    "index": [
+                                                        "1"
+                                                    ]
+                                                }
+                                            },
+                                            "C04103V04867": {
+                                                "category": {
+                                                    "index": [
+                                                        "10"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA35",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    },
+                    {
+                        "label": "Married or cohabiting",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "C02199V02655",
+                                            "C04103V04867"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA35C01"
+                                                    ]
+                                                }
+                                            },
+                                            "C02199V02655": {
+                                                "category": {
+                                                    "index": [
+                                                        "1"
+                                                    ]
+                                                }
+                                            },
+                                            "C04103V04867": {
+                                                "category": {
+                                                    "index": [
+                                                        "20"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA35",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    },
+                    {
+                        "label": "Divorced, widowed and other",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "C02199V02655",
+                                            "C04103V04867"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA35C01"
+                                                    ]
+                                                }
+                                            },
+                                            "C02199V02655": {
+                                                "category": {
+                                                    "index": [
+                                                        "1"
+                                                    ]
+                                                }
+                                            },
+                                            "C04103V04867": {
+                                                "category": {
+                                                    "index": [
+                                                        "30"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA35",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    }
+                ],
+                "null": ".."
+            },
+            "options": {
+                "responsive": true,
+                "maintainAspectRatio": false,
+                "title": {
+                    "display": true,
+                    "text": [
+                        ""
+                    ]
+                },
+                "tooltips": {
+                    "mode": "index",
+                    "callbacks": {}
+                },
+                "hover": {
+                    "mode": "nearest",
+                    "intersect": true
+                },
+                "scales": {
+                    "xAxes": [
+                        {
+                            "ticks": {
+                                "beginAtZero": false,
+                                "maxTicksLimit": null
+                            },
+                            "gridLines": {
+                                "display": false
+                            },
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ],
+                    "yAxes": [
+                        {
+                            "display": true,
+                            "position": "left",
+                            "id": "y-axis-1",
+                            "ticks": {
+                                "beginAtZero": false
+                            },
+                            "callback": null,
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ]
+                },
+                "plugins": {
+                    "stacked100": {
+                        "enable": false
+                    },
+                    "colorschemes": {
+                        "scheme": [
+                            "#405381",
+                            "#5BC1A5",
+                            "#FCBE72",
+                            "#0091AB",
+                            "#90989F",
+                            "#3D5999",
+                            "#C6CC5C",
+                            "#579599",
+                            "#FBAA34",
+                            "#007780",
+                            "#B9BEC3",
+                            "#00AF86",
+                            "#6BC2C2",
+                            "#00758C",
+                            "#FCB053",
+                            "#6A7794",
+                            "#A3CCC1",
+                            "#F68B58",
+                            "#36A0B3"
+                        ]
+                    }
+                },
+                "legend": {
+                    "display": true,
+                    "position": "bottom"
+                },
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": "2023-03-01T11:00:00Z",
+                "layout": {
+                    "padding": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 22
+                    }
+                }
+            },
+            "plugins": [
+                {}
+            ]
+        },
+        "maritalStatusFemalesByArrival": {
+            "autoupdate": true,
+            "type": "line",
+            "copyright": true,
+            "link": "https://data.cso.ie/table/UA35",
+            "sort": false,
+            "metadata": {
+                "xAxis": {
+                    "TLIST(W1)": [],
+                    "role": "time"
+                },
+                "fluidTime": [],
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA35",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "data": {
+                "labels": [],
+                "datasets": [
+                    {
+                        "label": "Single",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "C02199V02655",
+                                            "C04103V04867"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA35C01"
+                                                    ]
+                                                }
+                                            },
+                                            "C02199V02655": {
+                                                "category": {
+                                                    "index": [
+                                                        "2"
+                                                    ]
+                                                }
+                                            },
+                                            "C04103V04867": {
+                                                "category": {
+                                                    "index": [
+                                                        "10"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA35",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    },
+                    {
+                        "label": "Married or cohabiting",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "C02199V02655",
+                                            "C04103V04867"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA35C01"
+                                                    ]
+                                                }
+                                            },
+                                            "C02199V02655": {
+                                                "category": {
+                                                    "index": [
+                                                        "2"
+                                                    ]
+                                                }
+                                            },
+                                            "C04103V04867": {
+                                                "category": {
+                                                    "index": [
+                                                        "20"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA35",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    },
+                    {
+                        "label": "Divorced, widowed and other",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "C02199V02655",
+                                            "C04103V04867"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA35C01"
+                                                    ]
+                                                }
+                                            },
+                                            "C02199V02655": {
+                                                "category": {
+                                                    "index": [
+                                                        "2"
+                                                    ]
+                                                }
+                                            },
+                                            "C04103V04867": {
+                                                "category": {
+                                                    "index": [
+                                                        "30"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA35",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    }
+                ],
+                "null": ".."
+            },
+            "options": {
+                "responsive": true,
+                "maintainAspectRatio": false,
+                "title": {
+                    "display": true,
+                    "text": [
+                        ""
+                    ]
+                },
+                "tooltips": {
+                    "mode": "index",
+                    "callbacks": {}
+                },
+                "hover": {
+                    "mode": "nearest",
+                    "intersect": true
+                },
+                "scales": {
+                    "xAxes": [
+                        {
+                            "ticks": {
+                                "beginAtZero": false,
+                                "maxTicksLimit": null
+                            },
+                            "gridLines": {
+                                "display": false
+                            },
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ],
+                    "yAxes": [
+                        {
+                            "display": true,
+                            "position": "left",
+                            "id": "y-axis-1",
+                            "ticks": {
+                                "beginAtZero": false
+                            },
+                            "callback": null,
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ]
+                },
+                "plugins": {
+                    "stacked100": {
+                        "enable": false
+                    },
+                    "colorschemes": {
+                        "scheme": [
+                            "#405381",
+                            "#5BC1A5",
+                            "#FCBE72",
+                            "#0091AB",
+                            "#90989F",
+                            "#3D5999",
+                            "#C6CC5C",
+                            "#579599",
+                            "#FBAA34",
+                            "#007780",
+                            "#B9BEC3",
+                            "#00AF86",
+                            "#6BC2C2",
+                            "#00758C",
+                            "#FCB053",
+                            "#6A7794",
+                            "#A3CCC1",
+                            "#F68B58",
+                            "#36A0B3"
+                        ]
+                    }
+                },
+                "legend": {
+                    "display": true,
+                    "position": "bottom"
+                },
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": "2023-03-01T11:00:00Z",
+                "layout": {
+                    "padding": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 22
+                    }
+                }
+            },
+            "plugins": [
+                {}
+            ]
+        }
+    }
+}

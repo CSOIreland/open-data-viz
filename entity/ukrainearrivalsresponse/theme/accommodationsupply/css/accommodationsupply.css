@@ -1,0 +1,11 @@
+/*******************************************************************************
+Custom CSS application specific
+*******************************************************************************/
+
+#visual-ukraine-arrivals-accommodation-supply-chart-container .pxwidget-canvas-wrapper {
+    height: 30vh;
+}
+
+#visual-ukraine-arrivals-accommodation-supply-chart-container-independent .pxwidget-canvas-wrapper {
+    height: 60vh;
+}

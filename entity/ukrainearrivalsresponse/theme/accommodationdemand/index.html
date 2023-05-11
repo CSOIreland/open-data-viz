@@ -1,0 +1,155 @@
+<div id="visual-ukraine-accommodation-demand">
+
+    <div class="container">
+        <div class="mx-4">
+            <table class="table table-bordered table-sm table-hover" name="accommodation-demand-headline-table">
+                <thead class="thead bg-info text-light">
+                    <tr>
+                        <th scope="col" style="width:20%;">Title</th>
+                        <th scope="col" style="width:20%; text-align:right">Total</th>
+                        <th scope="col" style="width:20%; text-align:right">Past Week</th>
+                        <th scope="col" style="width:20%; text-align:right">7-Day Average</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Seeking Accommodation</th>
+                        <td style="text-align:right" name="seeking-accommodation-total"></td>
+                        <td style="text-align:right" name="seeking-accommodation-last-week"></td>
+                        <td style="text-align:right" name="seeking-accommodation-7-day-average"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Independent</th>
+                        <td style="text-align:right" name="independent-total"></td>
+                        <td style="text-align:right" name="independent-last-week"></td>
+                        <td style="text-align:right" name="independent-7-day-average"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Serviced</th>
+                        <td style="text-align:right" name="serviced-total"></td>
+                        <td style="text-align:right" name="serviced-last-week"></td>
+                        <td style="text-align:right" name="serviced-7-day-average"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Emergency</th>
+                        <td style="text-align:right" name="emergency-total"></td>
+                        <td style="text-align:right" name="emergency-last-week"></td>
+                        <td style="text-align:right" name="emergency-7-day-average"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-6 col-lg-12">
+            <div class="card">
+                <div class="card-header bg-primary text-light">
+                    <span>% Currently Occupied of PPSN Issued</span>
+                </div>
+                <div class="card-header pt-2 pb-0">
+                    <ul class="nav nav-tabs border-bottom-0" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link h5 mb-0 active" name="chart-tab" id="visual-ukraine-arrivals-proportion-of-arrivals-chart-tab" data-toggle="tab" href="#visual-ukraine-arrivals-proportion-of-arrivals-chart-content" role="tab" aria-controls="visual-ukraine-arrivals-proportion-of-arrivals-chart-content" aria-selected="true"><span>Chart</span></a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link h5 mb-0" name="table-tab" id="visual-ukraine-arrivals-proportion-of-arrivals-table-tab" data-toggle="tab" href="#visual-ukraine-arrivals-proportion-of-arrivals-table-content" role="tab" aria-controls="visual-ukraine-arrivals-proportion-of-arrivals-table-content" aria-selected="false"><span>Table</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-content">
+                    <div class="tab-pane fade mb-4 active show" name="chart-content" id="visual-ukraine-arrivals-proportion-of-arrivals-chart-content" role="tabpanel" aria-labelledby="visual-ukraine-arrivals-proportion-of-arrivals-chart-tab">
+                        <div class="card-body">
+                            <!--  <div id="pxwidget2499478851" class="pxwidget"></div> -->
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" name="table-content" id="visual-ukraine-arrivals-proportion-of-arrivals-table-content" role="tabpanel" aria-labelledby="visual-ukraine-arrivals-proportion-of-arrivals-table-tab">
+                        <div class="card-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-12">
+            <div class="card" id="visual-ukraine-arrivals-accommodation-demand-percentage-occupied-chart-container">
+                <div class="card-header bg-primary text-light">
+                    <span>% Occupied per Accommodation type</span>
+                </div>
+
+                <div class="card-body text-nowrap text-dark mb-0">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow h-100">
+                                <div name="title" class="card-header p-2 text-light bg-gradient-info">Emergency</div>
+                                <div class="card-body px-0 py-1">
+                                    <div class="row no-gutters align-items-top">
+                                        <div class="col-12 text-right pr-2">
+                                            <div class="h1 text-nowrap display-5 font-weight-bold text-dark mb-0" name="value">%</div>
+                                        </div>
+                                    </div>
+                                    <!--   <script src="https://cdn.jsdelivr.net/gh/CSOIreland/PxWidget@2.4.2/js/isogram.min.js"></script>
+                                    <script>pxWidget.draw.init('chart', 'pxwidget9185134912', { "autoupdate": true, "type": "doughnut", "copyright": false, "sort": false, "metadata": { "xAxis": { "TLIST(A1)": ["2021"], "role": "time" }, "fluidTime": [0], "api": { "query": { "url": "https://ws.cso.ie/public/api.jsonrpc", "data": { "jsonrpc": "2.0", "method": "PxStat.Data.Cube_API.ReadMetadata", "params": { "matrix": "PEA15", "language": "en", "format": { "type": "JSON-stat", "version": "2.0" } }, "version": "2.0" } }, "response": {} } }, "data": { "labels": [], "datasets": [{ "label": "Seeking Accommodation", "pointRadius": 2, "pointHoverRadius": 4, "maxBarThickness": 90, "api": { "query": { "url": "https://ws.cso.ie/public/api.jsonrpc", "data": { "jsonrpc": "2.0", "method": "PxStat.Data.Cube_API.ReadDataset", "params": { "class": "query", "id": ["STATISTIC", "C02541V03076"], "dimension": { "STATISTIC": { "category": { "index": ["PEA15"] } }, "C02541V03076": { "category": { "index": ["04"] } } }, "extension": { "language": { "code": "en" }, "format": { "type": "JSON-stat", "version": "2.0" }, "matrix": "PEA15", "m2m": false }, "version": "2.0" } } }, "response": {} }, "data": [], "unit": [], "decimal": [], "fluidTime": [], "fill": false }], "null": ".." }, "options": { "responsive": true, "maintainAspectRatio": false, "title": { "display": false, "text": ["Seeking Accommodation", "Annual Population Change"] }, "tooltips": { "mode": "index", "callbacks": {} }, "hover": { "mode": "nearest", "intersect": true }, "plugins": { "stacked100": { "enable": false }, "colorschemes": { "scheme": "tableau.Tableau10" } }, "legend": { "display": true, "position": "bottom" }, "updated": "2021-08-31T11:00:00Z", "layout": { "padding": { "left": 0, "right": 0, "top": 0, "bottom": 22 } } }, "plugins": [{}] });</script>
+                                    <div id="pxwidget9185134912" class="pxwidget"></div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow h-100">
+                                <div name="title" class="card-header p-2 text-light bg-gradient-info">Serviced</div>
+                                <div class="card-body px-0 py-1">
+                                    <div class="row no-gutters align-items-top">
+                                        <div class="col-12 text-right pr-2">
+                                            <div class="h1 text-nowrap display-5 font-weight-bold text-dark mb-0" name="value">%</div>
+                                        </div>
+                                    </div>
+                                    <!--     <script src="https://cdn.jsdelivr.net/gh/CSOIreland/PxWidget@2.4.2/js/isogram.min.js"></script>
+                                    <script>pxWidget.draw.init('chart', 'pxwidget9185134922', { "autoupdate": true, "type": "doughnut", "copyright": false, "sort": false, "metadata": { "xAxis": { "TLIST(A1)": ["2021"], "role": "time" }, "fluidTime": [0], "api": { "query": { "url": "https://ws.cso.ie/public/api.jsonrpc", "data": { "jsonrpc": "2.0", "method": "PxStat.Data.Cube_API.ReadMetadata", "params": { "matrix": "PEA15", "language": "en", "format": { "type": "JSON-stat", "version": "2.0" } }, "version": "2.0" } }, "response": {} } }, "data": { "labels": [], "datasets": [{ "label": "Seeking Accommodation", "pointRadius": 2, "pointHoverRadius": 4, "maxBarThickness": 90, "api": { "query": { "url": "https://ws.cso.ie/public/api.jsonrpc", "data": { "jsonrpc": "2.0", "method": "PxStat.Data.Cube_API.ReadDataset", "params": { "class": "query", "id": ["STATISTIC", "C02541V03076"], "dimension": { "STATISTIC": { "category": { "index": ["PEA15"] } }, "C02541V03076": { "category": { "index": ["04"] } } }, "extension": { "language": { "code": "en" }, "format": { "type": "JSON-stat", "version": "2.0" }, "matrix": "PEA15", "m2m": false }, "version": "2.0" } } }, "response": {} }, "data": [], "unit": [], "decimal": [], "fluidTime": [], "fill": false }], "null": ".." }, "options": { "responsive": true, "maintainAspectRatio": false, "title": { "display": false, "text": ["Seeking Accommodation", "Annual Population Change"] }, "tooltips": { "mode": "index", "callbacks": {} }, "hover": { "mode": "nearest", "intersect": true }, "plugins": { "stacked100": { "enable": false }, "colorschemes": { "scheme": "tableau.Tableau10" } }, "legend": { "display": true, "position": "bottom" }, "updated": "2021-08-31T11:00:00Z", "layout": { "padding": { "left": 0, "right": 0, "top": 0, "bottom": 22 } } }, "plugins": [{}] });</script>
+                                    <div id="pxwidget9185134922" class="pxwidget"></div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow h-100">
+                                <div name="title" class="card-header p-2 text-light bg-gradient-info">Independent</div>
+                                <div class="card-body px-0 py-1">
+                                    <div class="row no-gutters align-items-top">
+                                        <div class="col-12 text-right pr-2">
+                                            <div class="h1 text-nowrap display-5 font-weight-bold text-dark mb-0" name="value">%</div>
+                                        </div>
+                                    </div>
+                                    <!--   <script src="https://cdn.jsdelivr.net/gh/CSOIreland/PxWidget@2.4.2/js/isogram.min.js"></script>
+                                    <script>pxWidget.draw.init('chart', 'pxwidget9185134222', { "autoupdate": true, "type": "doughnut", "copyright": false, "sort": false, "metadata": { "xAxis": { "TLIST(A1)": ["2021"], "role": "time" }, "fluidTime": [0], "api": { "query": { "url": "https://ws.cso.ie/public/api.jsonrpc", "data": { "jsonrpc": "2.0", "method": "PxStat.Data.Cube_API.ReadMetadata", "params": { "matrix": "PEA15", "language": "en", "format": { "type": "JSON-stat", "version": "2.0" } }, "version": "2.0" } }, "response": {} } }, "data": { "labels": [], "datasets": [{ "label": "Seeking Accommodation", "pointRadius": 2, "pointHoverRadius": 4, "maxBarThickness": 90, "api": { "query": { "url": "https://ws.cso.ie/public/api.jsonrpc", "data": { "jsonrpc": "2.0", "method": "PxStat.Data.Cube_API.ReadDataset", "params": { "class": "query", "id": ["STATISTIC", "C02541V03076"], "dimension": { "STATISTIC": { "category": { "index": ["PEA15"] } }, "C02541V03076": { "category": { "index": ["04"] } } }, "extension": { "language": { "code": "en" }, "format": { "type": "JSON-stat", "version": "2.0" }, "matrix": "PEA15", "m2m": false }, "version": "2.0" } } }, "response": {} }, "data": [], "unit": [], "decimal": [], "fluidTime": [], "fill": false }], "null": ".." }, "options": { "responsive": true, "maintainAspectRatio": false, "title": { "display": false, "text": ["Seeking Accommodation", "Annual Population Change"] }, "tooltips": { "mode": "index", "callbacks": {} }, "hover": { "mode": "nearest", "intersect": true }, "plugins": { "stacked100": { "enable": false }, "colorschemes": { "scheme": "tableau.Tableau10" } }, "legend": { "display": true, "position": "bottom" }, "updated": "2021-08-31T11:00:00Z", "layout": { "padding": { "left": 0, "right": 0, "top": 0, "bottom": 22 } } }, "plugins": [{}] });</script>
+                                    <div id="pxwidget9185134222" class="pxwidget"></div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Page specific CSS -->
+<link rel="stylesheet" href="entity/ukrainearrivalsresponse/theme/accommodationdemand/css/accommodationdemand.css">
+
+<!-- Page specific JS -->
+<script src="entity/ukrainearrivalsresponse/theme/accommodationdemand/js/accommodationdemand.library.js"></script>
+
+
+<script src="entity/ukrainearrivalsresponse/theme/accommodationdemand/js/accommodationdemand.js"></script>

@@ -1,0 +1,7 @@
+/*******************************************************************************
+Custom CSS application specific
+*******************************************************************************/
+
+#visual-ukraine-arrivals-secondary-of-eligible-chart-container .pxwidget-canvas-wrapper {
+    height: 32vh;
+}

@@ -1,0 +1,64 @@
+{
+    "themes": [
+        {
+            "value": "SM",
+            "label": "summary-metrics",
+            "title": "summary-metrics",
+            "entityPath": "entity/ukrainearrivalsresponse/theme/summary/index.html"
+        },
+        {
+            "value": "ADO",
+            "label": "accommodation-demand-and-occupancy",
+            "title": "accommodation-demand-and-occupancy",
+            "entityPath": "entity/ukrainearrivalsresponse/theme/accommodationdemand/index.html"
+        },
+        {
+            "value": "PPSN",
+            "label": "ppsn-issued",
+            "title": "ppsn-issued",
+            "entityPath": "entity/ukrainearrivalsresponse/theme/ppsnissued/index.html"
+        },
+        {
+            "value": "SWP",
+            "label": "social-welfare-payment",
+            "title": "social-welfare-payment",
+            "entityPath": "entity/ukrainearrivalsresponse/theme/socialwelfarepayment/index.html"
+        },
+        {
+            "value": "MS",
+            "label": "marital-status",
+            "title": "marital-status",
+            "entityPath": "entity/ukrainearrivalsresponse/theme/maritalstatus/index.html"
+        },
+        {
+            "value": "ED",
+            "label": "education",
+            "title": "education",
+            "entityPath": "entity/ukrainearrivalsresponse/theme/education/index.html"
+        },
+        {
+            "value": "HE",
+            "label": "health",
+            "title": "health",
+            "entityPath": "entity/ukrainearrivalsresponse/theme/health/index.html"
+        },
+        {
+            "value": "EM",
+            "label": "employment",
+            "title": "employment",
+            "entityPath": "entity/ukrainearrivalsresponse/theme/employment/index.html"
+        },
+        {
+            "value": "LALEA",
+            "label": "location-of-arrivals-lea",
+            "title": "location-of-arrivals-lea",
+            "entityPath": "entity/ukrainearrivalsresponse/theme/locationofarrivalslea/index.html"
+        },
+        {
+            "value": "LAC",
+            "label": "location-of-arrivals-county",
+            "title": "location-of-arrivals-county",
+            "entityPath": "entity/ukrainearrivalsresponse/theme/locationofarrivalscounty/index.html"
+        }
+    ]
+}

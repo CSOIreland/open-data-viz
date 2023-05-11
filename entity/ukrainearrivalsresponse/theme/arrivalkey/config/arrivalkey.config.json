@@ -1,0 +1,1516 @@
+{
+    "headlineData": [
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(D1)",
+                    "C03877V04628"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA05C01"
+                            ]
+                        }
+                    },
+                    "TLIST(D1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C03877V04628": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA05"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-arrival-key [name=arrival-key-headline-table] [name=total-arrivals-total]"
+        }
+    ],
+    "chart": {
+        "numberOfPassengersArrivingFromAllPortsOfEntry": {
+            "autoupdate": false,
+            "type": "line",
+            "copyright": true,
+            "link": "https://data.cso.ie/table/UA32",
+            "sort": false,
+            "metadata": {
+                "xAxis": {
+                    "TLIST(D1)": [],
+                    "role": "time"
+                },
+                "fluidTime": [],
+                "api": {
+                    "query": {},
+                    "response": {
+                        "class": "dataset",
+                        "dimension": {
+                            "STATISTIC": {
+                                "category": {
+                                    "index": {
+                                        "UA32C01": 0,
+                                        "UA32C02": 1,
+                                        "UA32C03": 2
+                                    },
+                                    "label": {
+                                        "UA32C01": "Passengers arriving from Ukraine to date",
+                                        "UA32C02": "7 day average of passengers arriving from Ukraine",
+                                        "UA32C03": "Passengers who arrived from Ukraine over the past 7 days"
+                                    },
+                                    "unit": {
+                                        "UA32C01": {
+                                            "decimals": 0,
+                                            "label": "Number",
+                                            "position": "end"
+                                        },
+                                        "UA32C02": {
+                                            "decimals": 0,
+                                            "label": "Number",
+                                            "position": "end"
+                                        },
+                                        "UA32C03": {
+                                            "decimals": 0,
+                                            "label": "Number",
+                                            "position": "end"
+                                        }
+                                    }
+                                },
+                                "label": "Statistic"
+                            },
+                            "TLIST(D1)": {
+                                "category": {
+                                    "index": {
+                                        "2022M04D07": 0,
+                                        "2022M04D14": 1,
+                                        "2022M04D21": 2,
+                                        "2022M04D28": 3,
+                                        "2022M05D05": 4,
+                                        "2022M05D12": 5,
+                                        "2022M05D19": 6,
+                                        "2022M05D26": 7,
+                                        "2022M06D02": 8,
+                                        "2022M06D09": 9,
+                                        "2022M06D16": 10,
+                                        "2022M06D23": 11,
+                                        "2022M06D30": 12,
+                                        "2022M07D07": 13,
+                                        "2022M07D14": 14,
+                                        "2022M07D21": 15,
+                                        "2022M07D28": 16,
+                                        "2022M08D04": 17,
+                                        "2022M08D11": 18,
+                                        "2022M08D18": 19,
+                                        "2022M08D25": 20,
+                                        "2022M09D01": 21,
+                                        "2022M09D08": 22,
+                                        "2022M09D15": 23,
+                                        "2022M09D22": 24,
+                                        "2022M09D29": 25,
+                                        "2022M10D06": 26,
+                                        "2022M10D13": 27,
+                                        "2022M10D20": 28,
+                                        "2022M10D27": 29,
+                                        "2022M11D03": 30,
+                                        "2022M11D10": 31,
+                                        "2022M11D17": 32,
+                                        "2022M11D24": 33,
+                                        "2022M12D01": 34,
+                                        "2022M12D08": 35,
+                                        "2022M12D15": 36,
+                                        "2022M12D22": 37,
+                                        "2022M12D29": 38,
+                                        "2023M01D05": 39,
+                                        "2023M01D12": 40
+                                    },
+                                    "label": {
+                                        "2022M04D07": "2022 April 07",
+                                        "2022M04D14": "2022 April 14",
+                                        "2022M04D21": "2022 April 21",
+                                        "2022M04D28": "2022 April 28",
+                                        "2022M05D05": "2022 May 05",
+                                        "2022M05D12": "2022 May 12",
+                                        "2022M05D19": "2022 May 19",
+                                        "2022M05D26": "2022 May 26",
+                                        "2022M06D02": "2022 June 02",
+                                        "2022M06D09": "2022 June 09",
+                                        "2022M06D16": "2022 June 16",
+                                        "2022M06D23": "2022 June 23",
+                                        "2022M06D30": "2022 June 30",
+                                        "2022M07D07": "2022 July 07",
+                                        "2022M07D14": "2022 July 14",
+                                        "2022M07D21": "2022 July 21",
+                                        "2022M07D28": "2022 July 28",
+                                        "2022M08D04": "2022 August 04",
+                                        "2022M08D11": "2022 August 11",
+                                        "2022M08D18": "2022 August 18",
+                                        "2022M08D25": "2022 August 25",
+                                        "2022M09D01": "2022 September 01",
+                                        "2022M09D08": "2022 September 08",
+                                        "2022M09D15": "2022 September 15",
+                                        "2022M09D22": "2022 September 22",
+                                        "2022M09D29": "2022 September 29",
+                                        "2022M10D06": "2022 October 06",
+                                        "2022M10D13": "2022 October 13",
+                                        "2022M10D20": "2022 October 20",
+                                        "2022M10D27": "2022 October 27",
+                                        "2022M11D03": "2022 November 03",
+                                        "2022M11D10": "2022 November 10",
+                                        "2022M11D17": "2022 November 17",
+                                        "2022M11D24": "2022 November 24",
+                                        "2022M12D01": "2022 December 01",
+                                        "2022M12D08": "2022 December 08",
+                                        "2022M12D15": "2022 December 15",
+                                        "2022M12D22": "2022 December 22",
+                                        "2022M12D29": "2022 December 29",
+                                        "2023M01D05": "2023 January 05",
+                                        "2023M01D12": "2023 January 12"
+                                    }
+                                },
+                                "label": "Day"
+                            },
+                            "C04039V04800": {
+                                "category": {
+                                    "index": {
+                                        "10": 1,
+                                        "20": 2,
+                                        "30": 3,
+                                        "40": 4,
+                                        "-": 0
+                                    },
+                                    "label": {
+                                        "10": "Dublin Airport",
+                                        "20": "Dublin Port",
+                                        "30": "Rosslare Port",
+                                        "40": "Other Airports/ Port  including Cork Airport and Shannon Airport",
+                                        "-": "All Ports and Airports"
+                                    }
+                                },
+                                "label": "Port of Entry"
+                            }
+                        },
+                        "extension": {
+                            "matrix": "UA32",
+                            "language": {
+                                "code": "en",
+                                "name": "English"
+                            },
+                            "elimination": {
+                                "C04039V04800": null
+                            },
+                            "contact": {
+                                "name": "Declan Smyth",
+                                "email": "sscu@cso.ie",
+                                "phone": "(+353) 1 498 4000"
+                            },
+                            "subject": {
+                                "code": 0,
+                                "value": ""
+                            },
+                            "product": {
+                                "code": "",
+                                "value": ""
+                            },
+                            "official": true,
+                            "copyright": {
+                                "name": "Central Statistics Office, Ireland",
+                                "code": "CSO",
+                                "href": "https://www.cso.ie/"
+                            },
+                            "exceptional": false,
+                            "reservation": false,
+                            "archive": false,
+                            "experimental": false,
+                            "analytical": false
+                        },
+                        "id": [
+                            "STATISTIC",
+                            "TLIST(D1)",
+                            "C04039V04800"
+                        ],
+                        "label": "Passengers arriving from Ukraine",
+                        "note": [],
+                        "role": {
+                            "metric": [
+                                "STATISTIC"
+                            ],
+                            "time": [
+                                "TLIST(D1)"
+                            ],
+                            "geo": null,
+                            "classification": [
+                                "C04039V04800"
+                            ]
+                        },
+                        "size": [
+                            3,
+                            41,
+                            5
+                        ],
+                        "value": [],
+                        "version": "2.0"
+                    }
+                }
+            },
+            "data": {
+                "labels": [],
+                "datasets": [
+                    {
+                        "label": "Arrivals",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {},
+                            "response": {
+                                "class": "dataset",
+                                "dimension": {
+                                    "STATISTIC": {
+                                        "category": {
+                                            "index": {
+                                                "UA32C03": 0
+                                            },
+                                            "label": {
+                                                "UA32C03": "Passengers who arrived from Ukraine over the past 7 days"
+                                            },
+                                            "unit": {
+                                                "UA32C03": {
+                                                    "decimals": 0,
+                                                    "label": "Number",
+                                                    "position": "end"
+                                                }
+                                            }
+                                        },
+                                        "label": "Statistic"
+                                    },
+                                    "TLIST(D1)": {
+                                        "category": {
+                                            "index": {
+                                                "2022M04D07": 0,
+                                                "2022M04D14": 1,
+                                                "2022M04D21": 2,
+                                                "2022M04D28": 3,
+                                                "2022M05D05": 4,
+                                                "2022M05D12": 5,
+                                                "2022M05D19": 6,
+                                                "2022M05D26": 7,
+                                                "2022M06D02": 8,
+                                                "2022M06D09": 9,
+                                                "2022M06D16": 10,
+                                                "2022M06D23": 11,
+                                                "2022M06D30": 12,
+                                                "2022M07D07": 13,
+                                                "2022M07D14": 14,
+                                                "2022M07D21": 15,
+                                                "2022M07D28": 16,
+                                                "2022M08D04": 17,
+                                                "2022M08D11": 18,
+                                                "2022M08D18": 19,
+                                                "2022M08D25": 20,
+                                                "2022M09D01": 21,
+                                                "2022M09D08": 22,
+                                                "2022M09D15": 23,
+                                                "2022M09D22": 24,
+                                                "2022M09D29": 25,
+                                                "2022M10D06": 26,
+                                                "2022M10D13": 27,
+                                                "2022M10D20": 28,
+                                                "2022M10D27": 29,
+                                                "2022M11D03": 30,
+                                                "2022M11D10": 31,
+                                                "2022M11D17": 32,
+                                                "2022M11D24": 33,
+                                                "2022M12D01": 34,
+                                                "2022M12D08": 35,
+                                                "2022M12D15": 36,
+                                                "2022M12D22": 37,
+                                                "2022M12D29": 38,
+                                                "2023M01D05": 39,
+                                                "2023M01D12": 40
+                                            },
+                                            "label": {
+                                                "2022M04D07": "2022 April 07",
+                                                "2022M04D14": "2022 April 14",
+                                                "2022M04D21": "2022 April 21",
+                                                "2022M04D28": "2022 April 28",
+                                                "2022M05D05": "2022 May 05",
+                                                "2022M05D12": "2022 May 12",
+                                                "2022M05D19": "2022 May 19",
+                                                "2022M05D26": "2022 May 26",
+                                                "2022M06D02": "2022 June 02",
+                                                "2022M06D09": "2022 June 09",
+                                                "2022M06D16": "2022 June 16",
+                                                "2022M06D23": "2022 June 23",
+                                                "2022M06D30": "2022 June 30",
+                                                "2022M07D07": "2022 July 07",
+                                                "2022M07D14": "2022 July 14",
+                                                "2022M07D21": "2022 July 21",
+                                                "2022M07D28": "2022 July 28",
+                                                "2022M08D04": "2022 August 04",
+                                                "2022M08D11": "2022 August 11",
+                                                "2022M08D18": "2022 August 18",
+                                                "2022M08D25": "2022 August 25",
+                                                "2022M09D01": "2022 September 01",
+                                                "2022M09D08": "2022 September 08",
+                                                "2022M09D15": "2022 September 15",
+                                                "2022M09D22": "2022 September 22",
+                                                "2022M09D29": "2022 September 29",
+                                                "2022M10D06": "2022 October 06",
+                                                "2022M10D13": "2022 October 13",
+                                                "2022M10D20": "2022 October 20",
+                                                "2022M10D27": "2022 October 27",
+                                                "2022M11D03": "2022 November 03",
+                                                "2022M11D10": "2022 November 10",
+                                                "2022M11D17": "2022 November 17",
+                                                "2022M11D24": "2022 November 24",
+                                                "2022M12D01": "2022 December 01",
+                                                "2022M12D08": "2022 December 08",
+                                                "2022M12D15": "2022 December 15",
+                                                "2022M12D22": "2022 December 22",
+                                                "2022M12D29": "2022 December 29",
+                                                "2023M01D05": "2023 January 05",
+                                                "2023M01D12": "2023 January 12"
+                                            }
+                                        },
+                                        "label": "Day"
+                                    },
+                                    "C04039V04800": {
+                                        "category": {
+                                            "index": {
+                                                "-": 0
+                                            },
+                                            "label": {
+                                                "-": "All Ports and Airports"
+                                            }
+                                        },
+                                        "label": "Port of Entry"
+                                    }
+                                },
+                                "extension": {
+                                    "matrix": "UA32",
+                                    "language": {
+                                        "code": "en",
+                                        "name": "English"
+                                    },
+                                    "elimination": {
+                                        "C04039V04800": null
+                                    },
+                                    "contact": {
+                                        "name": "Declan Smyth",
+                                        "email": "sscu@cso.ie",
+                                        "phone": "(+353) 1 498 4000"
+                                    },
+                                    "subject": {
+                                        "code": 0,
+                                        "value": ""
+                                    },
+                                    "product": {
+                                        "code": "",
+                                        "value": ""
+                                    },
+                                    "official": true,
+                                    "copyright": {
+                                        "name": "Central Statistics Office, Ireland",
+                                        "code": "CSO",
+                                        "href": "https://www.cso.ie/"
+                                    },
+                                    "exceptional": false,
+                                    "reservation": false,
+                                    "archive": false,
+                                    "experimental": false,
+                                    "analytical": false
+                                },
+                                "id": [
+                                    "STATISTIC",
+                                    "TLIST(D1)",
+                                    "C04039V04800"
+                                ],
+                                "label": "Passengers arriving from Ukraine",
+                                "note": [],
+                                "role": {
+                                    "metric": [
+                                        "STATISTIC"
+                                    ],
+                                    "time": [
+                                        "TLIST(D1)"
+                                    ],
+                                    "geo": null,
+                                    "classification": [
+                                        "C04039V04800"
+                                    ]
+                                },
+                                "size": [
+                                    1,
+                                    41,
+                                    1
+                                ],
+                                "value": [
+                                    3634,
+                                    2680,
+                                    1691,
+                                    1400,
+                                    1675,
+                                    1745,
+                                    1509,
+                                    1196,
+                                    1533,
+                                    1122,
+                                    1144,
+                                    1546,
+                                    1029,
+                                    1376,
+                                    1085,
+                                    1075,
+                                    945,
+                                    702,
+                                    786,
+                                    714,
+                                    710,
+                                    824,
+                                    843,
+                                    879,
+                                    883,
+                                    978,
+                                    1321,
+                                    1335,
+                                    1362,
+                                    1249,
+                                    978,
+                                    728,
+                                    954,
+                                    1019,
+                                    734,
+                                    982,
+                                    1061,
+                                    1242,
+                                    646,
+                                    267,
+                                    453
+                                ],
+                                "version": "2.0"
+                            }
+                        },
+                        "data": [],
+                        "unit": [
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number"
+                        ],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    },
+                    {
+                        "label": "Arrivals 7 Day Rolling Average",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {},
+                            "response": {
+                                "class": "dataset",
+                                "dimension": {
+                                    "STATISTIC": {
+                                        "category": {
+                                            "index": {
+                                                "UA32C02": 0
+                                            },
+                                            "label": {
+                                                "UA32C02": "7 day average of passengers arriving from Ukraine"
+                                            },
+                                            "unit": {
+                                                "UA32C02": {
+                                                    "decimals": 0,
+                                                    "label": "Number",
+                                                    "position": "end"
+                                                }
+                                            }
+                                        },
+                                        "label": "Statistic"
+                                    },
+                                    "TLIST(D1)": {
+                                        "category": {
+                                            "index": {
+                                                "2022M04D07": 0,
+                                                "2022M04D14": 1,
+                                                "2022M04D21": 2,
+                                                "2022M04D28": 3,
+                                                "2022M05D05": 4,
+                                                "2022M05D12": 5,
+                                                "2022M05D19": 6,
+                                                "2022M05D26": 7,
+                                                "2022M06D02": 8,
+                                                "2022M06D09": 9,
+                                                "2022M06D16": 10,
+                                                "2022M06D23": 11,
+                                                "2022M06D30": 12,
+                                                "2022M07D07": 13,
+                                                "2022M07D14": 14,
+                                                "2022M07D21": 15,
+                                                "2022M07D28": 16,
+                                                "2022M08D04": 17,
+                                                "2022M08D11": 18,
+                                                "2022M08D18": 19,
+                                                "2022M08D25": 20,
+                                                "2022M09D01": 21,
+                                                "2022M09D08": 22,
+                                                "2022M09D15": 23,
+                                                "2022M09D22": 24,
+                                                "2022M09D29": 25,
+                                                "2022M10D06": 26,
+                                                "2022M10D13": 27,
+                                                "2022M10D20": 28,
+                                                "2022M10D27": 29,
+                                                "2022M11D03": 30,
+                                                "2022M11D10": 31,
+                                                "2022M11D17": 32,
+                                                "2022M11D24": 33,
+                                                "2022M12D01": 34,
+                                                "2022M12D08": 35,
+                                                "2022M12D15": 36,
+                                                "2022M12D22": 37,
+                                                "2022M12D29": 38,
+                                                "2023M01D05": 39,
+                                                "2023M01D12": 40
+                                            },
+                                            "label": {
+                                                "2022M04D07": "2022 April 07",
+                                                "2022M04D14": "2022 April 14",
+                                                "2022M04D21": "2022 April 21",
+                                                "2022M04D28": "2022 April 28",
+                                                "2022M05D05": "2022 May 05",
+                                                "2022M05D12": "2022 May 12",
+                                                "2022M05D19": "2022 May 19",
+                                                "2022M05D26": "2022 May 26",
+                                                "2022M06D02": "2022 June 02",
+                                                "2022M06D09": "2022 June 09",
+                                                "2022M06D16": "2022 June 16",
+                                                "2022M06D23": "2022 June 23",
+                                                "2022M06D30": "2022 June 30",
+                                                "2022M07D07": "2022 July 07",
+                                                "2022M07D14": "2022 July 14",
+                                                "2022M07D21": "2022 July 21",
+                                                "2022M07D28": "2022 July 28",
+                                                "2022M08D04": "2022 August 04",
+                                                "2022M08D11": "2022 August 11",
+                                                "2022M08D18": "2022 August 18",
+                                                "2022M08D25": "2022 August 25",
+                                                "2022M09D01": "2022 September 01",
+                                                "2022M09D08": "2022 September 08",
+                                                "2022M09D15": "2022 September 15",
+                                                "2022M09D22": "2022 September 22",
+                                                "2022M09D29": "2022 September 29",
+                                                "2022M10D06": "2022 October 06",
+                                                "2022M10D13": "2022 October 13",
+                                                "2022M10D20": "2022 October 20",
+                                                "2022M10D27": "2022 October 27",
+                                                "2022M11D03": "2022 November 03",
+                                                "2022M11D10": "2022 November 10",
+                                                "2022M11D17": "2022 November 17",
+                                                "2022M11D24": "2022 November 24",
+                                                "2022M12D01": "2022 December 01",
+                                                "2022M12D08": "2022 December 08",
+                                                "2022M12D15": "2022 December 15",
+                                                "2022M12D22": "2022 December 22",
+                                                "2022M12D29": "2022 December 29",
+                                                "2023M01D05": "2023 January 05",
+                                                "2023M01D12": "2023 January 12"
+                                            }
+                                        },
+                                        "label": "Day"
+                                    },
+                                    "C04039V04800": {
+                                        "category": {
+                                            "index": {
+                                                "-": 0
+                                            },
+                                            "label": {
+                                                "-": "All Ports and Airports"
+                                            }
+                                        },
+                                        "label": "Port of Entry"
+                                    }
+                                },
+                                "extension": {
+                                    "matrix": "UA32",
+                                    "language": {
+                                        "code": "en",
+                                        "name": "English"
+                                    },
+                                    "elimination": {
+                                        "C04039V04800": null
+                                    },
+                                    "contact": {
+                                        "name": "Declan Smyth",
+                                        "email": "sscu@cso.ie",
+                                        "phone": "(+353) 1 498 4000"
+                                    },
+                                    "subject": {
+                                        "code": 0,
+                                        "value": ""
+                                    },
+                                    "product": {
+                                        "code": "",
+                                        "value": ""
+                                    },
+                                    "official": true,
+                                    "copyright": {
+                                        "name": "Central Statistics Office, Ireland",
+                                        "code": "CSO",
+                                        "href": "https://www.cso.ie/"
+                                    },
+                                    "exceptional": false,
+                                    "reservation": false,
+                                    "archive": false,
+                                    "experimental": false,
+                                    "analytical": false
+                                },
+                                "id": [
+                                    "STATISTIC",
+                                    "TLIST(D1)",
+                                    "C04039V04800"
+                                ],
+                                "label": "Passengers arriving from Ukraine",
+                                "note": [],
+                                "role": {
+                                    "metric": [
+                                        "STATISTIC"
+                                    ],
+                                    "time": [
+                                        "TLIST(D1)"
+                                    ],
+                                    "geo": null,
+                                    "classification": [
+                                        "C04039V04800"
+                                    ]
+                                },
+                                "size": [
+                                    1,
+                                    41,
+                                    1
+                                ],
+                                "value": [
+                                    519,
+                                    383,
+                                    242,
+                                    200,
+                                    239,
+                                    249,
+                                    216,
+                                    171,
+                                    219,
+                                    160,
+                                    163,
+                                    221,
+                                    147,
+                                    197,
+                                    155,
+                                    154,
+                                    135,
+                                    100,
+                                    112,
+                                    102,
+                                    101,
+                                    118,
+                                    120,
+                                    126,
+                                    126,
+                                    140,
+                                    189,
+                                    191,
+                                    195,
+                                    178,
+                                    140,
+                                    104,
+                                    136,
+                                    146,
+                                    105,
+                                    140,
+                                    152,
+                                    177,
+                                    92,
+                                    38,
+                                    65
+                                ],
+                                "version": "2.0"
+                            }
+                        },
+                        "data": [],
+                        "unit": [
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number",
+                            "Number"
+                        ],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    }
+                ],
+                "null": ".."
+            },
+            "options": {
+                "responsive": true,
+                "maintainAspectRatio": false,
+                "title": {
+                    "display": true,
+                    "text": [
+                        ""
+                    ]
+                },
+                "tooltips": {
+                    "mode": "index",
+                    "callbacks": {}
+                },
+                "hover": {
+                    "mode": "nearest",
+                    "intersect": true
+                },
+                "scales": {
+                    "xAxes": [
+                        {
+                            "ticks": {
+                                "beginAtZero": false,
+                                "maxTicksLimit": null
+                            },
+                            "gridLines": {
+                                "display": false
+                            },
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ],
+                    "yAxes": [
+                        {
+                            "display": true,
+                            "position": "left",
+                            "id": "y-axis-1",
+                            "ticks": {
+                                "beginAtZero": false
+                            },
+                            "callback": null,
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ]
+                },
+                "plugins": {
+                    "stacked100": {
+                        "enable": false
+                    },
+                    "colorschemes": {
+                        "scheme": [
+                            "#405381",
+                            "#5BC1A5",
+                            "#FCBE72",
+                            "#0091AB",
+                            "#90989F",
+                            "#3D5999",
+                            "#C6CC5C",
+                            "#579599",
+                            "#FBAA34",
+                            "#007780",
+                            "#B9BEC3",
+                            "#00AF86",
+                            "#6BC2C2",
+                            "#00758C",
+                            "#FCB053",
+                            "#6A7794",
+                            "#A3CCC1",
+                            "#F68B58",
+                            "#36A0B3"
+                        ]
+                    }
+                },
+                "legend": {
+                    "display": true,
+                    "position": "bottom"
+                },
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": null,
+                "layout": {
+                    "padding": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 22
+                    }
+                }
+            },
+            "plugins": [
+                {}
+            ]
+        }
+    },
+    "table": {
+        "numberOfPassengersArrivingFromAllPortsOfEntry": {
+            "autoupdate": false,
+            "fluidTime": [],
+            "copyright": true,
+            "title": "",
+            "link": "https://data.cso.ie/table/UA32",
+            "pivot": null,
+            "hideColumns": [
+                "C04039V04800",
+                "UNIT"
+            ],
+            "internationalisation": {
+                "unit": "Unit",
+                "value": "Value"
+            },
+            "defaultContent": "..",
+            "data": {
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/private/api.jsonrpc"
+                    },
+                    "response": {
+                        "class": "dataset",
+                        "dimension": {
+                            "STATISTIC": {
+                                "category": {
+                                    "index": {
+                                        "UA32C02": 0,
+                                        "UA32C03": 1
+                                    },
+                                    "label": {
+                                        "UA32C02": "7 day average of passengers arriving from Ukraine",
+                                        "UA32C03": "Passengers who arrived from Ukraine over the past 7 days"
+                                    },
+                                    "unit": {
+                                        "UA32C02": {
+                                            "decimals": 0,
+                                            "label": "Number",
+                                            "position": "end"
+                                        },
+                                        "UA32C03": {
+                                            "decimals": 0,
+                                            "label": "Number",
+                                            "position": "end"
+                                        }
+                                    }
+                                },
+                                "label": "Statistic"
+                            },
+                            "TLIST(D1)": {
+                                "category": {
+                                    "index": {
+                                        "2022M04D07": 0,
+                                        "2022M04D14": 1,
+                                        "2022M04D21": 2,
+                                        "2022M04D28": 3,
+                                        "2022M05D05": 4,
+                                        "2022M05D12": 5,
+                                        "2022M05D19": 6,
+                                        "2022M05D26": 7,
+                                        "2022M06D02": 8,
+                                        "2022M06D09": 9,
+                                        "2022M06D16": 10,
+                                        "2022M06D23": 11,
+                                        "2022M06D30": 12,
+                                        "2022M07D07": 13,
+                                        "2022M07D14": 14,
+                                        "2022M07D21": 15,
+                                        "2022M07D28": 16,
+                                        "2022M08D04": 17,
+                                        "2022M08D11": 18,
+                                        "2022M08D18": 19,
+                                        "2022M08D25": 20,
+                                        "2022M09D01": 21,
+                                        "2022M09D08": 22,
+                                        "2022M09D15": 23,
+                                        "2022M09D22": 24,
+                                        "2022M09D29": 25,
+                                        "2022M10D06": 26,
+                                        "2022M10D13": 27,
+                                        "2022M10D20": 28,
+                                        "2022M10D27": 29,
+                                        "2022M11D03": 30,
+                                        "2022M11D10": 31,
+                                        "2022M11D17": 32,
+                                        "2022M11D24": 33,
+                                        "2022M12D01": 34,
+                                        "2022M12D08": 35,
+                                        "2022M12D15": 36,
+                                        "2022M12D22": 37,
+                                        "2022M12D29": 38,
+                                        "2023M01D05": 39,
+                                        "2023M01D12": 40
+                                    },
+                                    "label": {
+                                        "2022M04D07": "2022 April 07",
+                                        "2022M04D14": "2022 April 14",
+                                        "2022M04D21": "2022 April 21",
+                                        "2022M04D28": "2022 April 28",
+                                        "2022M05D05": "2022 May 05",
+                                        "2022M05D12": "2022 May 12",
+                                        "2022M05D19": "2022 May 19",
+                                        "2022M05D26": "2022 May 26",
+                                        "2022M06D02": "2022 June 02",
+                                        "2022M06D09": "2022 June 09",
+                                        "2022M06D16": "2022 June 16",
+                                        "2022M06D23": "2022 June 23",
+                                        "2022M06D30": "2022 June 30",
+                                        "2022M07D07": "2022 July 07",
+                                        "2022M07D14": "2022 July 14",
+                                        "2022M07D21": "2022 July 21",
+                                        "2022M07D28": "2022 July 28",
+                                        "2022M08D04": "2022 August 04",
+                                        "2022M08D11": "2022 August 11",
+                                        "2022M08D18": "2022 August 18",
+                                        "2022M08D25": "2022 August 25",
+                                        "2022M09D01": "2022 September 01",
+                                        "2022M09D08": "2022 September 08",
+                                        "2022M09D15": "2022 September 15",
+                                        "2022M09D22": "2022 September 22",
+                                        "2022M09D29": "2022 September 29",
+                                        "2022M10D06": "2022 October 06",
+                                        "2022M10D13": "2022 October 13",
+                                        "2022M10D20": "2022 October 20",
+                                        "2022M10D27": "2022 October 27",
+                                        "2022M11D03": "2022 November 03",
+                                        "2022M11D10": "2022 November 10",
+                                        "2022M11D17": "2022 November 17",
+                                        "2022M11D24": "2022 November 24",
+                                        "2022M12D01": "2022 December 01",
+                                        "2022M12D08": "2022 December 08",
+                                        "2022M12D15": "2022 December 15",
+                                        "2022M12D22": "2022 December 22",
+                                        "2022M12D29": "2022 December 29",
+                                        "2023M01D05": "2023 January 05",
+                                        "2023M01D12": "2023 January 12"
+                                    }
+                                },
+                                "label": "Day"
+                            },
+                            "C04039V04800": {
+                                "category": {
+                                    "index": {
+                                        "-": 0
+                                    },
+                                    "label": {
+                                        "-": "All Ports and Airports"
+                                    }
+                                },
+                                "label": "Port of Entry"
+                            }
+                        },
+                        "extension": {
+                            "matrix": "UA32",
+                            "language": {
+                                "code": "en",
+                                "name": "English"
+                            },
+                            "elimination": {
+                                "C04039V04800": null
+                            },
+                            "contact": {
+                                "name": "Declan Smyth",
+                                "email": "sscu@cso.ie",
+                                "phone": "(+353) 1 498 4000"
+                            },
+                            "subject": {
+                                "code": 0,
+                                "value": ""
+                            },
+                            "product": {
+                                "code": "",
+                                "value": ""
+                            },
+                            "official": true,
+                            "copyright": {
+                                "name": "Central Statistics Office, Ireland",
+                                "code": "CSO",
+                                "href": "https://www.cso.ie/"
+                            },
+                            "exceptional": false,
+                            "reservation": false,
+                            "archive": false,
+                            "experimental": false,
+                            "analytical": false
+                        },
+                        "id": [
+                            "STATISTIC",
+                            "TLIST(D1)",
+                            "C04039V04800"
+                        ],
+                        "label": "Passengers arriving from Ukraine",
+                        "note": [],
+                        "role": {
+                            "metric": [
+                                "STATISTIC"
+                            ],
+                            "time": [
+                                "TLIST(D1)"
+                            ],
+                            "geo": null,
+                            "classification": [
+                                "C04039V04800"
+                            ]
+                        },
+                        "size": [
+                            2,
+                            41,
+                            1
+                        ],
+                        "value": [
+                            519,
+                            383,
+                            242,
+                            200,
+                            239,
+                            249,
+                            216,
+                            171,
+                            219,
+                            160,
+                            163,
+                            221,
+                            147,
+                            197,
+                            155,
+                            154,
+                            135,
+                            100,
+                            112,
+                            102,
+                            101,
+                            118,
+                            120,
+                            126,
+                            126,
+                            140,
+                            189,
+                            191,
+                            195,
+                            178,
+                            140,
+                            104,
+                            136,
+                            146,
+                            105,
+                            140,
+                            152,
+                            177,
+                            92,
+                            38,
+                            65,
+                            3634,
+                            2680,
+                            1691,
+                            1400,
+                            1675,
+                            1745,
+                            1509,
+                            1196,
+                            1533,
+                            1122,
+                            1144,
+                            1546,
+                            1029,
+                            1376,
+                            1085,
+                            1075,
+                            945,
+                            702,
+                            786,
+                            714,
+                            710,
+                            824,
+                            843,
+                            879,
+                            883,
+                            978,
+                            1321,
+                            1335,
+                            1362,
+                            1249,
+                            978,
+                            728,
+                            954,
+                            1019,
+                            734,
+                            982,
+                            1061,
+                            1242,
+                            646,
+                            267,
+                            453
+                        ],
+                        "version": "2.0"
+                    }
+                }
+            },
+            "metadata": {
+                "api": {
+                    "query": {},
+                    "response": {}
+                }
+            },
+            "options": {
+                "language": {
+                    "decimal": ".",
+                    "emptyTable": "No data available in table",
+                    "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+                    "infoEmpty": "Showing 0 to 0 of 0 entries",
+                    "infoFiltered": "(filtered from _MAX_ total entries)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Show _MENU_ entries",
+                    "loadingRecords": "Loading...",
+                    "processing": "Processing...",
+                    "search": "Search:",
+                    "zeroRecords": "No matching records found",
+                    "paginate": {
+                        "first": "First",
+                        "last": "Last",
+                        "next": "Next",
+                        "previous": "Previous"
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                },
+                "search": {
+                    "search": ""
+                },
+                "dom": "Bfltip",
+                "responsive": true,
+                "buttons": [
+                    {
+                        "extend": "csv",
+                        "text": "Download CSV",
+                        "className": "export-button",
+                        "title": "UA32.20230124T140100",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    },
+                    {
+                        "extend": "print",
+                        "text": "Print",
+                        "className": "export-button",
+                        "title": "",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    }
+                ],
+                "order": []
+            }
+        },
+        "arrivalsUnaccompaniedMinors": {
+            "autoupdate": false,
+            "fluidTime": [],
+            "copyright": true,
+            "title": "",
+            "link": "https://data.cso.ie/table/UA19",
+            "pivot": null,
+            "hideColumns": [
+                "TLIST(M1)",
+                "C03788V04538",
+                "UNIT"
+            ],
+            "internationalisation": {
+                "unit": "Unit",
+                "value": "Value"
+            },
+            "defaultContent": "..",
+            "data": {
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/private/api.jsonrpc"
+                    },
+                    "response": {
+                        "class": "dataset",
+                        "dimension": {
+                            "STATISTIC": {
+                                "category": {
+                                    "index": {
+                                        "UA19C01": 0,
+                                        "UA19C02": 1,
+                                        "UA19C03": 2
+                                    },
+                                    "label": {
+                                        "UA19C01": "Referred to Tusla",
+                                        "UA19C02": "Accommodated by Tusla",
+                                        "UA19C03": "Remaining in Tulsa"
+                                    },
+                                    "unit": {
+                                        "UA19C01": {
+                                            "decimals": 0,
+                                            "label": "Number",
+                                            "position": "end"
+                                        },
+                                        "UA19C02": {
+                                            "decimals": 0,
+                                            "label": "Number",
+                                            "position": "end"
+                                        },
+                                        "UA19C03": {
+                                            "decimals": 0,
+                                            "label": "Number",
+                                            "position": "end"
+                                        }
+                                    }
+                                },
+                                "label": "Statistic"
+                            },
+                            "TLIST(M1)": {
+                                "category": {
+                                    "index": {
+                                        "202212": 0
+                                    },
+                                    "label": {
+                                        "202212": "2022 December"
+                                    }
+                                },
+                                "label": "Day"
+                            },
+                            "C03788V04538": {
+                                "category": {
+                                    "index": {
+                                        "IE0": 0
+                                    },
+                                    "label": {
+                                        "IE0": "Ireland"
+                                    }
+                                },
+                                "label": "Ireland"
+                            }
+                        },
+                        "extension": {
+                            "matrix": "UA19",
+                            "language": {
+                                "code": "en",
+                                "name": "English"
+                            },
+                            "elimination": {
+                                "C03788V04538": null
+                            },
+                            "contact": {
+                                "name": "Declan Smyth",
+                                "email": "sscu@cso.ie",
+                                "phone": "(+353) 1 498 4000"
+                            },
+                            "subject": {
+                                "code": 74,
+                                "value": "Ukraine Hub"
+                            },
+                            "product": {
+                                "code": "UAK",
+                                "value": "Ukraine Hub Statistics"
+                            },
+                            "official": true,
+                            "copyright": {
+                                "name": "Tusla - Child and Family Agency",
+                                "code": "TCFG",
+                                "href": "https://www.tusla.ie/"
+                            },
+                            "exceptional": false,
+                            "reservation": false,
+                            "archive": false,
+                            "experimental": false,
+                            "analytical": false
+                        },
+                        "id": [
+                            "STATISTIC",
+                            "TLIST(M1)",
+                            "C03788V04538"
+                        ],
+                        "label": "Unaccompanied Minors from Ukraine Referred to Tusla",
+                        "note": [
+                            "For more information, please go to the [url=https://www.cso.ie/en/statistics/population/arrivalsfromukraineinireland/]statistical release page[/url] on our website."
+                        ],
+                        "role": {
+                            "metric": [
+                                "STATISTIC"
+                            ],
+                            "time": [
+                                "TLIST(M1)"
+                            ],
+                            "geo": null,
+                            "classification": [
+                                "C03788V04538"
+                            ]
+                        },
+                        "size": [
+                            3,
+                            1,
+                            1
+                        ],
+                        "value": [
+                            261,
+                            191,
+                            73
+                        ],
+                        "version": "2.0"
+                    }
+                }
+            },
+            "metadata": {
+                "api": {
+                    "query": {},
+                    "response": {}
+                }
+            },
+            "options": {
+                "language": {
+                    "decimal": ".",
+                    "emptyTable": "No data available in table",
+                    "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+                    "infoEmpty": "Showing 0 to 0 of 0 entries",
+                    "infoFiltered": "(filtered from _MAX_ total entries)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Show _MENU_ entries",
+                    "loadingRecords": "Loading...",
+                    "processing": "Processing...",
+                    "search": "Search:",
+                    "zeroRecords": "No matching records found",
+                    "paginate": {
+                        "first": "First",
+                        "last": "Last",
+                        "next": "Next",
+                        "previous": "Previous"
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                },
+                "search": {
+                    "search": ""
+                },
+                "dom": "ft",
+                "responsive": true,
+                "buttons": [
+                    {
+                        "extend": "csv",
+                        "text": "Download CSV",
+                        "className": "export-button",
+                        "title": "UA19.20230124T100156",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    },
+                    {
+                        "extend": "print",
+                        "text": "Print",
+                        "className": "export-button",
+                        "title": "",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    }
+                ],
+                "order": [],
+                "paging": false
+            }
+        }
+    }
+}

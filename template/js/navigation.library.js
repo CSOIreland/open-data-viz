@@ -22,6 +22,7 @@ app.navigation.draw = function () {
                 listItem.find("i").addClass(link.icon);
                 $("#navigation").find("[name=entity-navigation]").append(listItem);
                 api.content.navigate("#navigation [name=" + link.name + "]", link.path, null, null, app.label.entity[link.name].pageTitle, app.plugin.cookiconsent.granted);
+                debugger
             } else {
                 var navCollapse = $("#navigation").find("[name=templates]").find("[name=navigation-link-collapse]").clone();
                 navCollapse.find("i").addClass(link.icon)

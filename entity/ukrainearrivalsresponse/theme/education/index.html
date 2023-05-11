@@ -1,0 +1,749 @@
+<div id="visual-ukraine-education">
+
+    <div class="container">
+        <div class="col-12">
+            <table class="table table-bordered table-sm table-hover" name="education-headline-table">
+                <thead class="thead bg-info text-light">
+                    <tr>
+                        <th scope="col" style="width:20%;">Title</th>
+                        <th scope="col" style="width:20%; text-align:right">Total Eligible</th>
+                        <th scope="col" style="width:20%; text-align:right">Total Enrolled</th>
+                        <th scope="col" style="width:20%; text-align:right">7 day average daily enrolment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Primary</th>
+                        <td style="text-align:right" name="primary-total-eligible"></td>
+                        <td style="text-align:right" name="primary-total-enrolled"></td>
+                        <td style="text-align:right" name="primary-7-day-average-daily-enrolment"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Secondary</th>
+                        <td style="text-align:right" name="secondary-total-eligible"></td>
+                        <td style="text-align:right" name="secondary-total-enrolled"></td>
+                        <td style="text-align:right" name="secondary-7-day-average-daily-enrolment"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="col">
+        <div class="card m-4">
+
+            <div class="card-header bg-primary text-light">
+                <span>Successfully Enrolled out of Eligible</span>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-12">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-12">
+                                <div class="card border-left-blue shadow h-5 py-2">
+                                    <div class="card-body">
+                                        <div class="col mr-2 text-right">
+                                            <div class="h2 font-weight-bold text-primary text-uppercase mb-1">%</div>
+                                        </div>
+                                        <!--    <script>pxWidget.draw.init("chart",
+                                                "pxwidget5227751831",
+                                                {
+                                                    "autoupdate": true,
+                                                    "type": "doughnut",
+                                                    "copyright": false,
+                                                    "link": null,
+                                                    "sort": false,
+                                                    "metadata": {
+                                                        "xAxis": {
+                                                            "STATISTIC": [
+                                                                "UA15C02"
+                                                            ],
+                                                            "role": "metric"
+                                                        },
+                                                        "fluidTime": [
+
+                                                        ],
+                                                        "api": {
+                                                            "query": {
+                                                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                                                "data": {
+                                                                    "jsonrpc": "2.0",
+                                                                    "method": "PxStat.Data.Cube_API.ReadMetadata",
+                                                                    "params": {
+                                                                        "matrix": "UA15",
+                                                                        "language": "en",
+                                                                        "format": {
+                                                                            "type": "JSON-stat",
+                                                                            "version": "2.0"
+                                                                        }
+                                                                    },
+                                                                    "version": "2.0"
+                                                                }
+                                                            },
+                                                            "response": {
+
+                                                            }
+                                                        }
+                                                    },
+                                                    "data": {
+                                                        "labels": [
+
+                                                        ],
+                                                        "datasets": [
+                                                            {
+                                                                "label": "Series 1",
+                                                                "pointRadius": 2,
+                                                                "pointHoverRadius": 4,
+                                                                "maxBarThickness": 90,
+                                                                "api": {
+                                                                    "query": {
+                                                                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                                                        "data": {
+                                                                            "jsonrpc": "2.0",
+                                                                            "method": "PxStat.Data.Cube_API.ReadDataset",
+                                                                            "params": {
+                                                                                "class": "query",
+                                                                                "id": [
+                                                                                    "TLIST(W1)",
+                                                                                    "C02447V03042"
+                                                                                ],
+                                                                                "dimension": {
+                                                                                    "TLIST(W1)": {
+                                                                                        "category": {
+                                                                                            "index": [
+                                                                                                "2022W23"
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    "C02447V03042": {
+                                                                                        "category": {
+                                                                                            "index": [
+                                                                                                "1"
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "extension": {
+                                                                                    "language": {
+                                                                                        "code": "en"
+                                                                                    },
+                                                                                    "format": {
+                                                                                        "type": "JSON-stat",
+                                                                                        "version": "2.0"
+                                                                                    },
+                                                                                    "matrix": "UA15",
+                                                                                    "m2m": false
+                                                                                },
+                                                                                "version": "2.0"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "response": {
+
+                                                                    }
+                                                                },
+                                                                "data": [
+
+                                                                ],
+                                                                "unit": [
+
+                                                                ],
+                                                                "decimal": [
+
+                                                                ],
+                                                                "fluidTime": [
+                                                                    0
+                                                                ],
+                                                                "fill": false
+                                                            }
+                                                        ],
+                                                        "null": ".."
+                                                    },
+                                                    "options": {
+                                                        "responsive": true,
+                                                        "maintainAspectRatio": false,
+                                                        "title": {
+                                                            "display": true,
+                                                            "text": [
+
+                                                            ]
+                                                        },
+                                                        "tooltips": {
+                                                            "mode": "index",
+                                                            "callbacks": {
+
+                                                            }
+                                                        },
+                                                        "hover": {
+                                                            "mode": "nearest",
+                                                            "intersect": true
+                                                        },
+                                                        "plugins": {
+                                                            "stacked100": {
+                                                                "enable": false
+                                                            },
+                                                            "colorschemes": {
+                                                                "scheme": "tableau.Tableau10"
+                                                            }
+                                                        },
+                                                        "legend": {
+                                                            "display": true,
+                                                            "position": "bottom"
+                                                        },
+                                                        "updated": "2022-06-24T11:00:00Z",
+                                                        "layout": {
+                                                            "padding": {
+                                                                "left": 0,
+                                                                "right": 0,
+                                                                "top": 0,
+                                                                "bottom": 22
+                                                            }
+                                                        }
+                                                    },
+                                                    "plugins": [
+                                                        {
+
+                                                        }
+                                                    ]
+                                                });</script>
+                                        <div id="pxwidget5227751831" class="pxwidget"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 col-lg-12">
+                                <div class="card border-left-blue shadow h-5 py-2">
+                                    <div class="card-body">
+                                        <div class="col mr-2 text-right">
+                                            <div class="h2 font-weight-bold text-primary text-uppercase mb-1">%</div>
+                                        </div>
+                                        <!--  <script>pxWidget.draw.init("chart",
+                                                "pxwidget3715656651",
+                                                {
+                                                    "autoupdate": true,
+                                                    "type": "doughnut",
+                                                    "copyright": false,
+                                                    "link": null,
+                                                    "sort": false,
+                                                    "metadata": {
+                                                        "xAxis": {
+                                                            "STATISTIC": [
+                                                                "UA16C02"
+                                                            ],
+                                                            "role": "metric"
+                                                        },
+                                                        "fluidTime": [
+
+                                                        ],
+                                                        "api": {
+                                                            "query": {
+                                                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                                                "data": {
+                                                                    "jsonrpc": "2.0",
+                                                                    "method": "PxStat.Data.Cube_API.ReadMetadata",
+                                                                    "params": {
+                                                                        "matrix": "UA16",
+                                                                        "language": "en",
+                                                                        "format": {
+                                                                            "type": "JSON-stat",
+                                                                            "version": "2.0"
+                                                                        }
+                                                                    },
+                                                                    "version": "2.0"
+                                                                }
+                                                            },
+                                                            "response": {
+
+                                                            }
+                                                        }
+                                                    },
+                                                    "data": {
+                                                        "labels": [
+
+                                                        ],
+                                                        "datasets": [
+                                                            {
+                                                                "label": "Series 1",
+                                                                "pointRadius": 2,
+                                                                "pointHoverRadius": 4,
+                                                                "maxBarThickness": 90,
+                                                                "api": {
+                                                                    "query": {
+                                                                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                                                        "data": {
+                                                                            "jsonrpc": "2.0",
+                                                                            "method": "PxStat.Data.Cube_API.ReadDataset",
+                                                                            "params": {
+                                                                                "class": "query",
+                                                                                "id": [
+                                                                                    "TLIST(W1)",
+                                                                                    "C02447V03042"
+                                                                                ],
+                                                                                "dimension": {
+                                                                                    "TLIST(W1)": {
+                                                                                        "category": {
+                                                                                            "index": [
+                                                                                                "2022W22"
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    "C02447V03042": {
+                                                                                        "category": {
+                                                                                            "index": [
+                                                                                                "2"
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "extension": {
+                                                                                    "language": {
+                                                                                        "code": "en"
+                                                                                    },
+                                                                                    "format": {
+                                                                                        "type": "JSON-stat",
+                                                                                        "version": "2.0"
+                                                                                    },
+                                                                                    "matrix": "UA16",
+                                                                                    "m2m": false
+                                                                                },
+                                                                                "version": "2.0"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "response": {
+
+                                                                    }
+                                                                },
+                                                                "data": [
+
+                                                                ],
+                                                                "unit": [
+
+                                                                ],
+                                                                "decimal": [
+
+                                                                ],
+                                                                "fluidTime": [
+                                                                    0
+                                                                ],
+                                                                "fill": false
+                                                            }
+                                                        ],
+                                                        "null": ".."
+                                                    },
+                                                    "options": {
+                                                        "responsive": true,
+                                                        "maintainAspectRatio": false,
+                                                        "title": {
+                                                            "display": true,
+                                                            "text": [
+
+                                                            ]
+                                                        },
+                                                        "tooltips": {
+                                                            "mode": "index",
+                                                            "callbacks": {
+
+                                                            }
+                                                        },
+                                                        "hover": {
+                                                            "mode": "nearest",
+                                                            "intersect": true
+                                                        },
+                                                        "plugins": {
+                                                            "stacked100": {
+                                                                "enable": false
+                                                            },
+                                                            "colorschemes": {
+                                                                "scheme": "tableau.Tableau10"
+                                                            }
+                                                        },
+                                                        "legend": {
+                                                            "display": true,
+                                                            "position": "bottom"
+                                                        },
+                                                        "updated": "2022-06-10T11:00:00Z",
+                                                        "layout": {
+                                                            "padding": {
+                                                                "left": 0,
+                                                                "right": 0,
+                                                                "top": 0,
+                                                                "bottom": 22
+                                                            }
+                                                        }
+                                                    },
+                                                    "plugins": [
+                                                        {
+
+                                                        }
+                                                    ]
+                                                });</script>
+                                        <div id="pxwidget3715656651" class="pxwidget"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-12">
+                        <div id="visual-ukraine-arrivals-secondary-of-eligible-chart-container">
+                            <div class="col-12">
+                                <div class="card border-left-blue shadow h-5 py-2">
+                                    <div class="card-body">
+                                        <div class="col mr-2 text-right">
+                                            <div class="h2 font-weight-bold text-primary text-uppercase mb-1">%</div>
+                                        </div>
+                                        <!--  <script>pxWidget.draw.init("chart",
+                                                "pxwidget3715656652",
+                                                {
+                                                    "autoupdate": true,
+                                                    "type": "doughnut",
+                                                    "copyright": false,
+                                                    "link": null,
+                                                    "sort": false,
+                                                    "metadata": {
+                                                        "xAxis": {
+                                                            "STATISTIC": [
+                                                                "UA16C02"
+                                                            ],
+                                                            "role": "metric"
+                                                        },
+                                                        "fluidTime": [
+
+                                                        ],
+                                                        "api": {
+                                                            "query": {
+                                                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                                                "data": {
+                                                                    "jsonrpc": "2.0",
+                                                                    "method": "PxStat.Data.Cube_API.ReadMetadata",
+                                                                    "params": {
+                                                                        "matrix": "UA16",
+                                                                        "language": "en",
+                                                                        "format": {
+                                                                            "type": "JSON-stat",
+                                                                            "version": "2.0"
+                                                                        }
+                                                                    },
+                                                                    "version": "2.0"
+                                                                }
+                                                            },
+                                                            "response": {
+
+                                                            }
+                                                        }
+                                                    },
+                                                    "data": {
+                                                        "labels": [
+
+                                                        ],
+                                                        "datasets": [
+                                                            {
+                                                                "label": "Series 1",
+                                                                "pointRadius": 2,
+                                                                "pointHoverRadius": 4,
+                                                                "maxBarThickness": 90,
+                                                                "api": {
+                                                                    "query": {
+                                                                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                                                        "data": {
+                                                                            "jsonrpc": "2.0",
+                                                                            "method": "PxStat.Data.Cube_API.ReadDataset",
+                                                                            "params": {
+                                                                                "class": "query",
+                                                                                "id": [
+                                                                                    "TLIST(W1)",
+                                                                                    "C02447V03042"
+                                                                                ],
+                                                                                "dimension": {
+                                                                                    "TLIST(W1)": {
+                                                                                        "category": {
+                                                                                            "index": [
+                                                                                                "2022W22"
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    "C02447V03042": {
+                                                                                        "category": {
+                                                                                            "index": [
+                                                                                                "2"
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "extension": {
+                                                                                    "language": {
+                                                                                        "code": "en"
+                                                                                    },
+                                                                                    "format": {
+                                                                                        "type": "JSON-stat",
+                                                                                        "version": "2.0"
+                                                                                    },
+                                                                                    "matrix": "UA16",
+                                                                                    "m2m": false
+                                                                                },
+                                                                                "version": "2.0"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "response": {
+
+                                                                    }
+                                                                },
+                                                                "data": [
+
+                                                                ],
+                                                                "unit": [
+
+                                                                ],
+                                                                "decimal": [
+
+                                                                ],
+                                                                "fluidTime": [
+                                                                    0
+                                                                ],
+                                                                "fill": false
+                                                            }
+                                                        ],
+                                                        "null": ".."
+                                                    },
+                                                    "options": {
+                                                        "responsive": true,
+                                                        "maintainAspectRatio": false,
+                                                        "title": {
+                                                            "display": true,
+                                                            "text": [
+
+                                                            ]
+                                                        },
+                                                        "tooltips": {
+                                                            "mode": "index",
+                                                            "callbacks": {
+
+                                                            }
+                                                        },
+                                                        "hover": {
+                                                            "mode": "nearest",
+                                                            "intersect": true
+                                                        },
+                                                        "plugins": {
+                                                            "stacked100": {
+                                                                "enable": false
+                                                            },
+                                                            "colorschemes": {
+                                                                "scheme": "tableau.Tableau10"
+                                                            }
+                                                        },
+                                                        "legend": {
+                                                            "display": true,
+                                                            "position": "bottom"
+                                                        },
+                                                        "updated": "2022-06-10T11:00:00Z",
+                                                        "layout": {
+                                                            "padding": {
+                                                                "left": 0,
+                                                                "right": 0,
+                                                                "top": 0,
+                                                                "bottom": 22
+                                                            }
+                                                        }
+                                                    },
+                                                    "plugins": [
+                                                        {
+
+                                                        }
+                                                    ]
+                                                });</script>
+                                        <div id="pxwidget3715656652" class="pxwidget"></div> -->
+
+                                        <div class="col mr-2 text-right">
+                                            <div class="h2 font-weight-bold text-primary text-uppercase mb-1">%</div>
+                                        </div>
+
+                                        <!--   <script>pxWidget.draw.init("chart",
+                                                "pxwidget3715656653",
+                                                {
+                                                    "autoupdate": true,
+                                                    "type": "doughnut",
+                                                    "copyright": false,
+                                                    "link": null,
+                                                    "sort": false,
+                                                    "metadata": {
+                                                        "xAxis": {
+                                                            "STATISTIC": [
+                                                                "UA16C02"
+                                                            ],
+                                                            "role": "metric"
+                                                        },
+                                                        "fluidTime": [
+
+                                                        ],
+                                                        "api": {
+                                                            "query": {
+                                                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                                                "data": {
+                                                                    "jsonrpc": "2.0",
+                                                                    "method": "PxStat.Data.Cube_API.ReadMetadata",
+                                                                    "params": {
+                                                                        "matrix": "UA16",
+                                                                        "language": "en",
+                                                                        "format": {
+                                                                            "type": "JSON-stat",
+                                                                            "version": "2.0"
+                                                                        }
+                                                                    },
+                                                                    "version": "2.0"
+                                                                }
+                                                            },
+                                                            "response": {
+
+                                                            }
+                                                        }
+                                                    },
+                                                    "data": {
+                                                        "labels": [
+
+                                                        ],
+                                                        "datasets": [
+                                                            {
+                                                                "label": "Series 1",
+                                                                "pointRadius": 2,
+                                                                "pointHoverRadius": 4,
+                                                                "maxBarThickness": 90,
+                                                                "api": {
+                                                                    "query": {
+                                                                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                                                        "data": {
+                                                                            "jsonrpc": "2.0",
+                                                                            "method": "PxStat.Data.Cube_API.ReadDataset",
+                                                                            "params": {
+                                                                                "class": "query",
+                                                                                "id": [
+                                                                                    "TLIST(W1)",
+                                                                                    "C02447V03042"
+                                                                                ],
+                                                                                "dimension": {
+                                                                                    "TLIST(W1)": {
+                                                                                        "category": {
+                                                                                            "index": [
+                                                                                                "2022W22"
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    "C02447V03042": {
+                                                                                        "category": {
+                                                                                            "index": [
+                                                                                                "2"
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "extension": {
+                                                                                    "language": {
+                                                                                        "code": "en"
+                                                                                    },
+                                                                                    "format": {
+                                                                                        "type": "JSON-stat",
+                                                                                        "version": "2.0"
+                                                                                    },
+                                                                                    "matrix": "UA16",
+                                                                                    "m2m": false
+                                                                                },
+                                                                                "version": "2.0"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "response": {
+
+                                                                    }
+                                                                },
+                                                                "data": [
+
+                                                                ],
+                                                                "unit": [
+
+                                                                ],
+                                                                "decimal": [
+
+                                                                ],
+                                                                "fluidTime": [
+                                                                    0
+                                                                ],
+                                                                "fill": false
+                                                            }
+                                                        ],
+                                                        "null": ".."
+                                                    },
+                                                    "options": {
+                                                        "responsive": true,
+                                                        "maintainAspectRatio": false,
+                                                        "title": {
+                                                            "display": true,
+                                                            "text": [
+
+                                                            ]
+                                                        },
+                                                        "tooltips": {
+                                                            "mode": "index",
+                                                            "callbacks": {
+
+                                                            }
+                                                        },
+                                                        "hover": {
+                                                            "mode": "nearest",
+                                                            "intersect": true
+                                                        },
+                                                        "plugins": {
+                                                            "stacked100": {
+                                                                "enable": false
+                                                            },
+                                                            "colorschemes": {
+                                                                "scheme": "tableau.Tableau10"
+                                                            }
+                                                        },
+                                                        "legend": {
+                                                            "display": true,
+                                                            "position": "bottom"
+                                                        },
+                                                        "updated": "2022-06-10T11:00:00Z",
+                                                        "layout": {
+                                                            "padding": {
+                                                                "left": 0,
+                                                                "right": 0,
+                                                                "top": 0,
+                                                                "bottom": 22
+                                                            }
+                                                        }
+                                                    },
+                                                    "plugins": [
+                                                        {
+
+                                                        }
+                                                    ]
+                                                });</script>
+                                        <div id="pxwidget3715656653" class="pxwidget"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+<!-- Page specific JS -->
+<script src="entity/ukrainearrivalsresponse/theme/education/js/education.library.js"></script>
+
+<!-- Page specific CSS -->
+<link rel="stylesheet" href="entity/ukrainearrivalsresponse/theme/education/css/education.css">
+
+
+<script src="entity/ukrainearrivalsresponse/theme/education/js/education.js"></script>

@@ -1,0 +1,586 @@
+{
+    "headlineData": [
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "TLIST(W1)",
+                    "C04040V04801"
+                ],
+                "dimension": {
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C04040V04801": {
+                        "category": {
+                            "index": [
+                                "20"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": false,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA33"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-accommodation-demand [name=accommodation-demand-headline-table] [name=independent-total]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "TLIST(W1)",
+                    "C04040V04801"
+                ],
+                "dimension": {
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C04040V04801": {
+                        "category": {
+                            "index": [
+                                "30"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA33"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-accommodation-demand [name=accommodation-demand-headline-table] [name=serviced-total]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "TLIST(W1)",
+                    "C04040V04801"
+                ],
+                "dimension": {
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C04040V04801": {
+                        "category": {
+                            "index": [
+                                "10"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA33"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-accommodation-demand [name=accommodation-demand-headline-table] [name=emergency-total]"
+        }
+    ],
+    "chart": {
+        "percentageCurrentlyOccupiedOfPpsnIssued": {
+            "autoupdate": false,
+            "type": "line",
+            "copyright": true,
+            "link": "https://data.cso.ie/table/UA33",
+            "sort": false,
+            "metadata": {
+                "xAxis": {
+                    "STATISTIC": [
+                        "UA33C04"
+                    ],
+                    "role": "metric"
+                },
+                "fluidTime": [],
+                "api": {
+                    "query": {},
+                    "response": {
+                        "class": "dataset",
+                        "dimension": {
+                            "STATISTIC": {
+                                "category": {
+                                    "index": {
+                                        "UA33C01": 0,
+                                        "UA33C02": 1,
+                                        "UA33C03": 2,
+                                        "UA33C04": 3
+                                    },
+                                    "label": {
+                                        "UA33C01": "Accommodation capacity for arrivals from Ukraine",
+                                        "UA33C02": "Accommodation allocated to arrivals from Ukraine",
+                                        "UA33C03": "Accommodation not allocated to arrivals from Ukraine",
+                                        "UA33C04": "Percentage of accommodation allocated to arrivals from Ukraine"
+                                    },
+                                    "unit": {
+                                        "UA33C01": {
+                                            "decimals": 0,
+                                            "label": "Number",
+                                            "position": "end"
+                                        },
+                                        "UA33C02": {
+                                            "decimals": 0,
+                                            "label": "Number",
+                                            "position": "end"
+                                        },
+                                        "UA33C03": {
+                                            "decimals": 0,
+                                            "label": "Number",
+                                            "position": "end"
+                                        },
+                                        "UA33C04": {
+                                            "decimals": 0,
+                                            "label": "%",
+                                            "position": "end"
+                                        }
+                                    }
+                                },
+                                "label": "Statistic"
+                            },
+                            "TLIST(W1)": {
+                                "category": {
+                                    "index": {
+                                        "2022M04D14": 0,
+                                        "2022M04D21": 1,
+                                        "2022M04D28": 2,
+                                        "2022M05D05": 3,
+                                        "2022M05D12": 4,
+                                        "2022M05D19": 5,
+                                        "2022M05D26": 6,
+                                        "2022M06D02": 7,
+                                        "2022M06D09": 8,
+                                        "2022M06D16": 9,
+                                        "2022M06D23": 10,
+                                        "2022M06D30": 11,
+                                        "2022M07D07": 12,
+                                        "2022M07D14": 13,
+                                        "2022M07D21": 14,
+                                        "2022M07D28": 15,
+                                        "2022M08D04": 16,
+                                        "2022M08D11": 17,
+                                        "2022M08D18": 18,
+                                        "2022M08D25": 19,
+                                        "2022M09D01": 20,
+                                        "2022M09D08": 21,
+                                        "2022M09D15": 22,
+                                        "2022M09D22": 23,
+                                        "2022M09D29": 24,
+                                        "2022M10D06": 25,
+                                        "2022M10D13": 26,
+                                        "2022M10D20": 27,
+                                        "2022M10D27": 28,
+                                        "2022M11D03": 29,
+                                        "2022M11D10": 30,
+                                        "2022M11D17": 31,
+                                        "2022M11D24": 32,
+                                        "2022M12D01": 33
+                                    },
+                                    "label": {
+                                        "2022M04D14": "2022 April 14",
+                                        "2022M04D21": "2022 April 21",
+                                        "2022M04D28": "2022 April 28",
+                                        "2022M05D05": "2022 May 05",
+                                        "2022M05D12": "2022 May 12",
+                                        "2022M05D19": "2022 May 19",
+                                        "2022M05D26": "2022 May 26",
+                                        "2022M06D02": "2022 June 02",
+                                        "2022M06D09": "2022 June 09",
+                                        "2022M06D16": "2022 June 16",
+                                        "2022M06D23": "2022 June 23",
+                                        "2022M06D30": "2022 June 30",
+                                        "2022M07D07": "2022 July 07",
+                                        "2022M07D14": "2022 July 14",
+                                        "2022M07D21": "2022 July 21",
+                                        "2022M07D28": "2022 July 28",
+                                        "2022M08D04": "2022 August 04",
+                                        "2022M08D11": "2022 August 11",
+                                        "2022M08D18": "2022 August 18",
+                                        "2022M08D25": "2022 August 25",
+                                        "2022M09D01": "2022 September 01",
+                                        "2022M09D08": "2022 September 08",
+                                        "2022M09D15": "2022 September 15",
+                                        "2022M09D22": "2022 September 22",
+                                        "2022M09D29": "2022 September 29",
+                                        "2022M10D06": "2022 October 06",
+                                        "2022M10D13": "2022 October 13",
+                                        "2022M10D20": "2022 October 20",
+                                        "2022M10D27": "2022 October 27",
+                                        "2022M11D03": "2022 November 03",
+                                        "2022M11D10": "2022 November 10",
+                                        "2022M11D17": "2022 November 17",
+                                        "2022M11D24": "2022 November 24",
+                                        "2022M12D01": "2022 December 01"
+                                    }
+                                },
+                                "label": "Week"
+                            },
+                            "C04040V04801": {
+                                "category": {
+                                    "index": {
+                                        "10": 0,
+                                        "22": 1,
+                                        "30": 2
+                                    },
+                                    "label": {
+                                        "10": "Emergency accommodation",
+                                        "22": "All independent accommodation",
+                                        "30": "Serviced accommodation"
+                                    }
+                                },
+                                "label": "Type of Accommodation"
+                            }
+                        },
+                        "extension": {
+                            "matrix": "UA33",
+                            "language": {
+                                "code": "en",
+                                "name": "English"
+                            },
+                            "elimination": {
+                                "C04040V04801": null
+                            },
+                            "contact": {
+                                "name": "Declan Smyth",
+                                "email": "sscu@cso.ie",
+                                "phone": "(+353) 1 498 4000"
+                            },
+                            "subject": {
+                                "code": 0,
+                                "value": ""
+                            },
+                            "product": {
+                                "code": "",
+                                "value": ""
+                            },
+                            "official": true,
+                            "copyright": {
+                                "name": "Central Statistics Office, Ireland",
+                                "code": "CSO",
+                                "href": "https://www.cso.ie/"
+                            },
+                            "exceptional": false,
+                            "reservation": false,
+                            "archive": false,
+                            "experimental": false,
+                            "analytical": false
+                        },
+                        "id": [
+                            "STATISTIC",
+                            "TLIST(W1)",
+                            "C04040V04801"
+                        ],
+                        "label": "Accommodation capacity and allocation of accommodation for arrivals from Ukraine",
+                        "note": [],
+                        "role": {
+                            "metric": [
+                                "STATISTIC"
+                            ],
+                            "time": [
+                                "TLIST(W1)"
+                            ],
+                            "geo": null,
+                            "classification": [
+                                "C04040V04801"
+                            ]
+                        },
+                        "size": [
+                            4,
+                            34,
+                            3
+                        ],
+                        "value": [],
+                        "version": "2.0"
+                    }
+                }
+            },
+            "data": {
+                "labels": [],
+                "datasets": [
+                    {
+                        "label": "% Currently Occupied of PPSN Issued",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {},
+                            "response": {
+                                "class": "dataset",
+                                "dimension": {
+                                    "STATISTIC": {
+                                        "category": {
+                                            "index": {
+                                                "UA33C01": 0,
+                                                "UA33C02": 1,
+                                                "UA33C03": 2,
+                                                "UA33C04": 3
+                                            },
+                                            "label": {
+                                                "UA33C01": "Accommodation capacity for arrivals from Ukraine",
+                                                "UA33C02": "Accommodation allocated to arrivals from Ukraine",
+                                                "UA33C03": "Accommodation not allocated to arrivals from Ukraine",
+                                                "UA33C04": "Percentage of accommodation allocated to arrivals from Ukraine"
+                                            },
+                                            "unit": {
+                                                "UA33C01": {
+                                                    "decimals": 0,
+                                                    "label": "Number",
+                                                    "position": "end"
+                                                },
+                                                "UA33C02": {
+                                                    "decimals": 0,
+                                                    "label": "Number",
+                                                    "position": "end"
+                                                },
+                                                "UA33C03": {
+                                                    "decimals": 0,
+                                                    "label": "Number",
+                                                    "position": "end"
+                                                },
+                                                "UA33C04": {
+                                                    "decimals": 0,
+                                                    "label": "%",
+                                                    "position": "end"
+                                                }
+                                            }
+                                        },
+                                        "label": "Statistic"
+                                    },
+                                    "TLIST(W1)": {
+                                        "category": {
+                                            "index": {
+                                                "2022M12D01": 0
+                                            },
+                                            "label": {
+                                                "2022M12D01": "2022 December 01"
+                                            }
+                                        },
+                                        "label": "Week"
+                                    },
+                                    "C04040V04801": {
+                                        "category": {
+                                            "index": {
+                                                "22": 0
+                                            },
+                                            "label": {
+                                                "22": "All independent accommodation"
+                                            }
+                                        },
+                                        "label": "Type of Accommodation"
+                                    }
+                                },
+                                "extension": {
+                                    "matrix": "UA33",
+                                    "language": {
+                                        "code": "en",
+                                        "name": "English"
+                                    },
+                                    "elimination": {
+                                        "C04040V04801": null
+                                    },
+                                    "contact": {
+                                        "name": "Declan Smyth",
+                                        "email": "sscu@cso.ie",
+                                        "phone": "(+353) 1 498 4000"
+                                    },
+                                    "subject": {
+                                        "code": 0,
+                                        "value": ""
+                                    },
+                                    "product": {
+                                        "code": "",
+                                        "value": ""
+                                    },
+                                    "official": true,
+                                    "copyright": {
+                                        "name": "Central Statistics Office, Ireland",
+                                        "code": "CSO",
+                                        "href": "https://www.cso.ie/"
+                                    },
+                                    "exceptional": false,
+                                    "reservation": false,
+                                    "archive": false,
+                                    "experimental": false,
+                                    "analytical": false
+                                },
+                                "id": [
+                                    "STATISTIC",
+                                    "TLIST(W1)",
+                                    "C04040V04801"
+                                ],
+                                "label": "Accommodation capacity and allocation of accommodation for arrivals from Ukraine",
+                                "note": [],
+                                "role": {
+                                    "metric": [
+                                        "STATISTIC"
+                                    ],
+                                    "time": [
+                                        "TLIST(W1)"
+                                    ],
+                                    "geo": null,
+                                    "classification": [
+                                        "C04040V04801"
+                                    ]
+                                },
+                                "size": [
+                                    4,
+                                    1,
+                                    1
+                                ],
+                                "value": [
+                                    null,
+                                    null,
+                                    null,
+                                    null
+                                ],
+                                "version": "2.0"
+                            }
+                        },
+                        "data": [],
+                        "unit": [
+                            "%"
+                        ],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    }
+                ],
+                "null": ".."
+            },
+            "options": {
+                "responsive": true,
+                "maintainAspectRatio": false,
+                "title": {
+                    "display": true,
+                    "text": [
+                        ""
+                    ]
+                },
+                "tooltips": {
+                    "mode": "index",
+                    "callbacks": {}
+                },
+                "hover": {
+                    "mode": "nearest",
+                    "intersect": true
+                },
+                "scales": {
+                    "xAxes": [
+                        {
+                            "ticks": {
+                                "beginAtZero": false,
+                                "maxTicksLimit": null
+                            },
+                            "gridLines": {
+                                "display": false
+                            },
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ],
+                    "yAxes": [
+                        {
+                            "display": true,
+                            "position": "left",
+                            "id": "y-axis-1",
+                            "ticks": {
+                                "beginAtZero": true
+                            },
+                            "callback": null,
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ]
+                },
+                "plugins": {
+                    "stacked100": {
+                        "enable": false
+                    },
+                    "colorschemes": {
+                        "scheme": [
+                            "#405381",
+                            "#5BC1A5",
+                            "#FCBE72",
+                            "#0091AB",
+                            "#90989F",
+                            "#3D5999",
+                            "#C6CC5C",
+                            "#579599",
+                            "#FBAA34",
+                            "#007780",
+                            "#B9BEC3",
+                            "#00AF86",
+                            "#6BC2C2",
+                            "#00758C",
+                            "#FCB053",
+                            "#6A7794",
+                            "#A3CCC1",
+                            "#F68B58",
+                            "#36A0B3"
+                        ]
+                    }
+                },
+                "legend": {
+                    "display": true,
+                    "position": "bottom"
+                },
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": null,
+                "layout": {
+                    "padding": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 22
+                    }
+                }
+            },
+            "plugins": [
+                {}
+            ]
+        }
+    }
+}

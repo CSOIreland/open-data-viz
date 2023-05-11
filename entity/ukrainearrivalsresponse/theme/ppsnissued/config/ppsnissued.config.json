@@ -1,0 +1,2221 @@
+{
+    "headlineData": [
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C01"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "205"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=0-4-years-total]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C01"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "250"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=5-12-years-total]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C01"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "2712"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=13-17-years-total]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C01"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "3501"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=18-25-years-total]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C01"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "4366"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=26-35-years-total]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C01"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "4726"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=36-45-years-total]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C01"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "51006"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=46-55-years-total]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C01"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "546"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=56-years-and-over-total]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C03"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "546"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=0-4-years-past-week]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C03"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "205"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=0-4-years-past-week]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C03"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "250"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=5-12-years-past-week]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C03"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "2712"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=13-17-years-past-week]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C03"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "3501"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=18-25-years-past-week]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C03"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "4366"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=26-35-years-past-week]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C03"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "4726"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=36-45-years-past-week]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C03"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "51006"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=46-55-years-past-week]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C03"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "546"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=56-years-and-over-past-week]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C02"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "205"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=0-4-years-7-day-average]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C02"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "250"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=5-12-years-7-day-average]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C02"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "2712"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=13-17-years-7-day-average]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C02"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "3501"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=18-25-years-7-day-average]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C02"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "4366"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=26-35-years-7-day-average]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C02"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "4726"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=36-45-years-7-day-average]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C02"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "51006"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=46-55-years-7-day-average]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA38C02"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "546"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA38"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-ppsn-issued [name=ppsn-issued-headline-table] [name=56-years-and-over-7-day-average]"
+        }
+    ],
+    "percentage": [
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA36C03"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": "TLIST(W1)",
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA36"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-summary [name=percentage-currently-in-accommodation]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA36C06"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": [
+                                "2023M02D16"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": "TLIST(W1)",
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA36"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-summary [name=percentage-school-enrolments]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA36C09"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": [
+                                "2023M02D16"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": "TLIST(W1)",
+                    "codes": true,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA36"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-summary [name=percentage-medical-cards-issued]"
+        }
+    ],
+    "chart": {
+        "ppsnIssuedByAge": {
+            "autoupdate": true,
+            "type": "bar",
+            "copyright": true,
+            "link": "https://data.cso.ie/table/UA06",
+            "sort": false,
+            "metadata": {
+                "xAxis": {
+                    "C02076V03371": [
+                        "575",
+                        "550",
+                        "530",
+                        "515",
+                        "495",
+                        "475",
+                        "460",
+                        "440",
+                        "410",
+                        "365",
+                        "300",
+                        "265",
+                        "245",
+                        "205"
+                    ],
+                    "role": "classification"
+                },
+                "fluidTime": [],
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA06",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "data": {
+                "labels": [],
+                "datasets": [
+                    {
+                        "label": "Male",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "TLIST(W1)",
+                                            "C02199V02655"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA06C01"
+                                                    ]
+                                                }
+                                            },
+                                            "TLIST(W1)": {
+                                                "category": {
+                                                    "index": []
+                                                }
+                                            },
+                                            "C02199V02655": {
+                                                "category": {
+                                                    "index": [
+                                                        "1"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA06",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [
+                            0
+                        ],
+                        "fill": false
+                    },
+                    {
+                        "label": "Female",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "TLIST(W1)",
+                                            "C02199V02655"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA06C01"
+                                                    ]
+                                                }
+                                            },
+                                            "TLIST(W1)": {
+                                                "category": {
+                                                    "index": []
+                                                }
+                                            },
+                                            "C02199V02655": {
+                                                "category": {
+                                                    "index": [
+                                                        "2"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA06",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [
+                            0
+                        ],
+                        "fill": false
+                    }
+                ],
+                "null": ".."
+            },
+            "options": {
+                "responsive": true,
+                "maintainAspectRatio": false,
+                "title": {
+                    "display": true,
+                    "text": [
+                        ""
+                    ]
+                },
+                "tooltips": {
+                    "mode": "index",
+                    "callbacks": {}
+                },
+                "hover": {
+                    "mode": "nearest",
+                    "intersect": true
+                },
+                "scales": {
+                    "xAxes": [
+                        {
+                            "ticks": {
+                                "beginAtZero": false,
+                                "maxTicksLimit": null
+                            },
+                            "gridLines": {
+                                "display": false
+                            },
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": true
+                        }
+                    ],
+                    "yAxes": [
+                        {
+                            "display": true,
+                            "position": "left",
+                            "id": "y-axis-1",
+                            "ticks": {
+                                "beginAtZero": false
+                            },
+                            "callback": null,
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": true
+                        }
+                    ]
+                },
+                "plugins": {
+                    "stacked100": {
+                        "enable": false
+                    },
+                    "colorschemes": {
+                        "scheme": [
+                            "#405381",
+                            "#5BC1A5",
+                            "#FCBE72",
+                            "#0091AB",
+                            "#90989F",
+                            "#3D5999",
+                            "#C6CC5C",
+                            "#579599",
+                            "#FBAA34",
+                            "#007780",
+                            "#B9BEC3",
+                            "#00AF86",
+                            "#6BC2C2",
+                            "#00758C",
+                            "#FCB053",
+                            "#6A7794",
+                            "#A3CCC1",
+                            "#F68B58",
+                            "#36A0B3"
+                        ]
+                    }
+                },
+                "legend": {
+                    "display": true,
+                    "position": "bottom"
+                },
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": "2022-11-14T11:00:00Z",
+                "layout": {
+                    "padding": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 22
+                    }
+                }
+            },
+            "plugins": [
+                {}
+            ]
+        },
+        "ppsnIssuedByGender": {
+            "autoupdate": true,
+            "type": "doughnut",
+            "copyright": true,
+            "link": "https://data.cso.ie/table/UA06",
+            "sort": false,
+            "metadata": {
+                "xAxis": {
+                    "C02199V02655": [
+                        "1",
+                        "2"
+                    ],
+                    "role": "classification"
+                },
+                "fluidTime": [],
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA06",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "data": {
+                "labels": [],
+                "datasets": [
+                    {
+                        "label": "Series 1",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "TLIST(W1)",
+                                            "C02076V03371"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA06C01"
+                                                    ]
+                                                }
+                                            },
+                                            "TLIST(W1)": {
+                                                "category": {
+                                                    "index": []
+                                                }
+                                            },
+                                            "C02076V03371": {
+                                                "category": {
+                                                    "index": [
+                                                        "-"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA06",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [
+                            0
+                        ],
+                        "fill": false
+                    }
+                ],
+                "null": ".."
+            },
+            "options": {
+                "responsive": true,
+                "maintainAspectRatio": false,
+                "title": {
+                    "display": false,
+                    "text": [
+                        "",
+                        "Series 1"
+                    ]
+                },
+                "tooltips": {
+                    "mode": "index",
+                    "callbacks": {}
+                },
+                "hover": {
+                    "mode": "nearest",
+                    "intersect": true
+                },
+                "plugins": {
+                    "stacked100": {
+                        "enable": false
+                    },
+                    "colorschemes": {
+                        "scheme": [
+                            "#405381",
+                            "#5BC1A5",
+                            "#FCBE72",
+                            "#0091AB",
+                            "#90989F",
+                            "#3D5999",
+                            "#C6CC5C",
+                            "#579599",
+                            "#FBAA34",
+                            "#007780",
+                            "#B9BEC3",
+                            "#00AF86",
+                            "#6BC2C2",
+                            "#00758C",
+                            "#FCB053",
+                            "#6A7794",
+                            "#A3CCC1",
+                            "#F68B58",
+                            "#36A0B3"
+                        ]
+                    }
+                },
+                "legend": {
+                    "display": true,
+                    "position": "bottom"
+                },
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": "2022-12-19T11:00:00Z",
+                "layout": {
+                    "padding": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 22
+                    }
+                }
+            },
+            "plugins": [
+                {}
+            ]
+        }
+    },
+    "table": {
+        "ppsnIssuedByAge": {
+            "autoupdate": true,
+            "fluidTime": [
+                0
+            ],
+            "copyright": true,
+            "title": "",
+            "link": "https://data.cso.ie/table/UA06",
+            "pivot": "C02199V02655",
+            "hideColumns": [
+                "STATISTIC",
+                "TLIST(W1)",
+                "UNIT"
+            ],
+            "internationalisation": {
+                "unit": "Unit",
+                "value": "Value"
+            },
+            "defaultContent": "..",
+            "data": {
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadDataset",
+                            "params": {
+                                "class": "query",
+                                "id": [
+                                    "TLIST(W1)",
+                                    "C02199V02655",
+                                    "C02076V03371"
+                                ],
+                                "dimension": {
+                                    "TLIST(W1)": {
+                                        "category": {
+                                            "index": []
+                                        }
+                                    },
+                                    "C02199V02655": {
+                                        "category": {
+                                            "index": [
+                                                "1",
+                                                "2"
+                                            ]
+                                        }
+                                    },
+                                    "C02076V03371": {
+                                        "category": {
+                                            "index": [
+                                                "205",
+                                                "245",
+                                                "265",
+                                                "300",
+                                                "365",
+                                                "410",
+                                                "440",
+                                                "460",
+                                                "475",
+                                                "495",
+                                                "515",
+                                                "530",
+                                                "550",
+                                                "575"
+                                            ]
+                                        }
+                                    }
+                                },
+                                "extension": {
+                                    "pivot": "C02199V02655",
+                                    "codes": false,
+                                    "language": {
+                                        "code": "en"
+                                    },
+                                    "format": {
+                                        "type": "JSON-stat",
+                                        "version": "2.0"
+                                    },
+                                    "matrix": "UA06"
+                                },
+                                "version": "2.0",
+                                "m2m": false
+                            }
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "metadata": {
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA06",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "options": {
+                "language": {
+                    "decimal": ".",
+                    "emptyTable": "No data available in table",
+                    "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+                    "infoEmpty": "Showing 0 to 0 of 0 entries",
+                    "infoFiltered": "(filtered from _MAX_ total entries)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Show _MENU_ entries",
+                    "loadingRecords": "Loading...",
+                    "processing": "Processing...",
+                    "search": "Search:",
+                    "zeroRecords": "No matching records found",
+                    "paginate": {
+                        "first": "First",
+                        "last": "Last",
+                        "next": "Next",
+                        "previous": "Previous"
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                },
+                "search": {
+                    "search": ""
+                },
+                "dom": "Bfltip",
+                "responsive": true,
+                "buttons": [
+                    {
+                        "extend": "csv",
+                        "text": "Download CSV",
+                        "className": "export-button",
+                        "title": "UA06.20230203T140223",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    },
+                    {
+                        "extend": "print",
+                        "text": "Print",
+                        "className": "export-button",
+                        "title": "",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    }
+                ],
+                "order": []
+            }
+        },
+        "ppsnIssuedByGender": {
+            "autoupdate": true,
+            "fluidTime": [
+                0
+            ],
+            "copyright": true,
+            "title": "",
+            "link": "https://data.cso.ie/table/UA06",
+            "pivot": null,
+            "hideColumns": [
+                "STATISTIC",
+                "TLIST(W1)",
+                "C02076V03371",
+                "UNIT"
+            ],
+            "internationalisation": {
+                "unit": "Unit",
+                "value": "Value"
+            },
+            "defaultContent": "..",
+            "data": {
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadDataset",
+                            "params": {
+                                "class": "query",
+                                "id": [
+                                    "TLIST(W1)",
+                                    "C02199V02655",
+                                    "C02076V03371"
+                                ],
+                                "dimension": {
+                                    "TLIST(W1)": {
+                                        "category": {
+                                            "index": [
+                                                "2022W49"
+                                            ]
+                                        }
+                                    },
+                                    "C02199V02655": {
+                                        "category": {
+                                            "index": [
+                                                "1",
+                                                "2"
+                                            ]
+                                        }
+                                    },
+                                    "C02076V03371": {
+                                        "category": {
+                                            "index": [
+                                                "-"
+                                            ]
+                                        }
+                                    }
+                                },
+                                "extension": {
+                                    "pivot": null,
+                                    "codes": false,
+                                    "language": {
+                                        "code": "en"
+                                    },
+                                    "format": {
+                                        "type": "JSON-stat",
+                                        "version": "2.0"
+                                    },
+                                    "matrix": "UA06"
+                                },
+                                "version": "2.0",
+                                "m2m": false
+                            }
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "metadata": {
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA06",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "options": {
+                "language": {
+                    "decimal": ".",
+                    "emptyTable": "No data available in table",
+                    "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+                    "infoEmpty": "Showing 0 to 0 of 0 entries",
+                    "infoFiltered": "(filtered from _MAX_ total entries)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Show _MENU_ entries",
+                    "loadingRecords": "Loading...",
+                    "processing": "Processing...",
+                    "search": "Search:",
+                    "zeroRecords": "No matching records found",
+                    "paginate": {
+                        "first": "First",
+                        "last": "Last",
+                        "next": "Next",
+                        "previous": "Previous"
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                },
+                "search": {
+                    "search": ""
+                },
+                "dom": "Bfltip",
+                "responsive": true,
+                "buttons": [
+                    {
+                        "extend": "csv",
+                        "text": "Download CSV",
+                        "className": "export-button",
+                        "title": "UA06.20230117T140107",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    },
+                    {
+                        "extend": "print",
+                        "text": "Print",
+                        "className": "export-button",
+                        "title": "",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    }
+                ],
+                "order": []
+            }
+        }
+    }
+}

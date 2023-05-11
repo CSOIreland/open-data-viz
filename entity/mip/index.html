@@ -1,0 +1,747 @@
+<div id="visual-mip">
+    <div name="heading"></div>
+
+    <ul name="theme-tabs" class="nav nav-tabs" role="tablist">
+
+        <li class="nav-item d-none d-sm-none d-md-none d-lg-block d-xl-block" role="presentation">
+            <a name="society-tab" class="nav-link mb-0 active" id="mip-society-tab" data-toggle="tab" href="#mip-society-content" role="tab" aria-controls="mip-society-content" aria-selected="true" label="society"></a>
+        </li>
+        <li class="nav-item d-none d-sm-none d-md-none d-lg-block d-xl-block" role="presentation">
+            <a name="economy-tab" class="nav-link mb-0" id="mip-economy-tab" data-toggle="tab" href="#mip-economy-content" role="tab" aria-controls="mip-economy-content" aria-selected="false" label="economy"></a>
+        </li>
+        <li class="nav-item d-none d-sm-none d-md-none d-lg-block d-xl-block" role="presentation">
+            <a name="environment-tab" class="nav-link mb-0" id="mip-environment-tab" data-toggle="tab" href="#mip-environment-content" role="tab" aria-controls="mip-environment-content" aria-selected="false" label="environment"></a>
+        </li>
+        <li class="nav-item d-none d-sm-none d-md-none d-lg-block d-xl-block" role="presentation">
+            <a name="education-tab" class="nav-link mb-0" id="mip-education-tab" data-toggle="tab" href="#mip-education-content" role="tab" aria-controls="mip-education-content" aria-selected="false" label="education"></a>
+        </li>
+        <li class="nav-item d-none d-sm-none d-md-none d-lg-block d-xl-block" role="presentation">
+            <a name="health-tab" class="nav-link mb-0" id="mip-health-tab" data-toggle="tab" href="#mip-health-content" role="tab" aria-controls="mip-health-content" aria-selected="false" label="health"></a>
+        </li>
+
+
+
+        <li class="nav-item dropdown d-block d-sm-block d-md-block d-lg-none d-xl-none">
+            <a class="h4 mb-0 nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" label="theme"></a>
+            <div class="dropdown-menu">
+                <a name="society-tab" class="dropdown-item active" id="mip-society-mobile-tab" data-toggle="tab" href="#mip-society-content" role="tab" aria-controls="mip-society-content" aria-selected="true" label="society"></a>
+                <a name="economy-tab" class="dropdown-item" id="mip-economy-mobile-tab" data-toggle="tab" href="#mip-economy-content" role="tab" aria-controls="mip-economy-content" aria-selected="false" label="economy"></a>
+                <a name="environment-tab" class="dropdown-item" id="mip-environment-mobile-tab" data-toggle="tab" href="#mip-environment-content" role="tab" aria-controls="mip-environment-content" aria-selected="false" label="environment"></a>
+                <a name="education-tab" class="dropdown-item" id="mip-education-mobile-tab" data-toggle="tab" href="#mip-education-content" role="tab" aria-controls="mip-education-content" aria-selected="false" label="education"></a>
+                <a name="health-tab" class="dropdown-item" id="mip-health-mobile-tab" data-toggle="tab" href="#mip-health-content" role="tab" aria-controls="mip-health-content" aria-selected="false" label="health"></a>
+            </div>
+        </li>
+
+
+
+
+    </ul>
+    <div class="tab-content p-2">
+        <div class="tab-pane fade show active" id="mip-society-content" role="tabpanel" data-tab="society-tab" aria-labelledby="mip-society-tab">
+
+            <div class="jumbotron p-3 mt-3 mb-2 bg-success text-light d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                <h4 class="mb-0" label="society"></h4>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-4 mb-2">
+                    <div class="card border-left-primary shadow h-100 pb-0">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-top">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1" label="population-of-ireland"></div>
+                                    <p name="population-year"></p>
+                                    <div class="h2 text-nowrap font-weight-bold text-dark mb-0">
+                                        <span name="population"></span> <span name="population-unit"></span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fa fa-users fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-right"><a href="" target="_blank" name="population-table"></a></div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 mb-2">
+                    <div class="card border-left-info shadow h-100 pb-0">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-top">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1" label="population-change"></div>
+                                    <p name="population-change-year"></p>
+                                    <div class="h2 text-nowrap font-weight-bold text-dark mb-0" name="cpi-latest-value">
+                                        <span name="population-change"></span> <span name="population-change-unit"></span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-user-plus fa-2x text-info"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-right"><a href="" target="_blank" name="population-change-table"></a></div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 mb-2">
+                    <div class="card border-left-warning shadow h-100 pb-0">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-top">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1" label="difference-in-median-weekly-earnings-between-males-and-females-in-ireland"></div>
+                                    <p name="weekly-earnings-male-female-year"></p>
+                                    <div class="h2 text-nowrap font-weight-bold text-dark mb-0"> €<span name="weekly-earnings-male-female"></span></div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-venus-mars fa-2x text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-right"><a href="" target="_blank" name="earnings-table"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-population-distribution-by-age-group"></span>, <span name="population-by-age-group-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-populationByAgeGroup" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-at-risk-of-poverty-consistent-poverty-rates-age-group"></span>, <span name="at-risk-of-poverty-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-atRiskOfPoverty" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-and-eu27-young-and-old-age-dependency-ratios"></span>, <span name="young-and-old-dependency-ratios-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-youngAndOldDependencyRatios" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-migration-and-national-increase"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-migrationNaturalIncrease" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="eu27-total-fertility-rate"></span>, <span name="total-fertility-rate-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-totalFertilityRate" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="tab-pane fade" id="mip-economy-content" role="tabpanel" data-tab="economy-tab" aria-labelledby="mip-economy-tab">
+
+            <div class="jumbotron p-3 mt-3 mb-2 bg-success text-light d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                <h4 class="mb-0" label="economy"></h4>
+            </div>
+
+            <div class="row">
+
+                <!--  <div class="col-xl-4 mb-2">
+                    <div class="card border-left-primary shadow h-100 pb-0">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-top">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1" label="gdp-of-ireland">
+                                    </div>
+                                    <p name="gdp-ireland-year"></p>
+                                    <div class="h2 text-nowrap font-weight-bold text-dark mb-0"><span name="gdp-ireland"></span> <span name="gdp-ireland-unit"></span></div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fa fa-credit-card fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-right"><a href="" target="_blank" name="gdp-ireland-table"></a></div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 mb-2">
+                    <div class="card border-left-success shadow h-100 pb-0">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-top">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1" label="modified-gni-of-ireland">
+                                    </div>
+                                    <p name="modified-gni-ireland-year"></p>
+                                    <div class="h2 text-nowrap font-weight-bold text-dark mb-0"><span name="modified-gni-ireland"></span> <span name="modified-gni-ireland-unit"></span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-money-bill fa-2x text-success"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-right"><a href="" target="_blank" name="modified-gni-table"></a></div>
+                    </div>
+                </div> -->
+
+                <div class="col-xl-12 mb-2">
+                    <div class="card border-left-info shadow h-100 pb-0">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-top">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1" label="ireland-general-government-consolidated-gross-debt">
+                                    </div>
+                                    <p name="general-gov-consolidated-gross-debt-year"></p>
+                                    <div class="h2 text-nowrap font-weight-bold text-dark mb-0"><span name="general-gov-consolidated-gross-debt"></span> <span name="general-gov-consolidated-gross-debt-unit"></span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-university fa-2x text-info"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-right"><a href="" target="_blank" name="gross-debt-table"></a></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-and-eu27-gdp-growth-rates"></span>, <span name="gdp-growth-rates-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-gdp-growth-rates" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-and-eu27-unemployment-rates"></span>, <span name="unemployment-rates-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-unemployment-rates" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-residential-property-price-tax"></span>, <span name="rppi-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-rppi" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-imports-exports-of-goods-services"></span>, <span name="imports-exports-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-imports-exports" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="by-country-comparative-price-levels-financial-consumption-private-households"></span>, <span name="comparative-price-levels-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-comparative-price-levels" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="tab-pane fade" id="mip-environment-content" role="tabpanel" data-tab="environment-tab" aria-labelledby="environment-tab">
+            <div class="jumbotron p-3 mt-3 mb-2 bg-success text-light d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                <h4 class="mb-0" label="environment"></h4>
+            </div>
+            <div class="row">
+
+                <div class="col-xl-4 mb-2">
+                    <div class="card border-left-primary shadow h-100 pb-0">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-top">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1" label="ireland-vehicles-licensed-first-time">
+                                    </div>
+                                    <p name="new-vehicles-year"></p>
+                                    <div class="h2 text-nowrap font-weight-bold text-dark mb-0" name="new-vehicles"></div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fa fa-car fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-right"><a href="" target="_blank" name="new-vehicles-table"></a></div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 mb-2">
+                    <div class="card border-left-success shadow h-100 pb-0">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-top">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1" label="ireland-municipal-waste-generated">
+                                    </div>
+                                    <p name="waste-generated-year"></p>
+                                    <div class="h2 text-nowrap font-weight-bold text-dark mb-0"> <span name="waste-generated"></span> <span name="waste-generated-unit"></span></div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-recycle fa-2x text-success"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-right"><a href="" target="_blank" name="waste-generated-table"></a></div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 mb-2">
+                    <div class="card border-left-info shadow h-100 pb-0">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-top">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1" label="ireland-total-ghg-emissions">
+                                    </div>
+                                    <p name="total-ghg-emissions-year"></p>
+                                    <div class="h2 text-nowrap font-weight-bold text-dark mb-0"> <span name="total-ghg-emissions"></span> <span name="total-ghg-emissions-unit"></span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-smog fa-2x text-info"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-right"><a href="" target="_blank" name="total-ghg-emissions-table"></a></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-and-eu27-municipal-waste-treated-and-landfilled"></span>, <span name="municipal-waste-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-municipal-waste" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-and-eu27-modal-split-of-inland-freight-transport"></span>, <span name="inland-freight-transport-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-inland-freight-transport" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-number-of-vehicles-licensed-first-time-type"></span>, <span name="vehicles-licensed-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-vehicles-licensed" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-net-greenhouse-gas-emissions-and-kyoto-target-index"></span> <span name="net-greenhouse-gas-emissions"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-net-greenhouse-gas-emissions" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="by-country-energy-productivity"></span>, <span name="energy-productivity-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-energy-productivity" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="tab-pane fade" id="mip-education-content" role="tabpanel" data-tab="education-tab" aria-labelledby="mip-education-tab">
+            <div class="jumbotron p-3 mt-3 mb-2 bg-success text-light d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                <h4 class="mb-0" label="education"></h4>
+            </div>
+            <div class="row">
+
+                <div class="col-xl-4 mb-2">
+                    <div class="card border-left-primary shadow h-100 pb-0">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-top">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1" label="number-of-primary-school-students-in-ireland">
+                                    </div>
+                                    <p name="primary-students-ireland-year"></p>
+                                    <div class="h2 text-nowrap font-weight-bold text-dark mb-0"><span name="primary-students-ireland"></span></div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fa fa-shapes fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-right"><a href="" target="_blank" name="primary-students-ireland-table"></a></div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 mb-2">
+                    <div class="card border-left-info shadow h-100 pb-0">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-top">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1" label="number-of-secondary-school-students-in-ireland">
+                                    </div>
+                                    <p name="secondary-students-ireland-year"></p>
+                                    <div class="h2 text-nowrap font-weight-bold text-dark mb-0">
+                                        <span name="secondary-students-ireland"></span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-school fa-2x text-info"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-right"><a href="" target="_blank" name="secondary-students-ireland-table"></a></div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 mb-2">
+                    <div class="card border-left-warning shadow h-100 pb-0">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-top">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1" label="ireland-stem-graduates">
+                                    </div>
+                                    <p name="ireland-stem-graduates-year"></p>
+                                    <div class="h2 text-nowrap font-weight-bold text-dark mb-0"><span name="ireland-stem-graduates"></span></div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-user-graduate fa-2x text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-right"><a href="" target="_blank" name="ireland-stem-graduates-table"></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-and-eu27-young-people-neither-in-employment-nor-education"></span>, <span name="young-people-not-in-employment-education-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-young-people-not-in-employment-education" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-and-eu27-stem-graduates-by-sex"></span>, <span name="stem-graduates-by-sex-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-stem-graduates-by-sex" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-real-current-public-expenditure-on-education"></span>, <span name="real-expenditure-on-education-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-real-expenditure-on-education" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-and-oecd-student-performance-mathematics-reading-science-literacy-scales"></span>, <span name="ireland-and-oced-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-ireland-and-oced" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="by-country-ratio-of-students-to-teachers-primary"></span>, <span name="ratio-students-teachers-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-ratio-students-teachers-primary" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="by-country-ratio-of-students-to-teachers-upper-secondary"></span>, <span name="ratio-students-teachers-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-ratio-students-teachers-upper-secondary" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="tab-pane fade" id="mip-health-content" role="tabpanel" data-tab="health-tab" aria-labelledby="mip-health-tab">
+            <div class="jumbotron p-3 mt-3 mb-2 bg-success text-light d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                <h4 class="mb-0" label="health"></h4>
+            </div>
+            <div class="row">
+
+                <div class="col-xl-4 mb-2">
+                    <div class="card border-left-primary shadow h-100 pb-0">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-top">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1" label="ireland-life-expectancy-in-years-at-birth">
+                                    </div>
+                                    <p name="life-expectancy-at-birth-year"></p>
+                                    <div class="h2 text-nowrap font-weight-bold text-dark mb-0"><span name="life-expectancy-at-birth"></span></div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fa fa-baby-carriage fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-right"><a href="" target="_blank" name="life-expectancy-at-birth-table"></a></div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 mb-2">
+                    <div class="card border-left-info shadow h-100 pb-0">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-top">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1" label="ireland-life-expectancy-in-years-at-age-65-males">
+                                    </div>
+                                    <p name="life-expectancy-at-65-male-year"></p>
+                                    <div class="h2 text-nowrap font-weight-bold text-dark mb-0">
+                                        <span name="life-expectancy-at-65-male"></span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-male fa-2x text-info"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-right"><a href="" target="_blank" name="life-expectancy-at-65-male-table"></a></div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 mb-2">
+                    <div class="card border-left-warning shadow h-100 pb-0">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-top">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1" label="ireland-life-expectancy-in-years-at-age-65-females">
+                                    </div>
+                                    <p name="life-expectancy-at-65-female-year"></p>
+                                    <div class="h2 text-nowrap font-weight-bold text-dark mb-0"> <span name="life-expectancy-at-65-female"></span></div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-female fa-2x text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-right"><a href="" target="_blank" name="life-expectancy-at-65-female-table"></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-and-eu27-life-expectancy-in-years-at-birth-sex"></span>, <span name="life-expectancy-at-birth-sex-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-life-expectancy-at-birth-sex" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-and-eu27-healthy-life-years-at-birth-sex"></span>, <span name="healthy-life-years-at-birth-sex-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-healthy-life-years-at-birth-sex" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-and-eu27-proportion-of-life-expectancy-in-years-in-poor-health"></span>, <span name="life-expectancy-in-poor-health-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-life-expectancy-in-poor-health" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="ireland-current-public-expenditure-on-healthcare"></span>
+                            <span name="current-expenditure-on-healthcare-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-current-expenditure-on-healthcare" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-light">
+                            <span label="by-country-total-expenditure-on-health"></span>, <span name="total-expenditure-on-health-year"></span>
+                        </div>
+                        <div class="card-body">
+                            <div id="mip-pxwidget-total-expenditure-on-health" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Page specific CSS -->
+<link rel="stylesheet" href="entity/mip/css/mip.css">
+<!-- Page specific JS -->
+<script src="entity/mip/js/mip.library.js"></script>
+<script src="entity/mip/js/mip.economy.library.js"></script>
+<script src="entity/mip/js/mip.social.library.js"></script>
+<script src="entity/mip/js/mip.environment.library.js"></script>
+<script src="entity/mip/js/mip.education.library.js"></script>
+<script src="entity/mip/js/mip.health.library.js"></script>
+
+
+
+<script src="entity/mip/js/mip.js"></script>

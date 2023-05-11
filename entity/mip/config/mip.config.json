@@ -1,0 +1,7107 @@
+{
+	"society": {
+		"headlineFigures": {
+			"populationOfIreland": {
+				"params": {
+					"class": "query",
+					"id": [
+						"TLIST(A1)",
+						"C02076V02508",
+						"C02199V02655"
+					],
+					"dimension": {
+						"TLIST(A1)": {
+							"category": {
+								"index": []
+							}
+						},
+						"C02076V02508": {
+							"category": {
+								"index": [
+									"-"
+								]
+							}
+						},
+						"C02199V02655": {
+							"category": {
+								"index": [
+									"-"
+								]
+							}
+						}
+					},
+					"extension": {
+						"pivot": null,
+						"codes": false,
+						"language": {
+							"code": "en"
+						},
+						"format": {
+							"type": "JSON-stat",
+							"version": "2.0"
+						},
+						"matrix": "PEA01"
+					},
+					"version": "2.0"
+				}
+			},
+			"populationChange": {
+				"params": {
+					"class": "query",
+					"id": [
+						"TLIST(A1)",
+						"C02541V03076"
+					],
+					"dimension": {
+						"TLIST(A1)": {
+							"category": {
+								"index": []
+							}
+						},
+						"C02541V03076": {
+							"category": {
+								"index": [
+									"07"
+								]
+							}
+						}
+					},
+					"extension": {
+						"pivot": null,
+						"codes": false,
+						"language": {
+							"code": "en"
+						},
+						"format": {
+							"type": "JSON-stat",
+							"version": "2.0"
+						},
+						"matrix": "PEA15"
+					},
+					"version": "2.0"
+				}
+			},
+			"medianWeeklyEarnings": {
+				"params": {
+					"class": "query",
+					"id": [
+						"STATISTIC",
+						"TLIST(A1)",
+						"C02199V02655",
+						"C02665V03225"
+					],
+					"dimension": {
+						"STATISTIC": {
+							"category": {
+								"index": [
+									"NSA85C02"
+								]
+							}
+						},
+						"TLIST(A1)": {
+							"category": {
+								"index": []
+							}
+						},
+						"C02199V02655": {
+							"category": {
+								"index": [
+									"1",
+									"2"
+								]
+							}
+						},
+						"C02665V03225": {
+							"category": {
+								"index": [
+									"-"
+								]
+							}
+						}
+					},
+					"extension": {
+						"pivot": null,
+						"codes": false,
+						"language": {
+							"code": "en"
+						},
+						"format": {
+							"type": "JSON-stat",
+							"version": "2.0"
+						},
+						"matrix": "NSA85"
+					},
+					"version": "2.0"
+				}
+			}
+		},
+		"charts": {
+			"migrationNaturalIncrease": {
+				"autoupdate": true,
+				"type": "line",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/PEA15",
+				"metadata": {
+					"xAxis": {
+						"TLIST(A1)": [],
+						"role": "time"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "PEA15",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"C02541V03076"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"PEA15"
+														]
+													}
+												},
+												"C02541V03076": {
+													"category": {
+														"index": [
+															"04"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "PEA15",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"C02541V03076"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"PEA15"
+														]
+													}
+												},
+												"C02541V03076": {
+													"category": {
+														"index": [
+															"05"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "PEA15",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"C02541V03076"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"PEA15"
+														]
+													}
+												},
+												"C02541V03076": {
+													"category": {
+														"index": [
+															"06"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "PEA15",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"C02541V03076"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"PEA15"
+														]
+													}
+												},
+												"C02541V03076": {
+													"category": {
+														"index": [
+															"01"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "PEA15",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"C02541V03076"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"PEA15"
+														]
+													}
+												},
+												"C02541V03076": {
+													"category": {
+														"index": [
+															"02"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "PEA15",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"C02541V03076"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"PEA15"
+														]
+													}
+												},
+												"C02541V03076": {
+													"category": {
+														"index": [
+															"03"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "PEA15",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false,
+						"text": []
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null,
+									"reverse": true,
+									"minRotation": 40
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": true,
+									"labelString": "'000 persons"
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau20"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2020-11-09T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"populationByAgeGroup": {
+				"autoupdate": true,
+				"type": "bar",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/PEA01",
+				"metadata": {
+					"xAxis": {
+						"TLIST(A1)": [],
+						"role": "time"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "PEA01",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"C02076V02508",
+												"C02199V02655"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"PEA01"
+														]
+													}
+												},
+												"C02076V02508": {
+													"category": {
+														"index": [
+															"215"
+														]
+													}
+												},
+												"C02199V02655": {
+													"category": {
+														"index": [
+															"-"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "PEA01",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"C02076V02508",
+												"C02199V02655"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"PEA01"
+														]
+													}
+												},
+												"C02076V02508": {
+													"category": {
+														"index": [
+															"310"
+														]
+													}
+												},
+												"C02199V02655": {
+													"category": {
+														"index": [
+															"-"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "PEA01",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"C02076V02508",
+												"C02199V02655"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"PEA01"
+														]
+													}
+												},
+												"C02076V02508": {
+													"category": {
+														"index": [
+															"420"
+														]
+													}
+												},
+												"C02199V02655": {
+													"category": {
+														"index": [
+															"-"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "PEA01",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"C02076V02508",
+												"C02199V02655"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"PEA01"
+														]
+													}
+												},
+												"C02076V02508": {
+													"category": {
+														"index": [
+															"505"
+														]
+													}
+												},
+												"C02199V02655": {
+													"category": {
+														"index": [
+															"-"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "PEA01",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"C02076V02508",
+												"C02199V02655"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"PEA01"
+														]
+													}
+												},
+												"C02076V02508": {
+													"category": {
+														"index": [
+															"575"
+														]
+													}
+												},
+												"C02199V02655": {
+													"category": {
+														"index": [
+															"-"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "PEA01",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false,
+						"text": []
+					},
+					"tooltips": {
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": true
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": true,
+									"labelString": "'000 persons"
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau10"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2020-11-09T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"atRiskOfPoverty": {
+				"autoupdate": true,
+				"type": "bar",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/SIA61",
+				"metadata": {
+					"xAxis": {
+						"C02076V02508": [],
+						"role": "classification"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "SIA61",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"SIA61C09"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": [
+															null
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "SIA61",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"SIA61C11"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": [
+															null
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "SIA61",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false,
+						"text": []
+					},
+					"tooltips": {
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": true,
+									"labelString": "%"
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau10"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2020-10-27T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"totalFertilityRate": {
+				"autoupdate": true,
+				"type": "horizontalBar",
+				"sort": true,
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP01",
+				"metadata": {
+					"xAxis": {
+						"C02677V03567": [
+							"SE",
+							"ES",
+							"SI",
+							"SK",
+							"RO",
+							"PT",
+							"PL",
+							"NL",
+							"MT",
+							"LU",
+							"LT",
+							"LV",
+							"IT",
+							"IE",
+							"HU",
+							"GR",
+							"DE",
+							"FR",
+							"FI",
+							"ZZEUBQ",
+							"EE",
+							"DK",
+							"CZ",
+							"CY",
+							"HR",
+							"BG",
+							"BE",
+							"AT"
+						],
+						"role": "classification"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP01",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP01C01"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP01",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": true,
+									"precision": 1,
+									"stepSize": 1
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau20"
+						}
+					},
+					"legend": {
+						"display": false
+					},
+					"updated": "2021-06-25T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"youngAndOldDependencyRatios": {
+				"autoupdate": true,
+				"type": "bar",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP04",
+				"metadata": {
+					"xAxis": {
+						"STATISTIC": [],
+						"role": "metric"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP04",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"TLIST(A1)",
+												"C02677V03567"
+											],
+											"dimension": {
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02677V03567": {
+													"category": {
+														"index": [
+															"ZZEUBQ"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP04",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"TLIST(A1)",
+												"C02677V03567"
+											],
+											"dimension": {
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02677V03567": {
+													"category": {
+														"index": [
+															"IE"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP04",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": true,
+									"labelString": "% of population aged 15-64"
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau10"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-25T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			}
+		}
+	},
+	"economy": {
+		"headlineFigures": {
+			"gdpOfIreland": {
+				"params": {
+					"class": "query",
+					"id": [
+						"TLIST(A1)",
+						"C03399V04176"
+					],
+					"dimension": {
+						"TLIST(A1)": {
+							"category": {
+								"index": []
+							}
+						},
+						"C03399V04176": {
+							"category": {
+								"index": [
+									"01"
+								]
+							}
+						}
+					},
+					"extension": {
+						"pivot": null,
+						"codes": false,
+						"language": {
+							"code": "en"
+						},
+						"format": {
+							"type": "JSON-stat",
+							"version": "2.0"
+						},
+						"matrix": "N2024"
+					},
+					"version": "2.0"
+				}
+			},
+			"modifiedGniOfIreland": {
+				"params": {
+					"class": "query",
+					"id": [
+						"TLIST(A1)",
+						"C03399V04176"
+					],
+					"dimension": {
+						"TLIST(A1)": {
+							"category": {
+								"index": []
+							}
+						},
+						"C03399V04176": {
+							"category": {
+								"index": [
+									"10"
+								]
+							}
+						}
+					},
+					"extension": {
+						"pivot": null,
+						"codes": false,
+						"language": {
+							"code": "en"
+						},
+						"format": {
+							"type": "JSON-stat",
+							"version": "2.0"
+						},
+						"matrix": "N2024"
+					},
+					"version": "2.0"
+				}
+			},
+			"generalGovConsolidatedGrossDebt": {
+				"params": {
+					"class": "query",
+					"id": [
+						"TLIST(A1)"
+					],
+					"dimension": {
+						"TLIST(A1)": {
+							"category": {
+								"index": []
+							}
+						}
+					},
+					"extension": {
+						"pivot": null,
+						"codes": false,
+						"language": {
+							"code": "en"
+						},
+						"format": {
+							"type": "JSON-stat",
+							"version": "2.0"
+						},
+						"matrix": "GFA12"
+					},
+					"version": "2.0"
+				}
+			}
+		},
+		"charts": {
+			"comparitivePriceLevels": {
+				"autoupdate": true,
+				"type": "horizontalBar",
+				"sort": true,
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP02",
+				"metadata": {
+					"xAxis": {
+						"C02677V03567": [
+							"SE",
+							"ES",
+							"SI",
+							"SK",
+							"RO",
+							"PT",
+							"PL",
+							"NL",
+							"MT",
+							"LU",
+							"LT",
+							"LV",
+							"IT",
+							"IE",
+							"HU",
+							"GR",
+							"DE",
+							"FR",
+							"FI",
+							"ZZEUBQ",
+							"EE",
+							"DK",
+							"CZ",
+							"CY",
+							"HR",
+							"BG",
+							"BE",
+							"AT"
+						],
+						"role": "classification"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP02",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP02C01"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP02",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau20"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-25T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"gdpGrowthRates": {
+				"autoupdate": true,
+				"type": "bar",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP10",
+				"metadata": {
+					"xAxis": {
+						"STATISTIC": [],
+						"role": "metric"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP10",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"TLIST(A1)",
+												"C02677V03567"
+											],
+											"dimension": {
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02677V03567": {
+													"category": {
+														"index": [
+															"-"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP10",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"TLIST(A1)",
+												"C02677V03567"
+											],
+											"dimension": {
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02677V03567": {
+													"category": {
+														"index": [
+															"IE1"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP10",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"TLIST(A1)",
+												"C02677V03567"
+											],
+											"dimension": {
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02677V03567": {
+													"category": {
+														"index": [
+															"IE2"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP10",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": true
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": true,
+									"labelString": "% change on previous year"
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau10"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-25T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"unemploymentRates": {
+				"autoupdate": true,
+				"type": "bar",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP11",
+				"metadata": {
+					"xAxis": {
+						"C02199V02655": [
+							"-"
+						],
+						"role": "classification"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP11",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C02677V03567"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP11"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02677V03567": {
+													"category": {
+														"index": [
+															"ZZEUBQ"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP11",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C02677V03567"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP11"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02677V03567": {
+													"category": {
+														"index": [
+															"IE"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP11",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": true
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": true,
+									"labelString": "%"
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau10"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-25T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"rppi": {
+				"autoupdate": true,
+				"type": "bar",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/HPA06",
+				"metadata": {
+					"xAxis": {
+						"STATISTIC": [
+							"HPA06C01"
+						],
+						"role": "metric"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "HPA06",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"TLIST(A1)",
+												"C02803V03373"
+											],
+											"dimension": {
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02803V03373": {
+													"category": {
+														"index": [
+															"-"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "HPA06",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"TLIST(A1)",
+												"C02803V03373"
+											],
+											"dimension": {
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02803V03373": {
+													"category": {
+														"index": [
+															"05"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "HPA06",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"TLIST(A1)",
+												"C02803V03373"
+											],
+											"dimension": {
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02803V03373": {
+													"category": {
+														"index": [
+															"03"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "HPA06",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": true
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": true,
+									"labelString": "Index"
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau10"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-08-12T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"importsAndExports": {
+				"autoupdate": true,
+				"type": "bar",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP15",
+				"metadata": {
+					"xAxis": {
+						"STATISTIC": [],
+						"role": "metric"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP15",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"TLIST(A1)",
+												"C02677V03567"
+											],
+											"dimension": {
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02677V03567": {
+													"category": {
+														"index": [
+															"IE1"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP15",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"TLIST(A1)",
+												"C02677V03567"
+											],
+											"dimension": {
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02677V03567": {
+													"category": {
+														"index": [
+															"IE2"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP15",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": true,
+									"labelString": "%"
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau10"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-25T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			}
+		}
+	},
+	"environment": {
+		"headlineFigures": {
+			"newVehicles": {
+				"jsonrpc": "2.0",
+				"method": "PxStat.Data.Cube_API.ReadDataset",
+				"params": {
+					"class": "query",
+					"id": [
+						"TLIST(A1)",
+						"C02172V02618",
+						"C01841V02268"
+					],
+					"dimension": {
+						"TLIST(A1)": {
+							"category": {
+								"index": []
+							}
+						},
+						"C02172V02618": {
+							"category": {
+								"index": [
+									"-"
+								]
+							}
+						},
+						"C01841V02268": {
+							"category": {
+								"index": [
+									"-"
+								]
+							}
+						}
+					},
+					"extension": {
+						"pivot": null,
+						"codes": false,
+						"language": {
+							"code": "en"
+						},
+						"format": {
+							"type": "JSON-stat",
+							"version": "2.0"
+						},
+						"matrix": "TEA17"
+					},
+					"version": "2.0"
+				}
+			},
+			"wasteGenerated": {
+				"jsonrpc": "2.0",
+				"method": "PxStat.Data.Cube_API.ReadDataset",
+				"params": {
+					"class": "query",
+					"id": [
+						"STATISTIC",
+						"C02677V03567"
+					],
+					"dimension": {
+						"STATISTIC": {
+							"category": {
+								"index": [
+									"MIP18C05"
+								]
+							}
+						},
+						"TLIST(A1)": {
+							"category": {
+								"index": []
+							}
+						},
+						"C02677V03567": {
+							"category": {
+								"index": [
+									"IE"
+								]
+							}
+						}
+					},
+					"extension": {
+						"pivot": null,
+						"codes": false,
+						"language": {
+							"code": "en"
+						},
+						"format": {
+							"type": "JSON-stat",
+							"version": "2.0"
+						},
+						"matrix": "MIP18"
+					},
+					"version": "2.0"
+				}
+			},
+			"totalGhgEmissions": {
+				"jsonrpc": "2.0",
+				"method": "PxStat.Data.Cube_API.ReadDataset",
+				"params": {
+					"class": "query",
+					"id": [
+						"STATISTIC",
+						"TLIST(A1)",
+						"C02597V03821"
+					],
+					"dimension": {
+						"STATISTIC": {
+							"category": {
+								"index": [
+									"EAA09C1"
+								]
+							}
+						},
+						"TLIST(A1)": {
+							"category": {
+								"index": []
+							}
+						},
+						"C02597V03821": {
+							"category": {
+								"index": [
+									"ZXD200"
+								]
+							}
+						}
+					},
+					"extension": {
+						"pivot": null,
+						"codes": false,
+						"language": {
+							"code": "en"
+						},
+						"format": {
+							"type": "JSON-stat",
+							"version": "2.0"
+						},
+						"matrix": "EAA09"
+					},
+					"version": "2.0"
+				}
+			}
+		},
+		"charts": {
+			"energyProductivity": {
+				"autoupdate": true,
+				"type": "horizontalBar",
+				"sort": true,
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP05",
+				"metadata": {
+					"xAxis": {
+						"C02677V03567": [
+							"SE",
+							"ES",
+							"SI",
+							"SK",
+							"RO",
+							"PT",
+							"PL",
+							"NL",
+							"MT",
+							"LU",
+							"LT",
+							"LV",
+							"IT",
+							"IE",
+							"HU",
+							"GR",
+							"DE",
+							"FR",
+							"FI",
+							"ZZEUBQ",
+							"EE",
+							"DK",
+							"CZ",
+							"CY",
+							"HR",
+							"BG",
+							"BE",
+							"AT"
+						],
+						"role": "classification"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP05",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP05C01"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP05",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": true,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau20"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-25T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"municipalWaste": {
+				"autoupdate": true,
+				"type": "bar",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP18",
+				"metadata": {
+					"xAxis": {
+						"STATISTIC": [
+							"MIP18C04",
+							"MIP18C02",
+							"MIP18C01"
+						],
+						"role": "metric"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP18",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"TLIST(A1)",
+												"C02677V03567"
+											],
+											"dimension": {
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02677V03567": {
+													"category": {
+														"index": [
+															"ZZEUBQ"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP18",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"TLIST(A1)",
+												"C02677V03567"
+											],
+											"dimension": {
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02677V03567": {
+													"category": {
+														"index": [
+															"IE"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP18",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": true,
+									"labelString": "% of waste generated"
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau10"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-25T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"modalSplitOfInlandFreightTransport": {
+				"autoupdate": true,
+				"type": "bar",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP17",
+				"metadata": {
+					"xAxis": {
+						"C02677V03567": [
+							"IE",
+							"ZZEUBQ"
+						],
+						"role": "classification"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP17",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP17C01"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP17",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP17C02"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP17",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP17C03"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP17",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": true
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": true,
+									"labelString": "% of inland freight"
+								},
+								"stacked": true
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": true
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau10"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-25T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"numberOfVehiclesLicensed": {
+				"autoupdate": true,
+				"type": "bar",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/TEA17",
+				"metadata": {
+					"xAxis": {
+						"C02172V02618": [
+							"-"
+						],
+						"role": "classification"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "TEA17",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C01841V02268"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"TEA17"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C01841V02268": {
+													"category": {
+														"index": [
+															"1"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "TEA17",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C01841V02268"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"TEA17"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C01841V02268": {
+													"category": {
+														"index": [
+															"2"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "TEA17",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C01841V02268"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"TEA17"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C01841V02268": {
+													"category": {
+														"index": [
+															"4"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "TEA17",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C01841V02268"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"TEA17"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C01841V02268": {
+													"category": {
+														"index": [
+															"6"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "TEA17",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": true
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau10"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-01-22T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"netGreenhouseGasEmissions": {
+				"autoupdate": true,
+				"type": "line",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP19",
+				"metadata": {
+					"xAxis": {
+						"TLIST(A1)": [],
+						"role": "time"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP19",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"C03808V04557"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP19C01"
+														]
+													}
+												},
+												"C03808V04557": {
+													"category": {
+														"index": [
+															"IE"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP19",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"C03808V04557"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP19C01"
+														]
+													}
+												},
+												"C03808V04557": {
+													"category": {
+														"index": [
+															"KIX"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP19",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null,
+									"reverse": true
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": true,
+									"labelString": "Index"
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau10"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-29T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			}
+		}
+	},
+	"education": {
+		"headlineFigures": {
+			"primaryStudentsIreland": {
+				"jsonrpc": "2.0",
+				"method": "PxStat.Data.Cube_API.ReadDataset",
+				"params": {
+					"class": "query",
+					"id": [
+						"TLIST(A1)",
+						"C02076V02508",
+						"C02447V03042"
+					],
+					"dimension": {
+						"TLIST(A1)": {
+							"category": {
+								"index": []
+							}
+						},
+						"C02076V02508": {
+							"category": {
+								"index": [
+									"-"
+								]
+							}
+						},
+						"C02447V03042": {
+							"category": {
+								"index": [
+									"110"
+								]
+							}
+						}
+					},
+					"extension": {
+						"pivot": null,
+						"codes": false,
+						"language": {
+							"code": "en"
+						},
+						"format": {
+							"type": "JSON-stat",
+							"version": "2.0"
+						},
+						"matrix": "EDA42"
+					},
+					"version": "2.0"
+				}
+			},
+			"secondaryStudentsIreland": {
+				"jsonrpc": "2.0",
+				"method": "PxStat.Data.Cube_API.ReadDataset",
+				"params": {
+					"class": "query",
+					"id": [
+						"TLIST(A1)",
+						"C02199V02655",
+						"C02351V02955",
+						"C02447V03042"
+					],
+					"dimension": {
+						"TLIST(A1)": {
+							"category": {
+								"index": []
+							}
+						},
+						"C02199V02655": {
+							"category": {
+								"index": [
+									"-"
+								]
+							}
+						},
+						"C02351V02955": {
+							"category": {
+								"index": [
+									"21"
+								]
+							}
+						},
+						"C02447V03042": {
+							"category": {
+								"index": [
+									"2"
+								]
+							}
+						}
+					},
+					"extension": {
+						"pivot": null,
+						"codes": false,
+						"language": {
+							"code": "en"
+						},
+						"format": {
+							"type": "JSON-stat",
+							"version": "2.0"
+						},
+						"matrix": "EDA70"
+					},
+					"version": "2.0"
+				}
+			},
+			"irelandStemGraduates": {
+				"jsonrpc": "2.0",
+				"method": "PxStat.Data.Cube_API.ReadDataset",
+				"params": {
+					"class": "query",
+					"id": [
+						"C02199V02655",
+						"C02677V03567"
+					],
+					"dimension": {
+						"TLIST(A1)": {
+							"category": {
+								"index": []
+							}
+						},
+						"C02199V02655": {
+							"category": {
+								"index": [
+									"-"
+								]
+							}
+						},
+						"C02677V03567": {
+							"category": {
+								"index": [
+									"IE"
+								]
+							}
+						}
+					},
+					"extension": {
+						"pivot": null,
+						"codes": false,
+						"language": {
+							"code": "en"
+						},
+						"format": {
+							"type": "JSON-stat",
+							"version": "2.0"
+						},
+						"matrix": "MIP09"
+					},
+					"version": "2.0"
+				}
+			}
+		},
+		"charts": {
+			"ratioStudentsToTeachersPrimary": {
+				"autoupdate": true,
+				"type": "horizontalBar",
+				"sort": true,
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP08",
+				"metadata": {
+					"xAxis": {
+						"C02677V03567": [
+							"SE",
+							"ES",
+							"SI",
+							"SK",
+							"RO",
+							"PT",
+							"PL",
+							"NL",
+							"MT",
+							"LU",
+							"LT",
+							"LV",
+							"IT",
+							"IE",
+							"HU",
+							"GR",
+							"DE",
+							"FR",
+							"FI",
+							"ZZEUBQ",
+							"EE",
+							"DK",
+							"CZ",
+							"CY",
+							"HR",
+							"BG",
+							"BE",
+							"AT"
+						],
+						"role": "classification"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP08",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C02352V02829"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP08"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02352V02829": {
+													"category": {
+														"index": [
+															"103"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP08",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": true
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": true
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau20"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-25T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"ratioStudentsToTeachersUpperSecondary": {
+				"autoupdate": true,
+				"type": "horizontalBar",
+				"sort": true,
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP08",
+				"metadata": {
+					"xAxis": {
+						"C02677V03567": [
+							"SE",
+							"ES",
+							"SI",
+							"SK",
+							"RO",
+							"PT",
+							"PL",
+							"NL",
+							"MT",
+							"LU",
+							"LT",
+							"LV",
+							"IT",
+							"IE",
+							"HU",
+							"GR",
+							"DE",
+							"FR",
+							"FI",
+							"ZZEUBQ",
+							"EE",
+							"DK",
+							"CZ",
+							"CY",
+							"HR",
+							"BG",
+							"BE",
+							"AT"
+						],
+						"role": "classification"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP08",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C02352V02829"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP08"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02352V02829": {
+													"category": {
+														"index": [
+															"22"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP08",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": true
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": true
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau20"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-25T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"youngPeopleNotInEmploymentEducation": {
+				"autoupdate": true,
+				"type": "bar",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP03",
+				"metadata": {
+					"xAxis": {
+						"C02677V03567": [
+							"IE",
+							"ZZEUBQ"
+						],
+						"role": "classification"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP03",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C02199V02655"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP03C01"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02199V02655": {
+													"category": {
+														"index": [
+															"2"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP03",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C02199V02655"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP03C01"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02199V02655": {
+													"category": {
+														"index": [
+															"-"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP03",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C02199V02655"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP03C01"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02199V02655": {
+													"category": {
+														"index": [
+															"1"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP03",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": true,
+									"precision": 1,
+									"stepSize": 1
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": true,
+									"labelString": "% of population aged 18-24"
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau10"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-25T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"stemGraduatesBySex": {
+				"autoupdate": true,
+				"type": "bar",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP09",
+				"metadata": {
+					"xAxis": {
+						"C02677V03567": [
+							"IE",
+							"ZZEUBQ"
+						],
+						"role": "classification"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP09",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C02199V02655"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP09"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02199V02655": {
+													"category": {
+														"index": [
+															"-"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP09",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C02199V02655"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP09"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02199V02655": {
+													"category": {
+														"index": [
+															"1"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP09",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C02199V02655"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP09"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02199V02655": {
+													"category": {
+														"index": [
+															"2"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP09",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau10"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-25T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"realExpenditureOnEducation": {
+				"autoupdate": true,
+				"type": "bar",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/EDA22",
+				"metadata": {
+					"xAxis": {
+						"STATISTIC": [],
+						"role": "metric"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "EDA22",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"TLIST(A1)",
+												"C02352V02829"
+											],
+											"dimension": {
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02352V02829": {
+													"category": {
+														"index": [
+															"104"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "EDA22",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"TLIST(A1)",
+												"C02352V02829"
+											],
+											"dimension": {
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02352V02829": {
+													"category": {
+														"index": [
+															"23"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "EDA22",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"TLIST(A1)",
+												"C02352V02829"
+											],
+											"dimension": {
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02352V02829": {
+													"category": {
+														"index": [
+															"4"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "EDA22",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": true
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": true,
+									"labelString": "€ per student at constant 2015"
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau10"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-01-06T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"irelandAndOced": {
+				"autoupdate": true,
+				"type": "bar",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP14",
+				"metadata": {
+					"xAxis": {
+						"C02677V03567": [
+							"-1",
+							"IE"
+						],
+						"role": "classification"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP14",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP14C02"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP14",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP14C01"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP14",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP14C03"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP14",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": true,
+									"labelString": "Mean score of 15 year old students"
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau10"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-25T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			}
+		}
+	},
+	"health": {
+		"headlineFigures": {
+			"lifeExpectancyAtBirth": {
+				"jsonrpc": "2.0",
+				"method": "PxStat.Data.Cube_API.ReadDataset",
+				"params": {
+					"class": "query",
+					"id": [
+						"C02199V02655",
+						"C02677V03567"
+					],
+					"dimension": {
+						"TLIST(A1)": {
+							"category": {
+								"index": []
+							}
+						},
+						"C02199V02655": {
+							"category": {
+								"index": [
+									"-"
+								]
+							}
+						},
+						"C02677V03567": {
+							"category": {
+								"index": [
+									"IE"
+								]
+							}
+						}
+					},
+					"extension": {
+						"pivot": null,
+						"codes": false,
+						"language": {
+							"code": "en"
+						},
+						"format": {
+							"type": "JSON-stat",
+							"version": "2.0"
+						},
+						"matrix": "MIP12"
+					},
+					"version": "2.0"
+				}
+			},
+			"lifeExpectancyAge65Males": {
+				"jsonrpc": "2.0",
+				"method": "PxStat.Data.Cube_API.ReadDataset",
+				"params": {
+					"class": "query",
+					"id": [
+						"TLIST(A1)",
+						"C02076V02508",
+						"C02199V02655"
+					],
+					"dimension": {
+						"TLIST(A1)": {
+							"category": {
+								"index": []
+							}
+						},
+						"C02076V02508": {
+							"category": {
+								"index": [
+									"065"
+								]
+							}
+						},
+						"C02199V02655": {
+							"category": {
+								"index": [
+									"1"
+								]
+							}
+						}
+					},
+					"extension": {
+						"pivot": null,
+						"codes": false,
+						"language": {
+							"code": "en"
+						},
+						"format": {
+							"type": "JSON-stat",
+							"version": "2.0"
+						},
+						"matrix": "VSA30"
+					},
+					"version": "2.0"
+				}
+			},
+			"lifeExpectancyAge65Females": {
+				"jsonrpc": "2.0",
+				"method": "PxStat.Data.Cube_API.ReadDataset",
+				"params": {
+					"class": "query",
+					"id": [
+						"TLIST(A1)",
+						"C02076V02508",
+						"C02199V02655"
+					],
+					"dimension": {
+						"TLIST(A1)": {
+							"category": {
+								"index": []
+							}
+						},
+						"C02076V02508": {
+							"category": {
+								"index": [
+									"065"
+								]
+							}
+						},
+						"C02199V02655": {
+							"category": {
+								"index": [
+									"2"
+								]
+							}
+						}
+					},
+					"extension": {
+						"pivot": null,
+						"codes": false,
+						"language": {
+							"code": "en"
+						},
+						"format": {
+							"type": "JSON-stat",
+							"version": "2.0"
+						},
+						"matrix": "VSA30"
+					},
+					"version": "2.0"
+				}
+			}
+		},
+		"charts": {
+			"totalExpenditureOnHealth": {
+				"autoupdate": true,
+				"type": "horizontalBar",
+				"sort": true,
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP13",
+				"metadata": {
+					"xAxis": {
+						"C02677V03567": [
+							"SE",
+							"ES",
+							"SI",
+							"SK",
+							"RO",
+							"PT",
+							"PL",
+							"NL",
+							"MT",
+							"LU",
+							"LT",
+							"LV",
+							"IT",
+							"IE1",
+							"HU",
+							"GR",
+							"DE",
+							"FR",
+							"FI",
+							"EE",
+							"DK",
+							"CZ",
+							"CY",
+							"HR",
+							"BG",
+							"BE",
+							"AT"
+						],
+						"role": "classification"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP13",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP13"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP13",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": true,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau20"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-25T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"lifeExpectancyAtBirthSex": {
+				"autoupdate": true,
+				"type": "bar",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP12",
+				"metadata": {
+					"xAxis": {
+						"C02199V02655": [
+							"-",
+							"2",
+							"1"
+						],
+						"role": "classification"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP12",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C02677V03567"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP12"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02677V03567": {
+													"category": {
+														"index": [
+															"ZZEUBQ"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP12",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C02677V03567"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP12"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02677V03567": {
+													"category": {
+														"index": [
+															"IE"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP12",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": true,
+									"labelString": "Years"
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau10"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-25T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"healthyLifeYearsAtBirthBySex": {
+				"autoupdate": true,
+				"type": "bar",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP06",
+				"metadata": {
+					"xAxis": {
+						"C02199V02655": [
+							"-",
+							"2",
+							"1"
+						],
+						"role": "classification"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP06",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C02677V03567"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP06C01"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02677V03567": {
+													"category": {
+														"index": [
+															"ZZEUBQ"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP06",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C02677V03567"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP06C01"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02677V03567": {
+													"category": {
+														"index": [
+															"IE"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP06",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": true,
+									"labelString": "Years"
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau10"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-25T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"lifeExpectancyInPoorHealth": {
+				"autoupdate": true,
+				"type": "bar",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/MIP16",
+				"metadata": {
+					"xAxis": {
+						"C02677V03567": [
+							"IE",
+							"ZZEUBQ"
+						],
+						"role": "classification"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "MIP16",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C02199V02655"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP16"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02199V02655": {
+													"category": {
+														"index": [
+															"1"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP16",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						},
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"TLIST(A1)",
+												"C02199V02655"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"MIP16"
+														]
+													}
+												},
+												"TLIST(A1)": {
+													"category": {
+														"index": []
+													}
+												},
+												"C02199V02655": {
+													"category": {
+														"index": [
+															"2"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "MIP16",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": true
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": true,
+									"labelString": "Years"
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau10"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-25T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			},
+			"currentExpenditureOnHealthcare": {
+				"autoupdate": true,
+				"type": "line",
+				"copyright": true,
+				"link": "https://data.cso.ie/table/SHA07",
+				"metadata": {
+					"xAxis": {
+						"TLIST(A1)": [],
+						"role": "time"
+					},
+					"api": {
+						"query": {
+							"url": "https://ws.cso.ie/public/api.jsonrpc",
+							"data": {
+								"jsonrpc": "2.0",
+								"method": "PxStat.Data.Cube_API.ReadMetadata",
+								"params": {
+									"matrix": "SHA07",
+									"language": "en",
+									"format": {
+										"type": "JSON-stat",
+										"version": "2.0"
+									}
+								},
+								"version": "2.0"
+							}
+						},
+						"response": {}
+					}
+				},
+				"data": {
+					"labels": [],
+					"datasets": [
+						{
+							"label": [],
+							"pointRadius": 2,
+							"pointHoverRadius": 4,
+							"maxBarThickness": 90,
+							"api": {
+								"query": {
+									"url": "https://ws.cso.ie/public/api.jsonrpc",
+									"data": {
+										"jsonrpc": "2.0",
+										"method": "PxStat.Data.Cube_API.ReadDataset",
+										"params": {
+											"class": "query",
+											"id": [
+												"STATISTIC",
+												"C02196V02652"
+											],
+											"dimension": {
+												"STATISTIC": {
+													"category": {
+														"index": [
+															"SHA07C04"
+														]
+													}
+												},
+												"C02196V02652": {
+													"category": {
+														"index": [
+															"-"
+														]
+													}
+												}
+											},
+											"extension": {
+												"language": {
+													"code": "en"
+												},
+												"format": {
+													"type": "JSON-stat",
+													"version": "2.0"
+												},
+												"matrix": "SHA07",
+												"m2m": false
+											},
+											"version": "2.0"
+										}
+									}
+								},
+								"response": {}
+							},
+							"data": [],
+							"fill": false
+						}
+					],
+					"null": ".."
+				},
+				"options": {
+					"responsive": true,
+					"maintainAspectRatio": false,
+					"title": {
+						"display": false
+					},
+					"tooltips": {
+						"mode": "index",
+						"callbacks": {}
+					},
+					"hover": {
+						"mode": "nearest",
+						"intersect": true
+					},
+					"scales": {
+						"xAxes": [
+							{
+								"ticks": {
+									"beginAtZero": false,
+									"maxTicksLimit": null,
+									"reverse": true,
+									"minRotation": 50
+								},
+								"gridLines": {
+									"display": false
+								},
+								"scaleLabel": {
+									"display": false,
+									"labelString": null
+								},
+								"stacked": false
+							}
+						],
+						"yAxes": [
+							{
+								"display": true,
+								"position": "left",
+								"id": "y-axis-1",
+								"ticks": {
+									"beginAtZero": false
+								},
+								"callback": null,
+								"scaleLabel": {
+									"display": true,
+									"labelString": "€ million"
+								},
+								"stacked": false
+							}
+						]
+					},
+					"plugins": {
+						"stacked100": {
+							"enable": false
+						},
+						"colorschemes": {
+							"scheme": "tableau.Tableau20"
+						}
+					},
+					"legend": {
+						"display": true,
+						"position": "bottom"
+					},
+					"updated": "2021-06-22T11:00:00Z",
+					"layout": {
+						"padding": {
+							"left": 0,
+							"right": 0,
+							"top": 0,
+							"bottom": 22
+						}
+					}
+				},
+				"plugins": [
+					{}
+				]
+			}
+		}
+	}
+}

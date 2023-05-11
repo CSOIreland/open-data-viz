@@ -1,0 +1,94 @@
+<div id="visual-ukraine-health">
+    <div class="container">
+        <div class="mx-4">
+            <table class="table table-bordered table-sm table-hover" name="health-headline-table">
+                <thead class="thead bg-info text-light">
+                    <tr>
+                        <th scope="col" style="width:20%;">Title</th>
+                        <th scope="col" style="width:20%; text-align:right">Total</th>
+                        <th scope="col" style="width:20%; text-align:right">Past week</th>
+                        <th scope="col" style="width:20%; text-align:right">7 Day average daily issued</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Medical Cards Issued</th>
+                        <td style="text-align:right" name="medical-cards-issued-total"></td>
+                        <td style="text-align:right" name="medical-cards-issued-last-week"></td>
+                        <td style="text-align:right" name="medical-cards-issued-7-day-average"></td>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row m-2">
+        <div class="col-xl-6 col-lg-12">
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-light">
+                    <span>7 day average Cards Issued</span>
+                </div>
+                <div class="card-header pt-2 pb-0">
+                    <ul class="nav nav-tabs border-bottom-0" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link h5 mb-0 active" name="chart-tab" id="visual-ukraine-arrivals-health-7-day-average-chart-tab" data-toggle="tab" href="#visual-ukraine-arrivals-health-7-day-average-chart-content" role="tab" aria-controls="visual-ukraine-arrivals-health-7-day-average-chart-content" aria-selected="true"><span>Chart</span></a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link h5 mb-0" name="table-tab" id="visual-ukraine-arrivals-health-7-day-average-table-tab" data-toggle="tab" href="#visual-ukraine-arrivals-health-7-day-average-table-content" role="tab" aria-controls="visual-ukraine-arrivals-health-7-day-average-table-content" aria-selected="false"><span>Table</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade mb-4 active show" name="chart-content" id="visual-ukraine-arrivals-health-7-day-average-chart-content" role="tabpanel" aria-labelledby="visual-ukraine-arrivals-health-7-day-average-chart-tab">
+                            <div id="pxwidget9463958571" class="pxwidget"></div>
+                        </div>
+                        <div class="tab-pane fade" name="table-content" id="visual-ukraine-arrivals-health-7-day-average-table-content" role="tabpanel" aria-labelledby="visual-ukraine-arrivals-health-7-day-average-table-tab">
+                            <div id="pxwidget7712588061" class="pxwidget"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-12">
+            <div class="card">
+                <div class="card-header bg-primary text-light">
+                    <span>Cumulative Medical Cards Issued</span>
+                </div>
+                <div class="card-header pt-2 pb-0">
+                    <ul class="nav nav-tabs border-bottom-0" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link h5 mb-0 active" name="chart-tab" id="visual-ukraine-arrivals-cumulative-medical-cards-issued-chart-tab" data-toggle="tab" href="#visual-ukraine-arrivals-cumulative-medical-cards-issued-chart-content" role="tab" aria-controls="visual-ukraine-arrivals-cumulative-medical-cards-issued-chart-content" aria-selected="true"><span>Chart</span></a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link h5 mb-0" name="table-tab" id="visual-ukraine-arrivals-cumulative-medical-cards-issued-table-tab" data-toggle="tab" href="#visual-ukraine-arrivals-cumulative-medical-cards-issued-table-content" role="tab" aria-controls="visual-ukraine-arrivals-cumulative-medical-cards-issued-table-content" aria-selected="false"><span>Table</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade mb-4 active show" name="chart-content" id="visual-ukraine-arrivals-cumulative-medical-cards-issued-chart-content" role="tabpanel" aria-labelledby="visual-ukraine-arrivals-cumulative-medical-cards-issued-chart-tab">
+                            <div id="pxwidget8147638291" class="pxwidget"></div>
+                        </div>
+                        <div class="tab-pane fade" name="table-content" id="visual-ukraine-arrivals-cumulative-medical-cards-issued-table-content" role="tabpanel" aria-labelledby="visual-ukraine-arrivals-cumulative-medical-cards-issued-table-tab">
+                            <div id="pxwidget3052434061" class="pxwidget"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Page specific JS -->
+<script src="entity/ukrainearrivalsresponse/theme/health/js/health.library.js"></script>
+
+
+<script src="entity/ukrainearrivalsresponse/theme/health/js/health.js"></script>

@@ -1,0 +1,952 @@
+{
+    "headlineData": [
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "TLIST(W1)",
+                    "C02199V02655",
+                    "C02076V03371"
+                ],
+                "dimension": {
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C02199V02655": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    },
+                    "C02076V03371": {
+                        "category": {
+                            "index": [
+                                "-"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": false,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA06"
+                },
+                "version": "2.0",
+                "m2m": false
+            },
+            "element": "#visual-ukraine-accommodation-supply [name=accommodation-supply-headline-table] [name=ppsn-issued-total]"
+        }
+    ],
+    "chart": {
+        "totalEmergencyBedsAvailable": {
+            "autoupdate": true,
+            "type": "line",
+            "copyright": false,
+            "link": null,
+            "sort": false,
+            "metadata": {
+                "xAxis": {
+                    "C03788V04538": [
+                        "2ae19629-1450-13a3-e055-000000000001",
+                        "2ae19629-1451-13a3-e055-000000000001",
+                        "2ae19629-1448-13a3-e055-000000000001",
+                        "2ae19629-143d-13a3-e055-000000000001",
+                        "2ae19629-1452-13a3-e055-000000000001",
+                        "2ae19629-144f-13a3-e055-000000000001",
+                        "2ae19629-1453-13a3-e055-000000000001",
+                        "2ae19629-1455-13a3-e055-000000000001",
+                        "2ae19629-1456-13a3-e055-000000000001",
+                        "2ae19629-1454-13a3-e055-000000000001",
+                        "2ae19629-1441-13a3-e055-000000000001",
+                        "2ae19629-1442-13a3-e055-000000000001",
+                        "2ae19629-1440-13a3-e055-000000000001",
+                        "2ae19629-143f-13a3-e055-000000000001",
+                        "2ae19629-143e-13a3-e055-000000000001",
+                        "2ae19629-1444-13a3-e055-000000000001",
+                        "2ae19629-1445-13a3-e055-000000000001",
+                        "2ae19629-1443-13a3-e055-000000000001",
+                        "2ae19629-1446-13a3-e055-000000000001",
+                        "2ae19629-1447-13a3-e055-000000000001",
+                        "2ae19629-1449-13a3-e055-000000000001",
+                        "2ae19629-144a-13a3-e055-000000000001",
+                        "2ae19629-144b-13a3-e055-000000000001",
+                        "2ae19629-144e-13a3-e055-000000000001",
+                        "2ae19629-144c-13a3-e055-000000000001",
+                        "2ae19629-144d-13a3-e055-000000000001"
+                    ],
+                    "role": "geo"
+                },
+                "fluidTime": [],
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA34",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "data": {
+                "labels": [],
+                "datasets": [
+                    {
+                        "label": "Series 1",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "TLIST(D1)"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA34C01"
+                                                    ]
+                                                }
+                                            },
+                                            "TLIST(D1)": {
+                                                "category": {
+                                                    "index": [
+                                                        "2022M11D07"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA34",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [
+                            0
+                        ],
+                        "fill": false
+                    }
+                ],
+                "null": ".."
+            },
+            "options": {
+                "responsive": true,
+                "maintainAspectRatio": false,
+                "title": {
+                    "display": true,
+                    "text": [
+                        ""
+                    ]
+                },
+                "tooltips": {
+                    "mode": "index",
+                    "callbacks": {}
+                },
+                "hover": {
+                    "mode": "nearest",
+                    "intersect": true
+                },
+                "scales": {
+                    "xAxes": [
+                        {
+                            "ticks": {
+                                "beginAtZero": false,
+                                "maxTicksLimit": null
+                            },
+                            "gridLines": {
+                                "display": false
+                            },
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ],
+                    "yAxes": [
+                        {
+                            "display": true,
+                            "position": "left",
+                            "id": "y-axis-1",
+                            "ticks": {
+                                "beginAtZero": false
+                            },
+                            "callback": null,
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ]
+                },
+                "plugins": {
+                    "stacked100": {
+                        "enable": false
+                    },
+                    "colorschemes": {
+                        "scheme": [
+                            "#405381",
+                            "#5BC1A5",
+                            "#FCBE72",
+                            "#0091AB",
+                            "#90989F",
+                            "#3D5999",
+                            "#C6CC5C",
+                            "#579599",
+                            "#FBAA34",
+                            "#007780",
+                            "#B9BEC3",
+                            "#00AF86",
+                            "#6BC2C2",
+                            "#00758C",
+                            "#FCB053",
+                            "#6A7794",
+                            "#A3CCC1",
+                            "#F68B58",
+                            "#36A0B3"
+                        ]
+                    }
+                },
+                "legend": {
+                    "display": true,
+                    "position": "bottom"
+                },
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": "2022-11-21T11:00:00Z",
+                "layout": {
+                    "padding": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 22
+                    }
+                }
+            },
+            "plugins": [
+                {}
+            ]
+        },
+        "totalIndependentBedsUnitsAvailable": {
+            "autoupdate": true,
+            "type": "line",
+            "copyright": false,
+            "link": null,
+            "sort": false,
+            "metadata": {
+                "xAxis": {
+                    "C03788V04538": [
+                        "2ae19629-1450-13a3-e055-000000000001",
+                        "2ae19629-1451-13a3-e055-000000000001",
+                        "2ae19629-1448-13a3-e055-000000000001",
+                        "2ae19629-143d-13a3-e055-000000000001",
+                        "2ae19629-1452-13a3-e055-000000000001",
+                        "2ae19629-144f-13a3-e055-000000000001",
+                        "2ae19629-1453-13a3-e055-000000000001",
+                        "2ae19629-1455-13a3-e055-000000000001",
+                        "2ae19629-1456-13a3-e055-000000000001",
+                        "2ae19629-1454-13a3-e055-000000000001",
+                        "2ae19629-1441-13a3-e055-000000000001",
+                        "2ae19629-1442-13a3-e055-000000000001",
+                        "2ae19629-1440-13a3-e055-000000000001",
+                        "2ae19629-143f-13a3-e055-000000000001",
+                        "2ae19629-143e-13a3-e055-000000000001",
+                        "2ae19629-1444-13a3-e055-000000000001",
+                        "2ae19629-1445-13a3-e055-000000000001",
+                        "2ae19629-1443-13a3-e055-000000000001",
+                        "2ae19629-1446-13a3-e055-000000000001",
+                        "2ae19629-1447-13a3-e055-000000000001",
+                        "2ae19629-1449-13a3-e055-000000000001",
+                        "2ae19629-144a-13a3-e055-000000000001",
+                        "2ae19629-144b-13a3-e055-000000000001",
+                        "2ae19629-144e-13a3-e055-000000000001",
+                        "2ae19629-144c-13a3-e055-000000000001",
+                        "2ae19629-144d-13a3-e055-000000000001"
+                    ],
+                    "role": "geo"
+                },
+                "fluidTime": [],
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA34",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "data": {
+                "labels": [],
+                "datasets": [
+                    {
+                        "label": "Series 1",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "TLIST(D1)"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA34C01"
+                                                    ]
+                                                }
+                                            },
+                                            "TLIST(D1)": {
+                                                "category": {
+                                                    "index": [
+                                                        "2022M11D07"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA34",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [
+                            0
+                        ],
+                        "fill": false
+                    }
+                ],
+                "null": ".."
+            },
+            "options": {
+                "responsive": true,
+                "maintainAspectRatio": false,
+                "title": {
+                    "display": true,
+                    "text": [
+                        ""
+                    ]
+                },
+                "tooltips": {
+                    "mode": "index",
+                    "callbacks": {}
+                },
+                "hover": {
+                    "mode": "nearest",
+                    "intersect": true
+                },
+                "scales": {
+                    "xAxes": [
+                        {
+                            "ticks": {
+                                "beginAtZero": false,
+                                "maxTicksLimit": null
+                            },
+                            "gridLines": {
+                                "display": false
+                            },
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ],
+                    "yAxes": [
+                        {
+                            "display": true,
+                            "position": "left",
+                            "id": "y-axis-1",
+                            "ticks": {
+                                "beginAtZero": false
+                            },
+                            "callback": null,
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ]
+                },
+                "plugins": {
+                    "stacked100": {
+                        "enable": false
+                    },
+                    "colorschemes": {
+                        "scheme": [
+                            "#405381",
+                            "#5BC1A5",
+                            "#FCBE72",
+                            "#0091AB",
+                            "#90989F",
+                            "#3D5999",
+                            "#C6CC5C",
+                            "#579599",
+                            "#FBAA34",
+                            "#007780",
+                            "#B9BEC3",
+                            "#00AF86",
+                            "#6BC2C2",
+                            "#00758C",
+                            "#FCB053",
+                            "#6A7794",
+                            "#A3CCC1",
+                            "#F68B58",
+                            "#36A0B3"
+                        ]
+                    }
+                },
+                "legend": {
+                    "display": true,
+                    "position": "bottom"
+                },
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": "2022-11-21T11:00:00Z",
+                "layout": {
+                    "padding": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 22
+                    }
+                }
+            },
+            "plugins": [
+                {}
+            ]
+        },
+        "totalServicedBedsAvailable": {
+            "autoupdate": true,
+            "type": "line",
+            "copyright": false,
+            "link": null,
+            "sort": false,
+            "metadata": {
+                "xAxis": {
+                    "C03788V04538": [
+                        "2ae19629-1450-13a3-e055-000000000001",
+                        "2ae19629-1451-13a3-e055-000000000001",
+                        "2ae19629-1448-13a3-e055-000000000001",
+                        "2ae19629-143d-13a3-e055-000000000001",
+                        "2ae19629-1452-13a3-e055-000000000001",
+                        "2ae19629-144f-13a3-e055-000000000001",
+                        "2ae19629-1453-13a3-e055-000000000001",
+                        "2ae19629-1455-13a3-e055-000000000001",
+                        "2ae19629-1456-13a3-e055-000000000001",
+                        "2ae19629-1454-13a3-e055-000000000001",
+                        "2ae19629-1441-13a3-e055-000000000001",
+                        "2ae19629-1442-13a3-e055-000000000001",
+                        "2ae19629-1440-13a3-e055-000000000001",
+                        "2ae19629-143f-13a3-e055-000000000001",
+                        "2ae19629-143e-13a3-e055-000000000001",
+                        "2ae19629-1444-13a3-e055-000000000001",
+                        "2ae19629-1445-13a3-e055-000000000001",
+                        "2ae19629-1443-13a3-e055-000000000001",
+                        "2ae19629-1446-13a3-e055-000000000001",
+                        "2ae19629-1447-13a3-e055-000000000001",
+                        "2ae19629-1449-13a3-e055-000000000001",
+                        "2ae19629-144a-13a3-e055-000000000001",
+                        "2ae19629-144b-13a3-e055-000000000001",
+                        "2ae19629-144e-13a3-e055-000000000001",
+                        "2ae19629-144c-13a3-e055-000000000001",
+                        "2ae19629-144d-13a3-e055-000000000001"
+                    ],
+                    "role": "geo"
+                },
+                "fluidTime": [],
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA34",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "data": {
+                "labels": [],
+                "datasets": [
+                    {
+                        "label": "Series 1",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "TLIST(D1)"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA34C01"
+                                                    ]
+                                                }
+                                            },
+                                            "TLIST(D1)": {
+                                                "category": {
+                                                    "index": [
+                                                        "2022M11D07"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA34",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [
+                            0
+                        ],
+                        "fill": false
+                    }
+                ],
+                "null": ".."
+            },
+            "options": {
+                "responsive": true,
+                "maintainAspectRatio": false,
+                "title": {
+                    "display": true,
+                    "text": [
+                        ""
+                    ]
+                },
+                "tooltips": {
+                    "mode": "index",
+                    "callbacks": {}
+                },
+                "hover": {
+                    "mode": "nearest",
+                    "intersect": true
+                },
+                "scales": {
+                    "xAxes": [
+                        {
+                            "ticks": {
+                                "beginAtZero": false,
+                                "maxTicksLimit": null
+                            },
+                            "gridLines": {
+                                "display": false
+                            },
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ],
+                    "yAxes": [
+                        {
+                            "display": true,
+                            "position": "left",
+                            "id": "y-axis-1",
+                            "ticks": {
+                                "beginAtZero": false
+                            },
+                            "callback": null,
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ]
+                },
+                "plugins": {
+                    "stacked100": {
+                        "enable": false
+                    },
+                    "colorschemes": {
+                        "scheme": [
+                            "#405381",
+                            "#5BC1A5",
+                            "#FCBE72",
+                            "#0091AB",
+                            "#90989F",
+                            "#3D5999",
+                            "#C6CC5C",
+                            "#579599",
+                            "#FBAA34",
+                            "#007780",
+                            "#B9BEC3",
+                            "#00AF86",
+                            "#6BC2C2",
+                            "#00758C",
+                            "#FCB053",
+                            "#6A7794",
+                            "#A3CCC1",
+                            "#F68B58",
+                            "#36A0B3"
+                        ]
+                    }
+                },
+                "legend": {
+                    "display": true,
+                    "position": "bottom"
+                },
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": "2022-11-21T11:00:00Z",
+                "layout": {
+                    "padding": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 22
+                    }
+                }
+            },
+            "plugins": [
+                {}
+            ]
+        },
+        "totalIndependentBedsSharedAvailable": {
+            "autoupdate": true,
+            "type": "line",
+            "copyright": false,
+            "link": null,
+            "sort": false,
+            "metadata": {
+                "xAxis": {
+                    "C03788V04538": [
+                        "2ae19629-1450-13a3-e055-000000000001",
+                        "2ae19629-1451-13a3-e055-000000000001",
+                        "2ae19629-1448-13a3-e055-000000000001",
+                        "2ae19629-143d-13a3-e055-000000000001",
+                        "2ae19629-1452-13a3-e055-000000000001",
+                        "2ae19629-144f-13a3-e055-000000000001",
+                        "2ae19629-1453-13a3-e055-000000000001",
+                        "2ae19629-1455-13a3-e055-000000000001",
+                        "2ae19629-1456-13a3-e055-000000000001",
+                        "2ae19629-1454-13a3-e055-000000000001",
+                        "2ae19629-1441-13a3-e055-000000000001",
+                        "2ae19629-1442-13a3-e055-000000000001",
+                        "2ae19629-1440-13a3-e055-000000000001",
+                        "2ae19629-143f-13a3-e055-000000000001",
+                        "2ae19629-143e-13a3-e055-000000000001",
+                        "2ae19629-1444-13a3-e055-000000000001",
+                        "2ae19629-1445-13a3-e055-000000000001",
+                        "2ae19629-1443-13a3-e055-000000000001",
+                        "2ae19629-1446-13a3-e055-000000000001",
+                        "2ae19629-1447-13a3-e055-000000000001",
+                        "2ae19629-1449-13a3-e055-000000000001",
+                        "2ae19629-144a-13a3-e055-000000000001",
+                        "2ae19629-144b-13a3-e055-000000000001",
+                        "2ae19629-144e-13a3-e055-000000000001",
+                        "2ae19629-144c-13a3-e055-000000000001",
+                        "2ae19629-144d-13a3-e055-000000000001"
+                    ],
+                    "role": "geo"
+                },
+                "fluidTime": [],
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA34",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "data": {
+                "labels": [],
+                "datasets": [
+                    {
+                        "label": "Series 1",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "TLIST(D1)"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA34C01"
+                                                    ]
+                                                }
+                                            },
+                                            "TLIST(D1)": {
+                                                "category": {
+                                                    "index": [
+                                                        "2022M11D07"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA34",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [
+                            0
+                        ],
+                        "fill": false
+                    }
+                ],
+                "null": ".."
+            },
+            "options": {
+                "responsive": true,
+                "maintainAspectRatio": false,
+                "title": {
+                    "display": true,
+                    "text": [
+                        ""
+                    ]
+                },
+                "tooltips": {
+                    "mode": "index",
+                    "callbacks": {}
+                },
+                "hover": {
+                    "mode": "nearest",
+                    "intersect": true
+                },
+                "scales": {
+                    "xAxes": [
+                        {
+                            "ticks": {
+                                "beginAtZero": false,
+                                "maxTicksLimit": null
+                            },
+                            "gridLines": {
+                                "display": false
+                            },
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ],
+                    "yAxes": [
+                        {
+                            "display": true,
+                            "position": "left",
+                            "id": "y-axis-1",
+                            "ticks": {
+                                "beginAtZero": false
+                            },
+                            "callback": null,
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ]
+                },
+                "plugins": {
+                    "stacked100": {
+                        "enable": false
+                    },
+                    "colorschemes": {
+                        "scheme": [
+                            "#405381",
+                            "#5BC1A5",
+                            "#FCBE72",
+                            "#0091AB",
+                            "#90989F",
+                            "#3D5999",
+                            "#C6CC5C",
+                            "#579599",
+                            "#FBAA34",
+                            "#007780",
+                            "#B9BEC3",
+                            "#00AF86",
+                            "#6BC2C2",
+                            "#00758C",
+                            "#FCB053",
+                            "#6A7794",
+                            "#A3CCC1",
+                            "#F68B58",
+                            "#36A0B3"
+                        ]
+                    }
+                },
+                "legend": {
+                    "display": true,
+                    "position": "bottom"
+                },
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": "2022-11-21T11:00:00Z",
+                "layout": {
+                    "padding": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 22
+                    }
+                }
+            },
+            "plugins": [
+                {}
+            ]
+        }
+    }
+}

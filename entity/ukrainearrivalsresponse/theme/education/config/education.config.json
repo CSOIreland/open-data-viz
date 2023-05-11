@@ -1,0 +1,274 @@
+{
+    "headlineData": [
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C04041V04802"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA31C03"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C04041V04802": {
+                        "category": {
+                            "index": [
+                                "10"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": false,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA31"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-education [name=education-headline-table] [name=primary-total-eligible]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C04041V04802"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA31C03"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C04041V04802": {
+                        "category": {
+                            "index": [
+                                "22"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": false,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA31"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-education [name=education-headline-table] [name=secondary-total-eligible]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C04041V04802"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA31C01"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C04041V04802": {
+                        "category": {
+                            "index": [
+                                "10"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": false,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA31"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-education [name=education-headline-table] [name=primary-total-enrolled]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C04041V04802"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA31C01"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C04041V04802": {
+                        "category": {
+                            "index": [
+                                "22"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": false,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA31"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-education [name=education-headline-table] [name=secondary-total-enrolled]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C04041V04802"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA31C02"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C04041V04802": {
+                        "category": {
+                            "index": [
+                                "10"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": false,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA31"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-education [name=education-headline-table] [name=primary-7-day-average-daily-enrolment]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "STATISTIC",
+                    "TLIST(W1)",
+                    "C04041V04802"
+                ],
+                "dimension": {
+                    "STATISTIC": {
+                        "category": {
+                            "index": [
+                                "UA31C02"
+                            ]
+                        }
+                    },
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C04041V04802": {
+                        "category": {
+                            "index": [
+                                "22"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": false,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA31"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-education [name=education-headline-table] [name=secondary-7-day-average-daily-enrolment]"
+        }
+    ]
+}

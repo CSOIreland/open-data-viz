@@ -1,0 +1,7 @@
+/*******************************************************************************
+Custom CSS application specific
+*******************************************************************************/
+
+#visual-ukraine-arrivals-employment-nace-sector-chart-content .pxwidget-canvas-wrapper {
+    height: 63vh;
+}

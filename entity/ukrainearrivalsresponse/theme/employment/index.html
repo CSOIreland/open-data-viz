@@ -1,0 +1,633 @@
+<div id="visual-ukraine-employment">
+
+
+
+    <!-- <div class="row m-4">
+
+
+        <div class="col-3">
+            <div class="card shadow h-100 pb-0">
+
+                <div class="card-header bg-info text-light">Number of Employments</div>
+                <div class="card-body">
+                    <div class="mb-0">
+
+                        <div class="d-flex justify-content-between align-items-center text-wrap px-2">
+                            <span>Total</span>
+                            <span class="font-weight-bold">4,121</span>
+
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center text-wrap px-2">
+                            <span>06/06/2022</span>
+                            <span class="font-weight-bold">475</span>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-3">
+            <div class="card shadow h-100 pb-0">
+
+                <div class="card-header bg-info text-light">Number of Employee</div>
+                <div class="card-body">
+                    <div class="mb-0">
+
+                        <div class="d-flex justify-content-between align-items-center text-wrap px-2">
+                            <span>Total</span>
+                            <span class="font-weight-bold">3863</span>
+
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center text-wrap px-2">
+                            <span>06/06/2022</span>
+                            <span class="font-weight-bold">424</span>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="col-6">
+            <div class="card shadow h-100 pb-0">
+
+                <div class="card-header bg-info text-light">Range of Average Weekly Income</div>
+                <div class="card-body">
+                    <div class="mb-0">
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div> -->
+
+    <div class="container">
+
+        <div class="row m-2">
+            <div class="col">
+                <table class="table table-bordered table-sm table-hover mt-2" name="employment-headline-table">
+                    <thead class="thead bg-info text-light">
+                        <tr>
+                            <th scope="col" style="width:20%;">Title</th>
+                            <th scope="col" style="width:20%; text-align:right">Total</th>
+                            <th scope="col" style="width:20%; text-align:right">Past week</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Number of Employments</th>
+                            <td style="text-align:right" name="number-of-employments-total"></td>
+                            <td style="text-align:right" name="number-of-employments-last-week"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Number of Employees</th>
+                            <td style="text-align:right" name="number-of-employees-total"></td>
+                            <td style="text-align:right" name="number-of-employees-last-week"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row m-4">
+        <div class="col-xl-6 col-lg-12">
+            <div class="card mb-4" id="visual-ukraine-arrivals-employment-nace-sector-chart-content">
+                <div class="card-header bg-primary text-light">
+                    <span>NACE Sector</span>
+                </div>
+                <div class="card-body">
+                    <script src="https://cdn.jsdelivr.net/gh/CSOIreland/PxWidget@2.4.5/js/isogram.min.js"></script>
+                    <script>pxWidget.draw.init("chart",
+                            "pxwidget9728966891",
+                            {
+                                "autoupdate": false,
+                                "type": "horizontalBar",
+                                "copyright": true,
+                                "link": "https://data.cso.ie/table/UA20",
+                                "sort": true,
+                                "metadata": {
+                                    "xAxis": {
+                                        "C03430V04137": [
+                                            "K",
+                                            "H",
+                                            "J",
+                                            "O",
+                                            "P",
+                                            "Q",
+                                            "L",
+                                            "M",
+                                            "A",
+                                            "F",
+                                            "N",
+                                            "Y8002",
+                                            "C",
+                                            "G",
+                                            "I"
+                                        ],
+                                        "role": "classification"
+                                    },
+                                    "fluidTime": [
+
+                                    ],
+                                    "api": {
+                                        "query": {
+
+                                        },
+                                        "response": {
+                                            "class": "dataset",
+                                            "dimension": {
+                                                "STATISTIC": {
+                                                    "category": {
+                                                        "index": {
+                                                            "UA20C01": 0
+                                                        },
+                                                        "label": {
+                                                            "UA20C01": "Number of Employments"
+                                                        },
+                                                        "unit": {
+                                                            "UA20C01": {
+                                                                "decimals": 0,
+                                                                "label": "Number",
+                                                                "position": "end"
+                                                            }
+                                                        }
+                                                    },
+                                                    "label": "Statistic"
+                                                },
+                                                "TLIST(D1)": {
+                                                    "category": {
+                                                        "index": {
+                                                            "2022M06D20": 0,
+                                                            "2022M06D27": 1,
+                                                            "2022M07D04": 2
+                                                        },
+                                                        "label": {
+                                                            "2022M06D20": "2022 June 20",
+                                                            "2022M06D27": "2022 June 27",
+                                                            "2022M07D04": "2022 July 04"
+                                                        }
+                                                    },
+                                                    "label": "Day"
+                                                },
+                                                "C03430V04137": {
+                                                    "category": {
+                                                        "index": {
+                                                            "K": 0,
+                                                            "H": 1,
+                                                            "J": 2,
+                                                            "O": 3,
+                                                            "P": 4,
+                                                            "Q": 5,
+                                                            "L": 6,
+                                                            "M": 7,
+                                                            "A": 8,
+                                                            "F": 9,
+                                                            "N": 10,
+                                                            "Y8002": 11,
+                                                            "C": 12,
+                                                            "G": 13,
+                                                            "I": 14,
+                                                            "-": 15
+                                                        },
+                                                        "label": {
+                                                            "K": "Financial and insurance activities (K)",
+                                                            "H": "Transportation and Storage (H)",
+                                                            "J": "Information and communication (J)",
+                                                            "O": "Public Administration and Defence (O)",
+                                                            "P": "Education (P)",
+                                                            "Q": "Human Health and Social Work Activities (Q)",
+                                                            "L": "Real estate activities (L)",
+                                                            "M": "Professional, Scientific and Technical Activities (M)",
+                                                            "A": "Agriculture, Forestry and Fishing (A)",
+                                                            "F": "Construction (F)",
+                                                            "N": "Administrative and Support Service Activities (N)",
+                                                            "Y8002": "Miscellaneous NACE Sectors (B, D, E, R-T)",
+                                                            "C": "Manufacturing (C)",
+                                                            "G": "Wholesale and Retail Trade (G)",
+                                                            "I": "Accommodation & Food Service Activities (I)",
+                                                            "-": "All NACE Economic Sectors"
+                                                        }
+                                                    },
+                                                    "label": "NACE Sector"
+                                                }
+                                            },
+                                            "extension": {
+                                                "matrix": "UA20",
+                                                "language": {
+                                                    "code": "en",
+                                                    "name": "English"
+                                                },
+                                                "elimination": {
+                                                    "C03430V04137": "-"
+                                                },
+                                                "contact": {
+                                                    "name": "Declan Smyth",
+                                                    "email": "sscu@cso.ie",
+                                                    "phone": "(+353) 1 498 4000"
+                                                },
+                                                "subject": {
+                                                    "code": 74,
+                                                    "value": "Ukraine Hub"
+                                                },
+                                                "product": {
+                                                    "code": "UAK",
+                                                    "value": "Ukraine Hub Statistics"
+                                                },
+                                                "official": true,
+                                                "copyright": {
+                                                    "name": "Office of the Revenue Commissioners",
+                                                    "code": "RCT",
+                                                    "href": "https://www.revenue.ie/"
+                                                },
+                                                "exceptional": false,
+                                                "reservation": false,
+                                                "archive": false,
+                                                "experimental": false,
+                                                "analytical": false
+                                            },
+                                            "id": [
+                                                "STATISTIC",
+                                                "TLIST(D1)",
+                                                "C03430V04137"
+                                            ],
+                                            "label": "Number of Employments of Arrivals from Ukraine",
+                                            "note": [
+                                                "For more information, please go to the [url=https://www.cso.ie/en/statistics/population/arrivalsfromukraineinireland/]statistical release page[/url] on our website."
+                                            ],
+                                            "role": {
+                                                "metric": [
+                                                    "STATISTIC"
+                                                ],
+                                                "time": [
+                                                    "TLIST(D1)"
+                                                ],
+                                                "geo": null,
+                                                "classification": [
+                                                    "C03430V04137"
+                                                ]
+                                            },
+                                            "size": [
+                                                1,
+                                                3,
+                                                16
+                                            ],
+                                            "value": [
+
+                                            ],
+                                            "version": "2.0"
+                                        }
+                                    }
+                                },
+                                "data": {
+                                    "labels": [
+
+                                    ],
+                                    "datasets": [
+                                        {
+                                            "label": "Number of employments",
+                                            "pointRadius": 2,
+                                            "pointHoverRadius": 4,
+                                            "maxBarThickness": 90,
+                                            "api": {
+                                                "query": {
+
+                                                },
+                                                "response": {
+                                                    "class": "dataset",
+                                                    "dimension": {
+                                                        "STATISTIC": {
+                                                            "category": {
+                                                                "index": {
+                                                                    "UA20C01": 0
+                                                                },
+                                                                "label": {
+                                                                    "UA20C01": "Number of Employments"
+                                                                },
+                                                                "unit": {
+                                                                    "UA20C01": {
+                                                                        "decimals": 0,
+                                                                        "label": "Number",
+                                                                        "position": "end"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "label": "Statistic"
+                                                        },
+                                                        "TLIST(D1)": {
+                                                            "category": {
+                                                                "index": {
+                                                                    "2022M07D04": 0
+                                                                },
+                                                                "label": {
+                                                                    "2022M07D04": "2022 July 04"
+                                                                }
+                                                            },
+                                                            "label": "Day"
+                                                        },
+                                                        "C03430V04137": {
+                                                            "category": {
+                                                                "index": {
+                                                                    "K": 0,
+                                                                    "H": 1,
+                                                                    "J": 2,
+                                                                    "O": 3,
+                                                                    "P": 4,
+                                                                    "Q": 5,
+                                                                    "L": 6,
+                                                                    "M": 7,
+                                                                    "A": 8,
+                                                                    "F": 9,
+                                                                    "N": 10,
+                                                                    "Y8002": 11,
+                                                                    "C": 12,
+                                                                    "G": 13,
+                                                                    "I": 14,
+                                                                    "-": 15
+                                                                },
+                                                                "label": {
+                                                                    "K": "Financial and insurance activities (K)",
+                                                                    "H": "Transportation and Storage (H)",
+                                                                    "J": "Information and communication (J)",
+                                                                    "O": "Public Administration and Defence (O)",
+                                                                    "P": "Education (P)",
+                                                                    "Q": "Human Health and Social Work Activities (Q)",
+                                                                    "L": "Real estate activities (L)",
+                                                                    "M": "Professional, Scientific and Technical Activities (M)",
+                                                                    "A": "Agriculture, Forestry and Fishing (A)",
+                                                                    "F": "Construction (F)",
+                                                                    "N": "Administrative and Support Service Activities (N)",
+                                                                    "Y8002": "Miscellaneous NACE Sectors (B, D, E, R-T)",
+                                                                    "C": "Manufacturing (C)",
+                                                                    "G": "Wholesale and Retail Trade (G)",
+                                                                    "I": "Accommodation & Food Service Activities (I)",
+                                                                    "-": "All NACE Economic Sectors"
+                                                                }
+                                                            },
+                                                            "label": "NACE Sector"
+                                                        }
+                                                    },
+                                                    "extension": {
+                                                        "matrix": "UA20",
+                                                        "language": {
+                                                            "code": "en",
+                                                            "name": "English"
+                                                        },
+                                                        "elimination": {
+                                                            "C03430V04137": "-"
+                                                        },
+                                                        "contact": {
+                                                            "name": "Declan Smyth",
+                                                            "email": "sscu@cso.ie",
+                                                            "phone": "(+353) 1 498 4000"
+                                                        },
+                                                        "subject": {
+                                                            "code": 74,
+                                                            "value": "Ukraine Hub"
+                                                        },
+                                                        "product": {
+                                                            "code": "UAK",
+                                                            "value": "Ukraine Hub Statistics"
+                                                        },
+                                                        "official": true,
+                                                        "copyright": {
+                                                            "name": "Office of the Revenue Commissioners",
+                                                            "code": "RCT",
+                                                            "href": "https://www.revenue.ie/"
+                                                        },
+                                                        "exceptional": false,
+                                                        "reservation": false,
+                                                        "archive": false,
+                                                        "experimental": false,
+                                                        "analytical": false
+                                                    },
+                                                    "id": [
+                                                        "STATISTIC",
+                                                        "TLIST(D1)",
+                                                        "C03430V04137"
+                                                    ],
+                                                    "label": "Number of Employments of Arrivals from Ukraine",
+                                                    "note": [
+                                                        "For more information, please go to the [url=https://www.cso.ie/en/statistics/population/arrivalsfromukraineinireland/]statistical release page[/url] on our website."
+                                                    ],
+                                                    "role": {
+                                                        "metric": [
+                                                            "STATISTIC"
+                                                        ],
+                                                        "time": [
+                                                            "TLIST(D1)"
+                                                        ],
+                                                        "geo": null,
+                                                        "classification": [
+                                                            "C03430V04137"
+                                                        ]
+                                                    },
+                                                    "size": [
+                                                        1,
+                                                        1,
+                                                        16
+                                                    ],
+                                                    "value": [
+                                                        27,
+                                                        56,
+                                                        78,
+                                                        80,
+                                                        100,
+                                                        111,
+                                                        140,
+                                                        144,
+                                                        193,
+                                                        238,
+                                                        308,
+                                                        396,
+                                                        450,
+                                                        793,
+                                                        2771,
+                                                        5885
+                                                    ],
+                                                    "version": "2.0"
+                                                }
+                                            },
+                                            "data": [
+
+                                            ],
+                                            "unit": [
+                                                "Number",
+                                                "Number",
+                                                "Number",
+                                                "Number",
+                                                "Number",
+                                                "Number",
+                                                "Number",
+                                                "Number",
+                                                "Number",
+                                                "Number",
+                                                "Number",
+                                                "Number",
+                                                "Number",
+                                                "Number",
+                                                "Number"
+                                            ],
+                                            "decimal": [
+
+                                            ],
+                                            "fluidTime": [
+
+                                            ],
+                                            "fill": false
+                                        }
+                                    ],
+                                    "null": ".."
+                                },
+                                "options": {
+                                    "responsive": true,
+                                    "maintainAspectRatio": false,
+                                    "title": {
+                                        "display": true,
+                                        "text": [
+                                            ""
+                                        ]
+                                    },
+                                    "tooltips": {
+                                        "mode": "index",
+                                        "callbacks": {
+
+                                        }
+                                    },
+                                    "hover": {
+                                        "mode": "nearest",
+                                        "intersect": true
+                                    },
+                                    "scales": {
+                                        "xAxes": [
+                                            {
+                                                "ticks": {
+                                                    "beginAtZero": false,
+                                                    "maxTicksLimit": null
+                                                },
+                                                "gridLines": {
+                                                    "display": false
+                                                },
+                                                "scaleLabel": {
+                                                    "display": false,
+                                                    "labelString": null
+                                                },
+                                                "stacked": false
+                                            }
+                                        ],
+                                        "yAxes": [
+                                            {
+                                                "display": true,
+                                                "position": "left",
+                                                "id": "y-axis-1",
+                                                "ticks": {
+                                                    "beginAtZero": false
+                                                },
+                                                "callback": null,
+                                                "scaleLabel": {
+                                                    "display": false,
+                                                    "labelString": null
+                                                },
+                                                "stacked": false
+                                            }
+                                        ]
+                                    },
+                                    "plugins": {
+                                        "stacked100": {
+                                            "enable": false
+                                        },
+                                        "colorschemes": {
+                                            "scheme": [
+                                                "#405381",
+                                                "#5BC1A5",
+                                                "#FCBE72",
+                                                "#0091AB",
+                                                "#90989F",
+                                                "#3D5999",
+                                                "#C6CC5C",
+                                                "#579599",
+                                                "#FBAA34",
+                                                "#007780",
+                                                "#B9BEC3",
+                                                "#00AF86",
+                                                "#6BC2C2",
+                                                "#00758C",
+                                                "#FCB053",
+                                                "#6A7794",
+                                                "#A3CCC1",
+                                                "#F68B58",
+                                                "#36A0B3"
+                                            ]
+                                        }
+                                    },
+                                    "legend": {
+                                        "display": true,
+                                        "position": "bottom"
+                                    },
+                                    "elements": {
+                                        "line": {
+                                            "tension": 0.4
+                                        }
+                                    },
+                                    "updated": null,
+                                    "layout": {
+                                        "padding": {
+                                            "left": 0,
+                                            "right": 0,
+                                            "top": 0,
+                                            "bottom": 22
+                                        }
+                                    }
+                                },
+                                "plugins": [
+                                    {
+
+                                    }
+                                ]
+                            });</script>
+                    <div id="pxwidget9728966891" class="pxwidget"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-12">
+            <div class="card">
+                <div class="card-header bg-primary text-light">
+                    <span>Location of Employers</span>
+                </div>
+                <div class="card-body">
+                    <div id="pxwidget6281235231" class="pxwidget"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Page specific CSS -->
+<link rel="stylesheet" href="entity/ukrainearrivalsresponse/theme/employment/css/employment.css">
+
+
+<!-- Page specific JS -->
+<script src="entity/ukrainearrivalsresponse/theme/employment/js/employment.library.js"></script>
+
+
+<script src="entity/ukrainearrivalsresponse/theme/employment/js/employment.js"></script>

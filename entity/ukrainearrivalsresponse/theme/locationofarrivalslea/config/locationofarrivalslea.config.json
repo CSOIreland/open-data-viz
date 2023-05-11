@@ -1,0 +1,1107 @@
+{
+    "numArrivalsCounty": {
+        "query": {
+            "class": "query",
+            "id": [
+                "STATISTIC",
+                "TLIST(D1)",
+                "C03788V04538"
+            ],
+            "dimension": {
+                "STATISTIC": {
+                    "category": {
+                        "index": []
+                    }
+                },
+                "TLIST(D1)": {
+                    "category": {
+                        "index": []
+                    }
+                },
+                "C03788V04538": {
+                    "category": {
+                        "index": []
+                    }
+                }
+            },
+            "extension": {
+                "pivot": null,
+                "codes": false,
+                "language": {
+                    "code": "en"
+                },
+                "format": {
+                    "type": "JSON-stat",
+                    "version": "2.0"
+                },
+                "matrix": "UA34"
+            },
+            "version": "2.0"
+        }
+    },
+    "numArrivalsLea": {
+        "query": {
+            "class": "query",
+            "id": [
+                "STATISTIC",
+                "TLIST(D1)",
+                "C03877V04628"
+            ],
+            "dimension": {
+                "STATISTIC": {
+                    "category": {
+                        "index": []
+                    }
+                },
+                "TLIST(D1)": {
+                    "category": {
+                        "index": []
+                    }
+                },
+                "C03877V04628": {
+                    "category": {
+                        "index": []
+                    }
+                }
+            },
+            "extension": {
+                "pivot": null,
+                "codes": false,
+                "language": {
+                    "code": "en"
+                },
+                "format": {
+                    "type": "JSON-stat",
+                    "version": "2.0"
+                },
+                "matrix": "UA05"
+            },
+            "version": "2.0"
+        }
+    },
+    "headlineData": [
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "TLIST(D1)",
+                    "C03788V04538"
+                ],
+                "dimension": {
+                    "TLIST(D1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C03788V04538": {
+                        "category": {
+                            "index": [
+                                "IE0"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": false,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA34"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-location-of-arrivals-lea [name=location-of-arrivals-lea-table] [name=arrivals-total]"
+        }
+    ],
+    "chart": {
+        "countyByNumberOfArrivals": {
+            "autoupdate": true,
+            "type": "horizontalBar",
+            "copyright": true,
+            "link": "https://data.cso.ie/table/UA34",
+            "sort": true,
+            "metadata": {
+                "xAxis": {
+                    "C03788V04538": [],
+                    "role": "geo"
+                },
+                "fluidTime": [],
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA34",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "data": {
+                "labels": [],
+                "datasets": [
+                    {
+                        "label": "County by number of arrivals",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "TLIST(D1)"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA34C01"
+                                                    ]
+                                                }
+                                            },
+                                            "TLIST(D1)": {
+                                                "category": {
+                                                    "index": [
+                                                        "2022M11D07"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA34",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [
+                            0
+                        ],
+                        "fill": false
+                    }
+                ],
+                "null": ".."
+            },
+            "options": {
+                "responsive": true,
+                "maintainAspectRatio": false,
+                "title": {
+                    "display": true,
+                    "text": [
+                        ""
+                    ]
+                },
+                "tooltips": {
+                    "mode": "index",
+                    "callbacks": {}
+                },
+                "hover": {
+                    "mode": "nearest",
+                    "intersect": true
+                },
+                "scales": {
+                    "xAxes": [
+                        {
+                            "ticks": {
+                                "beginAtZero": false,
+                                "maxTicksLimit": null
+                            },
+                            "gridLines": {
+                                "display": false
+                            },
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ],
+                    "yAxes": [
+                        {
+                            "display": true,
+                            "position": "left",
+                            "id": "y-axis-1",
+                            "ticks": {
+                                "beginAtZero": false
+                            },
+                            "callback": null,
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ]
+                },
+                "plugins": {
+                    "stacked100": {
+                        "enable": false
+                    },
+                    "colorschemes": {
+                        "scheme": [
+                            "#405381",
+                            "#5BC1A5",
+                            "#FCBE72",
+                            "#0091AB",
+                            "#90989F",
+                            "#3D5999",
+                            "#C6CC5C",
+                            "#579599",
+                            "#FBAA34",
+                            "#007780",
+                            "#B9BEC3",
+                            "#00AF86",
+                            "#6BC2C2",
+                            "#00758C",
+                            "#FCB053",
+                            "#6A7794",
+                            "#A3CCC1",
+                            "#F68B58",
+                            "#36A0B3"
+                        ]
+                    }
+                },
+                "legend": {
+                    "display": true,
+                    "position": "bottom"
+                },
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": "2022-11-21T11:00:00Z",
+                "layout": {
+                    "padding": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 22
+                    }
+                }
+            },
+            "plugins": [
+                {}
+            ]
+        },
+        "leaByNumberOfArrivals": {
+            "autoupdate": true,
+            "type": "horizontalBar",
+            "copyright": true,
+            "link": "https://data.cso.ie/table/UA05",
+            "sort": true,
+            "metadata": {
+                "xAxis": {
+                    "C03877V04628": [],
+                    "role": "geo"
+                },
+                "fluidTime": [],
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA05",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "data": {
+                "labels": [],
+                "datasets": [
+                    {
+                        "label": "LEA by number of arrivals",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "TLIST(D1)"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA05C01"
+                                                    ]
+                                                }
+                                            },
+                                            "TLIST(D1)": {
+                                                "category": {
+                                                    "index": [
+                                                        "2022M11D07"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA05",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [
+                            0
+                        ],
+                        "fill": false
+                    }
+                ],
+                "null": ".."
+            },
+            "options": {
+                "responsive": true,
+                "maintainAspectRatio": false,
+                "title": {
+                    "display": false
+                },
+                "tooltips": {
+                    "mode": "index",
+                    "callbacks": {}
+                },
+                "hover": {
+                    "mode": "nearest",
+                    "intersect": true
+                },
+                "scales": {
+                    "xAxes": [
+                        {
+                            "ticks": {
+                                "beginAtZero": false,
+                                "maxTicksLimit": null
+                            },
+                            "gridLines": {
+                                "display": false
+                            },
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ],
+                    "yAxes": [
+                        {
+                            "display": true,
+                            "position": "left",
+                            "id": "y-axis-1",
+                            "ticks": {
+                                "beginAtZero": false
+                            },
+                            "callback": null,
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ]
+                },
+                "plugins": {
+                    "stacked100": {
+                        "enable": false
+                    },
+                    "colorschemes": {
+                        "scheme": [
+                            "#405381",
+                            "#5BC1A5",
+                            "#FCBE72",
+                            "#0091AB",
+                            "#90989F",
+                            "#3D5999",
+                            "#C6CC5C",
+                            "#579599",
+                            "#FBAA34",
+                            "#007780",
+                            "#B9BEC3",
+                            "#00AF86",
+                            "#6BC2C2",
+                            "#00758C",
+                            "#FCB053",
+                            "#6A7794",
+                            "#A3CCC1",
+                            "#F68B58",
+                            "#36A0B3"
+                        ]
+                    }
+                },
+                "legend": {
+                    "display": true,
+                    "position": "bottom"
+                },
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": "2022-11-14T11:00:00Z",
+                "layout": {
+                    "padding": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 22
+                    }
+                }
+            },
+            "plugins": [
+                {}
+            ]
+        }
+    },
+    "table": {
+        "countyByNumberOfArrivals": {
+            "autoupdate": true,
+            "fluidTime": [
+                0
+            ],
+            "copyright": true,
+            "title": "",
+            "link": "https://data.cso.ie/table/UA34",
+            "pivot": null,
+            "hideColumns": [
+                "STATISTIC",
+                "UNIT"
+            ],
+            "internationalisation": {
+                "unit": "Unit",
+                "value": "Value"
+            },
+            "defaultContent": "..",
+            "data": {
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadDataset",
+                            "params": {
+                                "class": "query",
+                                "id": [
+                                    "TLIST(D1)",
+                                    "C03788V04538"
+                                ],
+                                "dimension": {
+                                    "TLIST(D1)": {
+                                        "category": {
+                                            "index": [
+                                                "2023M02D13"
+                                            ]
+                                        }
+                                    },
+                                    "C03788V04538": {
+                                        "category": {
+                                            "index": [
+                                                "2ae19629-1450-13a3-e055-000000000001",
+                                                "2ae19629-1451-13a3-e055-000000000001",
+                                                "2ae19629-1448-13a3-e055-000000000001",
+                                                "2ae19629-143d-13a3-e055-000000000001",
+                                                "2ae19629-1452-13a3-e055-000000000001",
+                                                "2ae19629-144f-13a3-e055-000000000001",
+                                                "2ae19629-1453-13a3-e055-000000000001",
+                                                "2ae19629-1455-13a3-e055-000000000001",
+                                                "2ae19629-1456-13a3-e055-000000000001",
+                                                "2ae19629-1454-13a3-e055-000000000001",
+                                                "2ae19629-1441-13a3-e055-000000000001",
+                                                "2ae19629-1442-13a3-e055-000000000001",
+                                                "2ae19629-1440-13a3-e055-000000000001",
+                                                "2ae19629-143f-13a3-e055-000000000001",
+                                                "2ae19629-143e-13a3-e055-000000000001",
+                                                "2ae19629-1444-13a3-e055-000000000001",
+                                                "2ae19629-1445-13a3-e055-000000000001",
+                                                "2ae19629-1443-13a3-e055-000000000001",
+                                                "2ae19629-1446-13a3-e055-000000000001",
+                                                "2ae19629-1447-13a3-e055-000000000001",
+                                                "2ae19629-1449-13a3-e055-000000000001",
+                                                "2ae19629-144a-13a3-e055-000000000001",
+                                                "2ae19629-144b-13a3-e055-000000000001",
+                                                "2ae19629-144e-13a3-e055-000000000001",
+                                                "2ae19629-144c-13a3-e055-000000000001",
+                                                "2ae19629-144d-13a3-e055-000000000001"
+                                            ]
+                                        }
+                                    }
+                                },
+                                "extension": {
+                                    "pivot": null,
+                                    "codes": false,
+                                    "language": {
+                                        "code": "en"
+                                    },
+                                    "format": {
+                                        "type": "JSON-stat",
+                                        "version": "2.0"
+                                    },
+                                    "matrix": "UA34"
+                                },
+                                "version": "2.0",
+                                "m2m": false
+                            }
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "metadata": {
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA34",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "options": {
+                "language": {
+                    "decimal": ".",
+                    "emptyTable": "No data available in table",
+                    "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+                    "infoEmpty": "Showing 0 to 0 of 0 entries",
+                    "infoFiltered": "(filtered from _MAX_ total entries)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Show _MENU_ entries",
+                    "loadingRecords": "Loading...",
+                    "processing": "Processing...",
+                    "search": "Search:",
+                    "zeroRecords": "No matching records found",
+                    "paginate": {
+                        "first": "First",
+                        "last": "Last",
+                        "next": "Next",
+                        "previous": "Previous"
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                },
+                "search": {
+                    "search": ""
+                },
+                "dom": "Bltip",
+                "responsive": true,
+                "buttons": [
+                    {
+                        "extend": "csv",
+                        "text": "Download CSV",
+                        "className": "export-button",
+                        "title": "UA34.20230303T090328",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    },
+                    {
+                        "extend": "print",
+                        "text": "Print",
+                        "className": "export-button",
+                        "title": "",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    }
+                ],
+                "order": [
+                    [
+                        4,
+                        "desc"
+                    ]
+                ]
+            }
+        },
+        "leaByNumberOfArrivals": {
+            "autoupdate": true,
+            "fluidTime": [
+                0
+            ],
+            "copyright": true,
+            "title": "",
+            "link": "https://data.cso.ie/table/UA05",
+            "pivot": null,
+            "hideColumns": [
+                "STATISTIC",
+                "UNIT"
+            ],
+            "internationalisation": {
+                "unit": "Unit",
+                "value": "Value"
+            },
+            "defaultContent": "..",
+            "data": {
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadDataset",
+                            "params": {
+                                "class": "query",
+                                "id": [
+                                    "STATISTIC",
+                                    "TLIST(D1)",
+                                    "C03877V04628"
+                                ],
+                                "dimension": {
+                                    "STATISTIC": {
+                                        "category": {
+                                            "index": [
+                                                "UA05C01"
+                                            ]
+                                        }
+                                    },
+                                    "TLIST(D1)": {
+                                        "category": {
+                                            "index": [
+                                                "2023M02D13"
+                                            ]
+                                        }
+                                    },
+                                    "C03877V04628": {
+                                        "category": {
+                                            "index": [
+                                                "2ae19629-3eff-13a3-e055-000000000001",
+                                                "2ae19629-3f00-13a3-e055-000000000001",
+                                                "2ae19629-3f01-13a3-e055-000000000001",
+                                                "2ae19629-3f02-13a3-e055-000000000001",
+                                                "2ae19629-3f03-13a3-e055-000000000001",
+                                                "2ae19629-3ef4-13a3-e055-553330000001",
+                                                "2ae19629-3f04-13a3-e055-000000000001",
+                                                "2ae19629-3f05-13a3-e055-000000000001",
+                                                "2ae19629-3f06-13a3-e055-000000000001",
+                                                "2ae19629-3f07-13a3-e055-000000000001",
+                                                "2ae19629-3f08-13a3-e055-000000000001",
+                                                "2ae19629-3f09-13a3-e055-000000000001",
+                                                "2ae19629-3f0a-13a3-e055-000000000001",
+                                                "2ae19629-3f0b-13a3-e055-000000000001",
+                                                "2ae19629-3f0c-13a3-e055-000000000001",
+                                                "2ae19629-3f0d-13a3-e055-000000000001",
+                                                "2ae19629-3f0e-13a3-e055-000000000001",
+                                                "2ae19629-3f0f-13a3-e055-000000000001",
+                                                "2ae19629-3f10-13a3-e055-000000000001",
+                                                "2ae19629-3f11-13a3-e055-000000000001",
+                                                "2ae19629-3f12-13a3-e055-000000000001",
+                                                "2ae19629-3f13-13a3-e055-000000000001",
+                                                "2ae19629-3ef4-13a3-e055-997550000001",
+                                                "2ae19629-3f14-13a3-e055-000000000001",
+                                                "2ae19629-3f15-13a3-e055-000000000001",
+                                                "2ae19629-3f16-13a3-e055-000000000001",
+                                                "2ae19629-3f17-13a3-e055-000000000001",
+                                                "2ae19629-3ef4-13a3-e055-111110000001",
+                                                "2ae19629-3ef4-13a3-e055-999110000001",
+                                                "2ae19629-3f18-13a3-e055-000000000001",
+                                                "2ae19629-3f19-13a3-e055-000000000001",
+                                                "2ae19629-3f1a-13a3-e055-000000000001",
+                                                "2ae19629-3f1b-13a3-e055-000000000001",
+                                                "2ae19629-3f1c-13a3-e055-000000000001",
+                                                "2ae19629-3f1d-13a3-e055-000000000001",
+                                                "2ae19629-3f1e-13a3-e055-000000000001",
+                                                "2ae19629-3f1f-13a3-e055-000000000001",
+                                                "2ae19629-3f20-13a3-e055-000000000001",
+                                                "2ae19629-3f21-13a3-e055-000000000001",
+                                                "2ae19629-3f22-13a3-e055-000000000001",
+                                                "2ae19629-3f23-13a3-e055-000000000001",
+                                                "2ae19629-3f24-13a3-e055-000000000001",
+                                                "2ae19629-3f25-13a3-e055-000000000001",
+                                                "2ae19629-3f26-13a3-e055-000000000001",
+                                                "2ae19629-3f27-13a3-e055-000000000001",
+                                                "2ae19629-3f28-13a3-e055-000000000001",
+                                                "2ae19629-3ef4-13a3-e055-007589300001",
+                                                "2ae19629-3f29-13a3-e055-000000000001",
+                                                "2ae19629-3f2a-13a3-e055-000000000001",
+                                                "2ae19629-3f2b-13a3-e055-000000000001",
+                                                "2ae19629-3f2c-13a3-e055-000000000001",
+                                                "2ae19629-3f2d-13a3-e055-000000000001",
+                                                "2ae19629-3f2e-13a3-e055-000000000001",
+                                                "2ae19629-3f2f-13a3-e055-000000000001",
+                                                "2ae19629-3f30-13a3-e055-000000000001",
+                                                "2ae19629-3ef4-13a3-e055-662310000001",
+                                                "2ae19629-3ef4-13a3-e055-000005500001",
+                                                "2ae19629-3ef4-13a3-e055-000005400001",
+                                                "2ae19629-3f31-13a3-e055-000000000001",
+                                                "2ae19629-3f32-13a3-e055-000000000001",
+                                                "2ae19629-3ef4-13a3-e055-000005300001",
+                                                "2ae19629-3f33-13a3-e055-000000000001",
+                                                "2ae19629-3f34-13a3-e055-000000000001",
+                                                "2ae19629-3f35-13a3-e055-000000000001",
+                                                "2ae19629-3f36-13a3-e055-000000000001",
+                                                "2ae19629-3f37-13a3-e055-000000000001",
+                                                "2ae19629-3f38-13a3-e055-000000000001",
+                                                "2ae19629-3ef4-13a3-e055-900000000111",
+                                                "2ae19629-3f39-13a3-e055-000000000001",
+                                                "2ae19629-3f3a-13a3-e055-000000000001",
+                                                "2ae19629-3f3b-13a3-e055-000000000001",
+                                                "2ae19629-3f3c-13a3-e055-000000000001",
+                                                "2ae19629-3ef4-13a3-e055-000024000001",
+                                                "2ae19629-3ef4-13a3-e055-999550000001",
+                                                "2ae19629-3f3d-13a3-e055-000000000001",
+                                                "2ae19629-3f3e-13a3-e055-000000000001",
+                                                "2ae19629-3ef4-13a3-e055-000000000001",
+                                                "2ae19629-3ef5-13a3-e055-000000000001",
+                                                "2ae19629-3ef6-13a3-e055-000000000001",
+                                                "2ae19629-3ef4-13a3-e055-999220000001",
+                                                "2ae19629-3ef7-13a3-e055-000000000001",
+                                                "2ae19629-3ef8-13a3-e055-000000000001",
+                                                "2ae19629-3ef9-13a3-e055-000000000001",
+                                                "2ae19629-3efa-13a3-e055-000000000001",
+                                                "2ae19629-3efb-13a3-e055-000000000001",
+                                                "2ae19629-3efc-13a3-e055-000000000001",
+                                                "2ae19629-3efd-13a3-e055-000000000001",
+                                                "2ae19629-3f3f-13a3-e055-000000000001",
+                                                "2ae19629-3f40-13a3-e055-000000000001",
+                                                "2ae19629-3f4e-13a3-e055-000000000001",
+                                                "2ae19629-3f4f-13a3-e055-000000000001",
+                                                "2ae19629-3f50-13a3-e055-000000000001",
+                                                "2ae19629-3f51-13a3-e055-000000000001",
+                                                "2ae19629-3f52-13a3-e055-000000000001",
+                                                "2ae19629-3f53-13a3-e055-000000000001",
+                                                "2ae19629-3f54-13a3-e055-000000000001",
+                                                "2ae19629-3f55-13a3-e055-000000000001",
+                                                "2ae19629-3ef4-13a3-e055-997440000001",
+                                                "2ae19629-3ef4-13a3-e055-000002200001",
+                                                "2ae19629-3ef4-13a3-e055-999770000001",
+                                                "2ae19629-3f56-13a3-e055-000000000001",
+                                                "2ae19629-3f57-13a3-e055-000000000001",
+                                                "2ae19629-3f58-13a3-e055-000000000001",
+                                                "2ae19629-3f59-13a3-e055-000000000001",
+                                                "2ae19629-3f5a-13a3-e055-000000000001",
+                                                "2ae19629-3f5b-13a3-e055-000000000001",
+                                                "2ae19629-3f5c-13a3-e055-000000000001",
+                                                "2ae19629-3f5d-13a3-e055-000000000001",
+                                                "2ae19629-3f5e-13a3-e055-000000000001",
+                                                "2ae19629-3ef4-13a3-e055-000005200001",
+                                                "2ae19629-3ef4-13a3-e055-999660000001",
+                                                "2ae19629-3f5f-13a3-e055-000000000001",
+                                                "2ae19629-3f60-13a3-e055-000000000001",
+                                                "2ae19629-3f61-13a3-e055-000000000001",
+                                                "2ae19629-3f62-13a3-e055-000000000001",
+                                                "2ae19629-3ef4-13a3-e055-000000044001",
+                                                "2ae19629-3f63-13a3-e055-000000000001",
+                                                "2ae19629-3f64-13a3-e055-000000000001",
+                                                "2ae19629-3f65-13a3-e055-000000000001",
+                                                "2ae19629-3f66-13a3-e055-000000000001",
+                                                "2ae19629-3f67-13a3-e055-000000000001",
+                                                "2ae19629-3f68-13a3-e055-000000000001",
+                                                "2ae19629-3f41-13a3-e055-000000000001",
+                                                "2ae19629-3f42-13a3-e055-000000000001",
+                                                "2ae19629-3ef4-13a3-e055-222220000001",
+                                                "2ae19629-3ef4-13a3-e055-444440000001",
+                                                "2ae19629-3ef4-13a3-e055-774560000001",
+                                                "2ae19629-3ef4-13a3-e055-999440000001",
+                                                "2ae19629-3ef4-13a3-e055-999990000001",
+                                                "2ae19629-3ef4-13a3-e055-000001100001",
+                                                "2ae19629-3ef4-13a3-e055-000012000001",
+                                                "2ae19629-3f43-13a3-e055-000000000001",
+                                                "2ae19629-3f44-13a3-e055-000000000001",
+                                                "2ae19629-3f45-13a3-e055-000000000001",
+                                                "2ae19629-3f46-13a3-e055-000000000001",
+                                                "2ae19629-3f47-13a3-e055-000000000001",
+                                                "2ae19629-3ef4-13a3-e055-700012002301",
+                                                "2ae19629-3ef4-13a3-e055-075000000001",
+                                                "2ae19629-3f48-13a3-e055-000000000001",
+                                                "2ae19629-3f49-13a3-e055-000000000001",
+                                                "2ae19629-3f4a-13a3-e055-000000000001",
+                                                "2ae19629-3f4b-13a3-e055-000000000001",
+                                                "2ae19629-3f4c-13a3-e055-000000000001",
+                                                "2ae19629-3ef4-13a3-e055-999330000001",
+                                                "2ae19629-3ef4-13a3-e055-994560000001",
+                                                "2ae19629-3f4d-13a3-e055-000000000001",
+                                                "2ae19629-3f69-13a3-e055-000000000001",
+                                                "2ae19629-3f6a-13a3-e055-000000000001",
+                                                "2ae19629-3f6b-13a3-e055-000000000001",
+                                                "2ae19629-3f6c-13a3-e055-000000000001",
+                                                "2ae19629-3f6d-13a3-e055-000000000001",
+                                                "2ae19629-3f6e-13a3-e055-000000000001",
+                                                "2ae19629-3ef4-13a3-e055-883360000001",
+                                                "2ae19629-3ef4-13a3-e055-000005600001",
+                                                "2ae19629-3f6f-13a3-e055-000000000001",
+                                                "2ae19629-3f70-13a3-e055-000000000001",
+                                                "2ae19629-3f71-13a3-e055-000000000001",
+                                                "2ae19629-3f72-13a3-e055-000000000001",
+                                                "2ae19629-3f73-13a3-e055-000000000001",
+                                                "2ae19629-3ef4-13a3-e055-999880000001",
+                                                "2ae19629-3ef4-13a3-e055-994510000001",
+                                                "2ae19629-3ef4-13a3-e055-777770000001",
+                                                "2ae19629-3f74-13a3-e055-000000000001",
+                                                "2ae19629-3f75-13a3-e055-000000000001",
+                                                "2ae19629-3f76-13a3-e055-000000000001",
+                                                "2ae19629-3f77-13a3-e055-000000000001"
+                                            ]
+                                        }
+                                    }
+                                },
+                                "extension": {
+                                    "pivot": null,
+                                    "codes": false,
+                                    "language": {
+                                        "code": "en"
+                                    },
+                                    "format": {
+                                        "type": "JSON-stat",
+                                        "version": "2.0"
+                                    },
+                                    "matrix": "UA05"
+                                },
+                                "version": "2.0",
+                                "m2m": false
+                            }
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "metadata": {
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA05",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "options": {
+                "language": {
+                    "decimal": ".",
+                    "emptyTable": "No data available in table",
+                    "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+                    "infoEmpty": "Showing 0 to 0 of 0 entries",
+                    "infoFiltered": "(filtered from _MAX_ total entries)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Show _MENU_ entries",
+                    "loadingRecords": "Loading...",
+                    "processing": "Processing...",
+                    "search": "Search:",
+                    "zeroRecords": "No matching records found",
+                    "paginate": {
+                        "first": "First",
+                        "last": "Last",
+                        "next": "Next",
+                        "previous": "Previous"
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                },
+                "search": {
+                    "search": ""
+                },
+                "dom": "Bltip",
+                "responsive": true,
+                "buttons": [
+                    {
+                        "extend": "csv",
+                        "text": "Download CSV",
+                        "className": "export-button",
+                        "title": "UA05.20230303T100354",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    },
+                    {
+                        "extend": "print",
+                        "text": "Print",
+                        "className": "export-button",
+                        "title": "",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    }
+                ],
+                "order": [
+                    [
+                        4,
+                        "desc"
+                    ]
+                ]
+            }
+        }
+    },
+    "map": {
+        "locationOfArrivals": {
+            "autoupdate": true,
+            "mapDimension": "C03877V04628",
+            "copyright": true,
+            "link": "https://data.cso.ie/table/UA05",
+            "title": null,
+            "borders": true,
+            "colorScale": "red",
+            "fullScreen": {
+                "title": "View Fullscreen",
+                "titleCancel": "Exit Fullscreen"
+            },
+            "data": {
+                "datasets": [
+                    {
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "TLIST(D1)"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA05C01"
+                                                    ]
+                                                }
+                                            },
+                                            "TLIST(D1)": {
+                                                "category": {
+                                                    "index": []
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA05"
+                                        },
+                                        "version": "2.0",
+                                        "m2m": false
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "fluidTime": [
+                            0
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA05",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "options": {
+                "mode": "q"
+            },
+            "baseMap": {
+                "leaflet": [],
+                "esri": [
+                    {
+                        "url": "https://utility.arcgis.com/usrsvcs/servers/88f1db9e4ae04df69e499223b8295843/rest/services/MapGeniePremiumWM/MapServer"
+                    }
+                ]
+            }
+        }
+    }
+}

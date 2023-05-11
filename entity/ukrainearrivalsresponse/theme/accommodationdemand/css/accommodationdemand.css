@@ -1,0 +1,7 @@
+/*******************************************************************************
+Custom CSS application specific
+*******************************************************************************/
+
+#visual-ukraine-arrivals-accommodation-demand-percentage-occupied-chart-container .pxwidget-canvas-wrapper {
+    height: 35vh;
+}

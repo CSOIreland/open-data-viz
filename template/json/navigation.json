@@ -8,6 +8,20 @@
                 "path": "entity/cpi",
                 "name": "cpi",
                 "menu": []
+            },
+            {
+                "label": "Measuring Ireland's Progress",
+                "icon": "fa-regular fa-flag",
+                "path": "entity/mip",
+                "name": "mip",
+                "menu": []
+            },
+            {
+                "label": "Ukraine Arrivals Response",
+                "icon": "fa-regular fa-flag",
+                "path": "entity/ukrainearrivalsresponse",
+                "name": "uar",
+                "menu": []
             }
         ]
     }

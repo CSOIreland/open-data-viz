@@ -1,0 +1,925 @@
+{
+    "headlineData": [
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "TLIST(W1)",
+                    "C03956V04714"
+                ],
+                "dimension": {
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C03956V04714": {
+                        "category": {
+                            "index": [
+                                "110"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": false,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA08"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-social-welfare-payment [name=social-welfare-payment-headline-table] [name=personal-allowance-total]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "TLIST(W1)",
+                    "C03956V04714"
+                ],
+                "dimension": {
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C03956V04714": {
+                        "category": {
+                            "index": [
+                                "300"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": false,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA08"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-social-welfare-payment [name=social-welfare-payment-headline-table] [name=adult-dependant-allowance-total]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "TLIST(W1)",
+                    "C03956V04714"
+                ],
+                "dimension": {
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C03956V04714": {
+                        "category": {
+                            "index": [
+                                "Y600"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": false,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA08"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-social-welfare-payment [name=social-welfare-payment-headline-table] [name=child-dependent-allowance-total]"
+        },
+        {
+            "query": {
+                "class": "query",
+                "id": [
+                    "TLIST(W1)",
+                    "C03956V04714"
+                ],
+                "dimension": {
+                    "TLIST(W1)": {
+                        "category": {
+                            "index": []
+                        }
+                    },
+                    "C03956V04714": {
+                        "category": {
+                            "index": [
+                                "200"
+                            ]
+                        }
+                    }
+                },
+                "extension": {
+                    "pivot": null,
+                    "codes": false,
+                    "language": {
+                        "code": "en"
+                    },
+                    "format": {
+                        "type": "JSON-stat",
+                        "version": "2.0"
+                    },
+                    "matrix": "UA08"
+                },
+                "version": "2.0"
+            },
+            "element": "#visual-ukraine-social-welfare-payment [name=social-welfare-payment-headline-table] [name=child-benefit-total]"
+        }
+    ],
+    "chart": {
+        "socialWelfareSchemes": {
+            "autoupdate": true,
+            "type": "line",
+            "copyright": true,
+            "link": "https://data.cso.ie/table/UA08",
+            "sort": false,
+            "metadata": {
+                "xAxis": {
+                    "TLIST(W1)": [],
+                    "role": "time"
+                },
+                "fluidTime": [],
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA08",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "data": {
+                "labels": [],
+                "datasets": [
+                    {
+                        "label": "Personal Allowance Cumulative",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "C03956V04714"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA08C01"
+                                                    ]
+                                                }
+                                            },
+                                            "C03956V04714": {
+                                                "category": {
+                                                    "index": [
+                                                        "110"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA08",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    },
+                    {
+                        "label": "Adult Dependent Allowance Cumulative",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "C03956V04714"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA08C01"
+                                                    ]
+                                                }
+                                            },
+                                            "C03956V04714": {
+                                                "category": {
+                                                    "index": [
+                                                        "300"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA08",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    },
+                    {
+                        "label": "Child Dependent Allowance Cumulative",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "C03956V04714"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA08C01"
+                                                    ]
+                                                }
+                                            },
+                                            "C03956V04714": {
+                                                "category": {
+                                                    "index": [
+                                                        "200"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA08",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    }
+                ],
+                "null": ".."
+            },
+            "options": {
+                "responsive": true,
+                "maintainAspectRatio": false,
+                "title": {
+                    "display": true,
+                    "text": [
+                        ""
+                    ]
+                },
+                "tooltips": {
+                    "mode": "index",
+                    "callbacks": {}
+                },
+                "hover": {
+                    "mode": "nearest",
+                    "intersect": true
+                },
+                "scales": {
+                    "xAxes": [
+                        {
+                            "ticks": {
+                                "beginAtZero": false,
+                                "maxTicksLimit": null
+                            },
+                            "gridLines": {
+                                "display": false
+                            },
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ],
+                    "yAxes": [
+                        {
+                            "display": true,
+                            "position": "left",
+                            "id": "y-axis-1",
+                            "ticks": {
+                                "beginAtZero": false
+                            },
+                            "callback": null,
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ]
+                },
+                "plugins": {
+                    "stacked100": {
+                        "enable": false
+                    },
+                    "colorschemes": {
+                        "scheme": [
+                            "#405381",
+                            "#5BC1A5",
+                            "#FCBE72",
+                            "#0091AB",
+                            "#90989F",
+                            "#3D5999",
+                            "#C6CC5C",
+                            "#579599",
+                            "#FBAA34",
+                            "#007780",
+                            "#B9BEC3",
+                            "#00AF86",
+                            "#6BC2C2",
+                            "#00758C",
+                            "#FCB053",
+                            "#6A7794",
+                            "#A3CCC1",
+                            "#F68B58",
+                            "#36A0B3"
+                        ]
+                    }
+                },
+                "legend": {
+                    "display": true,
+                    "position": "bottom"
+                },
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": "2022-06-02T11:00:00Z",
+                "layout": {
+                    "padding": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 22
+                    }
+                }
+            },
+            "plugins": [
+                {}
+            ]
+        },
+        "childBenefit": {
+            "autoupdate": true,
+            "type": "line",
+            "copyright": true,
+            "link": "https://data.cso.ie/table/UA09",
+            "sort": false,
+            "metadata": {
+                "xAxis": {
+                    "TLIST(W1)": [],
+                    "role": "time"
+                },
+                "fluidTime": [],
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA09",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "data": {
+                "labels": [],
+                "datasets": [
+                    {
+                        "label": "Child Benefits Cumulative",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC",
+                                            "C03957V04715"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
+                                                "category": {
+                                                    "index": [
+                                                        "UA09C01"
+                                                    ]
+                                                }
+                                            },
+                                            "C03957V04715": {
+                                                "category": {
+                                                    "index": [
+                                                        "20"
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
+                                            },
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA09",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
+                    }
+                ],
+                "null": ".."
+            },
+            "options": {
+                "responsive": true,
+                "maintainAspectRatio": false,
+                "title": {
+                    "display": true,
+                    "text": [
+                        ""
+                    ]
+                },
+                "tooltips": {
+                    "mode": "index",
+                    "callbacks": {}
+                },
+                "hover": {
+                    "mode": "nearest",
+                    "intersect": true
+                },
+                "scales": {
+                    "xAxes": [
+                        {
+                            "ticks": {
+                                "beginAtZero": false,
+                                "maxTicksLimit": null
+                            },
+                            "gridLines": {
+                                "display": false
+                            },
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ],
+                    "yAxes": [
+                        {
+                            "display": true,
+                            "position": "left",
+                            "id": "y-axis-1",
+                            "ticks": {
+                                "beginAtZero": false
+                            },
+                            "callback": null,
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ]
+                },
+                "plugins": {
+                    "stacked100": {
+                        "enable": false
+                    },
+                    "colorschemes": {
+                        "scheme": [
+                            "#405381",
+                            "#5BC1A5",
+                            "#FCBE72",
+                            "#0091AB",
+                            "#90989F",
+                            "#3D5999",
+                            "#C6CC5C",
+                            "#579599",
+                            "#FBAA34",
+                            "#007780",
+                            "#B9BEC3",
+                            "#00AF86",
+                            "#6BC2C2",
+                            "#00758C",
+                            "#FCB053",
+                            "#6A7794",
+                            "#A3CCC1",
+                            "#F68B58",
+                            "#36A0B3"
+                        ]
+                    }
+                },
+                "legend": {
+                    "display": true,
+                    "position": "bottom"
+                },
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": "2022-05-27T11:00:00Z",
+                "layout": {
+                    "padding": {
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "bottom": 22
+                    }
+                }
+            },
+            "plugins": [
+                {}
+            ]
+        }
+    },
+    "table": {
+        "socialWelfareSchemes": {
+            "autoupdate": true,
+            "fluidTime": [],
+            "copyright": true,
+            "title": "",
+            "link": "https://data.cso.ie/table/UA08",
+            "pivot": null,
+            "hideColumns": [
+                "STATISTIC",
+                "UNIT"
+            ],
+            "internationalisation": {
+                "unit": "Unit",
+                "value": "Value"
+            },
+            "defaultContent": "..",
+            "data": {
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadDataset",
+                            "params": {
+                                "class": "query",
+                                "id": [
+                                    "C03956V04714"
+                                ],
+                                "dimension": {
+                                    "C03956V04714": {
+                                        "category": {
+                                            "index": [
+                                                "110",
+                                                "200",
+                                                "300"
+                                            ]
+                                        }
+                                    }
+                                },
+                                "extension": {
+                                    "pivot": null,
+                                    "codes": false,
+                                    "language": {
+                                        "code": "en"
+                                    },
+                                    "format": {
+                                        "type": "JSON-stat",
+                                        "version": "2.0"
+                                    },
+                                    "matrix": "UA08"
+                                },
+                                "version": "2.0",
+                                "m2m": false
+                            }
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "metadata": {
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA08",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "options": {
+                "language": {
+                    "decimal": ".",
+                    "emptyTable": "No data available in table",
+                    "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+                    "infoEmpty": "Showing 0 to 0 of 0 entries",
+                    "infoFiltered": "(filtered from _MAX_ total entries)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Show _MENU_ entries",
+                    "loadingRecords": "Loading...",
+                    "processing": "Processing...",
+                    "search": "Search:",
+                    "zeroRecords": "No matching records found",
+                    "paginate": {
+                        "first": "First",
+                        "last": "Last",
+                        "next": "Next",
+                        "previous": "Previous"
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                },
+                "search": {
+                    "search": ""
+                },
+                "dom": "Bfltip",
+                "responsive": true,
+                "buttons": [
+                    {
+                        "extend": "csv",
+                        "text": "Download CSV",
+                        "className": "export-button",
+                        "title": "UA08.20230120T110130",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    },
+                    {
+                        "extend": "print",
+                        "text": "Print",
+                        "className": "export-button",
+                        "title": "",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    }
+                ],
+                "order": []
+            }
+        },
+        "childBenefit": {
+            "autoupdate": true,
+            "fluidTime": [],
+            "copyright": true,
+            "title": "",
+            "link": "https://data.cso.ie/table/UA09",
+            "pivot": null,
+            "hideColumns": [
+                "STATISTIC",
+                "C03957V04715",
+                "UNIT"
+            ],
+            "internationalisation": {
+                "unit": "Unit",
+                "value": "Value"
+            },
+            "defaultContent": "..",
+            "data": {
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadDataset",
+                            "params": {
+                                "class": "query",
+                                "id": [
+                                    "C03957V04715"
+                                ],
+                                "dimension": {
+                                    "C03957V04715": {
+                                        "category": {
+                                            "index": [
+                                                "20"
+                                            ]
+                                        }
+                                    }
+                                },
+                                "extension": {
+                                    "pivot": null,
+                                    "codes": false,
+                                    "language": {
+                                        "code": "en"
+                                    },
+                                    "format": {
+                                        "type": "JSON-stat",
+                                        "version": "2.0"
+                                    },
+                                    "matrix": "UA09"
+                                },
+                                "version": "2.0",
+                                "m2m": false
+                            }
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "metadata": {
+                "api": {
+                    "query": {
+                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": "UA09",
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "options": {
+                "language": {
+                    "decimal": ".",
+                    "emptyTable": "No data available in table",
+                    "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+                    "infoEmpty": "Showing 0 to 0 of 0 entries",
+                    "infoFiltered": "(filtered from _MAX_ total entries)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Show _MENU_ entries",
+                    "loadingRecords": "Loading...",
+                    "processing": "Processing...",
+                    "search": "Search:",
+                    "zeroRecords": "No matching records found",
+                    "paginate": {
+                        "first": "First",
+                        "last": "Last",
+                        "next": "Next",
+                        "previous": "Previous"
+                    },
+                    "aria": {
+                        "sortAscending": ": activate to sort column ascending",
+                        "sortDescending": ": activate to sort column descending"
+                    }
+                },
+                "search": {
+                    "search": ""
+                },
+                "dom": "Bfltip",
+                "responsive": true,
+                "buttons": [
+                    {
+                        "extend": "csv",
+                        "text": "Download CSV",
+                        "className": "export-button",
+                        "title": "UA09.20230120T110121",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    },
+                    {
+                        "extend": "print",
+                        "text": "Print",
+                        "className": "export-button",
+                        "title": "",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    }
+                ],
+                "order": []
+            }
+        }
+    }
+}
