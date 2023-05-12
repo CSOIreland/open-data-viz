@@ -20,6 +20,9 @@ const C_APP_URL_PXWIDGET_SNIPPET_2_4_2 = "https://cdn.jsdelivr.net/gh/CSOIreland
 const C_APP_URL_PXWIDGET_ISOGRAM_2_4_5 = "https://cdn.jsdelivr.net/gh/CSOIreland/PxWidget@2.4.5/js/isogram.min.js";
 const C_APP_URL_PXWIDGET_SNIPPET_2_4_5 = "https://cdn.jsdelivr.net/gh/CSOIreland/PxWidget@2.4.5/snippet.html";
 
+const C_APP_URL_PXWIDGET_ISOGRAM_2_4_6 = "https://cdn.jsdelivr.net/gh/CSOIreland/PxWidget@2.4.6/js/isogram.min.js";
+const C_APP_URL_PXWIDGET_SNIPPET_2_4_6 = "https://cdn.jsdelivr.net/gh/CSOIreland/PxWidget@2.4.6/snippet.html";
+
 const C_APP_URL_PXWIDGET_ISOGRAM_1_1_2 = "https://cdn.jsdelivr.net/gh/DisseminationNI/PxWidget@1.1.2/js/isogram.min.js";
 const C_APP_URL_PXWIDGET_SNIPPET_1_1_2 = "https://cdn.jsdelivr.net/gh/DisseminationNI/PxWidget@1.1.2/snippet.html";
 

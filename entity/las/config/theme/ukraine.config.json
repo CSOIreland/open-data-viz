@@ -1,14 +1,16 @@
 [
     {
-        "title": "Standardised Attendance Rate – Emergency Attendances",
+        "title": "Number of arrivals from Ukraine",
         "table": {
             "autoupdate": true,
             "fluidTime": [],
             "copyright": true,
-            "title": false,
-            "link": "https://data.nisra.gov.uk/table/",
-            "pivot": "GENDER",
-            "removeRedundantColumns": true,
+            "title": "",
+            "link": "https://demo-pxstat.cso.ie/table/",
+            "pivot": "STATISTIC",
+            "hideColumns": [
+                "C03855V04605"
+            ],
             "internationalisation": {
                 "unit": "Unit",
                 "value": "Value"
@@ -17,24 +19,20 @@
             "data": {
                 "api": {
                     "query": {
-                        "url": "https://ws-data.nisra.gov.uk/public/api.jsonrpc",
+                        "url": "https://ws-demo-pxstat.cso.ie/public/api.jsonrpc",
                         "data": {
                             "jsonrpc": "2.0",
                             "method": "PxStat.Data.Cube_API.ReadDataset",
                             "params": {
                                 "class": "query",
                                 "id": [
-                                    "AA"
+                                    "C03855V04605"
                                 ],
                                 "dimension": {
-                                    "AA": {
-                                        "category": {
-                                            "index": []
-                                        }
-                                    }
+                                    "C03855V04605": {}
                                 },
                                 "extension": {
-                                    "pivot": "GENDER",
+                                    "pivot": "STATISTIC",
                                     "codes": false,
                                     "language": {
                                         "code": "en"
@@ -87,20 +85,26 @@
                 "search": {
                     "search": ""
                 },
-                "dom": "Bft",
+                "dom": "ltip",
                 "responsive": true,
                 "buttons": [
                     {
                         "extend": "csv",
                         "text": "Download CSV",
                         "className": "export-button",
-                        "title": "EDATTENDAA.20230118T140133"
+                        "title": "UA05.20230329T160331",
+                        "exportOptions": {
+                            "columns": []
+                        }
                     },
                     {
                         "extend": "print",
                         "text": "Print",
                         "className": "export-button",
-                        "title": ""
+                        "title": "",
+                        "exportOptions": {
+                            "columns": []
+                        }
                     }
                 ],
                 "order": [
@@ -108,25 +112,24 @@
                         1,
                         "desc"
                     ]
-                ],
-                "paging": false
+                ]
             }
         },
         "chart": {
             "autoupdate": true,
             "type": "line",
             "copyright": true,
-            "link": "https://data.nisra.gov.uk/table/",
+            "link": "https://demo-pxstat.cso.ie/table/",
             "sort": false,
             "metadata": {
                 "xAxis": {
-                    "TLIST(A1)": [],
+                    "TLIST(D1)": [],
                     "role": "time"
                 },
                 "fluidTime": [],
                 "api": {
                     "query": {
-                        "url": "https://ws-data.nisra.gov.uk/public/api.jsonrpc",
+                        "url": "https://ws-demo-pxstat.cso.ie/public/api.jsonrpc",
                         "data": {
                             "jsonrpc": "2.0",
                             "method": "PxStat.Data.Cube_API.ReadMetadata",
@@ -148,34 +151,75 @@
                 "labels": [],
                 "datasets": [
                     {
-                        "label": "Emergency department attendances per 100,000 population (Number)",
+                        "label": "Number of arrivals from Ukraine",
                         "pointRadius": 2,
                         "pointHoverRadius": 4,
                         "maxBarThickness": 90,
                         "api": {
                             "query": {
-                                "url": "https://ws-data.nisra.gov.uk/public/api.jsonrpc",
+                                "url": "https://ws-demo-pxstat.cso.ie/public/api.jsonrpc",
                                 "data": {
                                     "jsonrpc": "2.0",
                                     "method": "PxStat.Data.Cube_API.ReadDataset",
                                     "params": {
                                         "class": "query",
                                         "id": [
-                                            "STATISTIC",
-                                            "GENDER"
+                                            "STATISTIC"
                                         ],
                                         "dimension": {
                                             "STATISTIC": {
                                                 "category": {
                                                     "index": [
-                                                        "EDAttend"
+                                                        "UA05C01"
                                                     ]
                                                 }
+                                            }
+                                        },
+                                        "extension": {
+                                            "language": {
+                                                "code": "en"
                                             },
-                                            "GENDER": {
+                                            "format": {
+                                                "type": "JSON-stat",
+                                                "version": "2.0"
+                                            },
+                                            "matrix": "UA05",
+                                            "m2m": false
+                                        },
+                                        "version": "2.0"
+                                    }
+                                }
+                            },
+                            "response": {}
+                        },
+                        "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false,
+                        "yAxisID": "y-axis-1"
+                    },
+                    {
+                        "label": "Arrivals from Ukraine as percentage of the population",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
+                        "api": {
+                            "query": {
+                                "url": "https://ws-demo-pxstat.cso.ie/public/api.jsonrpc",
+                                "data": {
+                                    "jsonrpc": "2.0",
+                                    "method": "PxStat.Data.Cube_API.ReadDataset",
+                                    "params": {
+                                        "class": "query",
+                                        "id": [
+                                            "STATISTIC"
+                                        ],
+                                        "dimension": {
+                                            "STATISTIC": {
                                                 "category": {
                                                     "index": [
-                                                        "All"
+                                                        "UA05C02"
                                                     ]
                                                 }
                                             }
@@ -201,7 +245,8 @@
                         "unit": [],
                         "decimal": [],
                         "fluidTime": [],
-                        "fill": false
+                        "fill": false,
+                        "yAxisID": "y-axis-2"
                     }
                 ],
                 "null": ".."
@@ -210,9 +255,9 @@
                 "responsive": true,
                 "maintainAspectRatio": false,
                 "title": {
-                    "display": false,
+                    "display": true,
                     "text": [
-                        "Standardised Attendance Rate – Emergency Attendances"
+                        ""
                     ]
                 },
                 "tooltips": {
@@ -250,8 +295,25 @@
                             },
                             "callback": null,
                             "scaleLabel": {
-                                "display": false,
-                                "labelString": null
+                                "display": true,
+                                "labelString": "Number"
+                            },
+                            "stacked": false
+                        },
+                        {
+                            "display": true,
+                            "type": "linear",
+                            "position": "right",
+                            "id": "y-axis-2",
+                            "gridLines": {
+                                "drawOnChartArea": false
+                            },
+                            "ticks": {
+                                "beginAtZero": false
+                            },
+                            "scaleLabel": {
+                                "display": true,
+                                "labelString": "%"
                             },
                             "stacked": false
                         }
@@ -269,7 +331,12 @@
                     "display": true,
                     "position": "bottom"
                 },
-                "updated": "2023-01-06T9:30:00.000Z",
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": "2023-03-29T16:06:45.697Z",
                 "layout": {
                     "padding": {
                         "left": 0,
@@ -284,9 +351,9 @@
             ]
         },
         "boundaries": {
-            "AA": {
-                "name": "Assembly Area",
-                "matrix": "EDATTENDAA"
+            "C03855V04605": {
+                "name": "Local Electoral Area 2019",
+                "matrix": "UA05"
             }
         }
     }

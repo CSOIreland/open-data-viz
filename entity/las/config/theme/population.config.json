@@ -1,13 +1,16 @@
 [
     {
-        "title": "Population by Sex and Age",
+        "title": "Population Change",
         "table": {
             "autoupdate": true,
+            "fluidTime": [
+                0
+            ],
             "copyright": true,
-            "title": false,
-            "link": "https://data.cso.ie/table/",
-            "pivot": "C03738V04487",
-            "removeRedundantColumns": true,
+            "title": "Population and Actual and Percentage Change 2016 to 2022",
+            "link": "https://demo-pxstat.cso.ie/table/",
+            "pivot": "STATISTIC",
+            "hideColumns": [],
             "internationalisation": {
                 "unit": "Unit",
                 "value": "Value"
@@ -16,22 +19,28 @@
             "data": {
                 "api": {
                     "query": {
-                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "url": "https://ws-demo-pxstat.cso.ie/public/api.jsonrpc",
                         "data": {
                             "jsonrpc": "2.0",
                             "method": "PxStat.Data.Cube_API.ReadDataset",
                             "params": {
                                 "class": "query",
-                                "id": [],
+                                "id": [
+                                    "STATISTIC"
+                                ],
                                 "dimension": {
-                                    "C03737V04485": {
+                                    "STATISTIC": {
                                         "category": {
-                                            "index": []
+                                            "index": [
+                                                "FP009C01",
+                                                "FP009C02",
+                                                "FP009C04"
+                                            ]
                                         }
                                     }
                                 },
                                 "extension": {
-                                    "pivot": "C03738V04487",
+                                    "pivot": "STATISTIC",
                                     "codes": false,
                                     "language": {
                                         "code": "en"
@@ -42,8 +51,30 @@
                                     },
                                     "matrix": null
                                 },
-                                "version": "2.0"
+                                "version": "2.0",
+                                "m2m": false
                             }
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "metadata": {
+                "api": {
+                    "query": {
+                        "url": "https://ws-demo-pxstat.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": null,
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
                         }
                     },
                     "response": {}
@@ -77,55 +108,53 @@
                 "search": {
                     "search": ""
                 },
-                "dom": "fltip",
-                "scrollX": false,
+                "dom": "Bfltip",
                 "responsive": true,
-                "order": [
-                    [
-                        0,
-                        "asc"
-                    ]
+                "buttons": [
+                    {
+                        "extend": "csv",
+                        "text": "Download CSV",
+                        "className": "export-button",
+                        "title": "FP009.20230131T130145",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    },
+                    {
+                        "extend": "print",
+                        "text": "Print",
+                        "className": "export-button",
+                        "title": "",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    }
                 ],
-                "options": {}
+                "order": []
             }
         },
         "chart": {
             "autoupdate": true,
             "type": "bar",
             "copyright": true,
-            "link": "https://data.cso.ie/table/",
+            "link": "https://demo-pxstat.cso.ie/table/",
+            "sort": false,
             "metadata": {
                 "xAxis": {
-                    "C03737V04485": [
-                        "AGE85andover",
-                        "AGE80-84",
-                        "AGE75-79",
-                        "AGE70-74",
-                        "AGE65-69",
-                        "AGE60-64",
-                        "AGE55-59",
-                        "AGE50-54",
-                        "AGE45-49",
-                        "AGE40-44",
-                        "AGE35-39",
-                        "AGE30-34",
-                        "AGE25-29",
-                        "AGE20-24",
-                        "AGE15-19",
-                        "AGE10-14",
-                        "AGE5-9",
-                        "AGE0-4"
-                    ],
-                    "role": "classification"
+                    "TLIST(A1)": [],
+                    "role": "time"
                 },
+                "fluidTime": [
+                    0
+                ],
                 "api": {
                     "query": {
-                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "url": "https://ws-demo-pxstat.cso.ie/public/api.jsonrpc",
                         "data": {
                             "jsonrpc": "2.0",
                             "method": "PxStat.Data.Cube_API.ReadMetadata",
                             "params": {
-                                "matrix": "SAP2016T1T1ALEA14",
+                                "matrix": null,
                                 "language": "en",
                                 "format": {
                                     "type": "JSON-stat",
@@ -142,39 +171,26 @@
                 "labels": [],
                 "datasets": [
                     {
-                        "label": "Males",
+                        "label": "Population 2016",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
                         "api": {
                             "query": {
-                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "url": "https://ws-demo-pxstat.cso.ie/public/api.jsonrpc",
                                 "data": {
                                     "jsonrpc": "2.0",
                                     "method": "PxStat.Data.Cube_API.ReadDataset",
                                     "params": {
                                         "class": "query",
                                         "id": [
-                                            "STATISTIC",
-                                            "TLIST(A1)",
-                                            "C03738V04487"
+                                            "STATISTIC"
                                         ],
                                         "dimension": {
                                             "STATISTIC": {
                                                 "category": {
                                                     "index": [
-                                                        "SAP2016T1T1C01"
-                                                    ]
-                                                }
-                                            },
-                                            "TLIST(A1)": {
-                                                "category": {
-                                                    "index": [
-                                                        "2016"
-                                                    ]
-                                                }
-                                            },
-                                            "C03738V04487": {
-                                                "category": {
-                                                    "index": [
-                                                        "M"
+                                                        "FP009C01"
                                                     ]
                                                 }
                                             }
@@ -188,7 +204,7 @@
                                                 "version": "2.0"
                                             },
                                             "matrix": null,
-                                            "m2m": true
+                                            "m2m": false
                                         },
                                         "version": "2.0"
                                     }
@@ -197,44 +213,32 @@
                             "response": {}
                         },
                         "data": [],
-                        "fill": false,
-                        "type": "bar",
-                        "order": 2
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
                     },
                     {
-                        "label": "Females",
+                        "label": "Population 2022",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
                         "api": {
                             "query": {
-                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "url": "https://ws-demo-pxstat.cso.ie/public/api.jsonrpc",
                                 "data": {
                                     "jsonrpc": "2.0",
                                     "method": "PxStat.Data.Cube_API.ReadDataset",
                                     "params": {
                                         "class": "query",
                                         "id": [
-                                            "STATISTIC",
-                                            "TLIST(A1)",
-                                            "C03738V04487"
+                                            "STATISTIC"
                                         ],
                                         "dimension": {
                                             "STATISTIC": {
                                                 "category": {
                                                     "index": [
-                                                        "SAP2016T1T1C01"
-                                                    ]
-                                                }
-                                            },
-                                            "TLIST(A1)": {
-                                                "category": {
-                                                    "index": [
-                                                        "2016"
-                                                    ]
-                                                }
-                                            },
-                                            "C03738V04487": {
-                                                "category": {
-                                                    "index": [
-                                                        "F"
+                                                        "FP009C02"
                                                     ]
                                                 }
                                             }
@@ -248,7 +252,7 @@
                                                 "version": "2.0"
                                             },
                                             "matrix": null,
-                                            "m2m": true
+                                            "m2m": false
                                         },
                                         "version": "2.0"
                                     }
@@ -257,69 +261,10 @@
                             "response": {}
                         },
                         "data": [],
-                        "fill": false,
-                        "type": "bar",
-                        "order": 2
-                    },
-                    {
-                        "label": "Both Sexes",
-                        "api": {
-                            "query": {
-                                "url": "https://ws.cso.ie/public/api.jsonrpc",
-                                "data": {
-                                    "jsonrpc": "2.0",
-                                    "method": "PxStat.Data.Cube_API.ReadDataset",
-                                    "params": {
-                                        "class": "query",
-                                        "id": [
-                                            "STATISTIC",
-                                            "TLIST(A1)",
-                                            "C03738V04487"
-                                        ],
-                                        "dimension": {
-                                            "STATISTIC": {
-                                                "category": {
-                                                    "index": [
-                                                        "SAP2016T1T1C01"
-                                                    ]
-                                                }
-                                            },
-                                            "TLIST(A1)": {
-                                                "category": {
-                                                    "index": [
-                                                        "2016"
-                                                    ]
-                                                }
-                                            },
-                                            "C03738V04487": {
-                                                "category": {
-                                                    "index": [
-                                                        "B"
-                                                    ]
-                                                }
-                                            }
-                                        },
-                                        "extension": {
-                                            "language": {
-                                                "code": "en"
-                                            },
-                                            "format": {
-                                                "type": "JSON-stat",
-                                                "version": "2.0"
-                                            },
-                                            "matrix": null,
-                                            "m2m": true
-                                        },
-                                        "version": "2.0"
-                                    }
-                                }
-                            },
-                            "response": {}
-                        },
-                        "data": [],
-                        "fill": false,
-                        "type": "line",
-                        "order": 1
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [],
+                        "fill": false
                     }
                 ],
                 "null": ".."
@@ -329,9 +274,7 @@
                 "maintainAspectRatio": false,
                 "title": {
                     "display": false,
-                    "text": [
-                        "Population"
-                    ]
+                    "text": []
                 },
                 "tooltips": {
                     "mode": "index",
@@ -364,7 +307,7 @@
                             "position": "left",
                             "id": "y-axis-1",
                             "ticks": {
-                                "beginAtZero": false
+                                "beginAtZero": true
                             },
                             "callback": null,
                             "scaleLabel": {
@@ -380,14 +323,19 @@
                         "enable": false
                     },
                     "colorschemes": {
-                        "scheme": "tableau.Tableau20"
+                        "scheme": "tableau.Tableau10"
                     }
                 },
                 "legend": {
                     "display": true,
                     "position": "bottom"
                 },
-                "updated": "2022-02-16T11:00:00Z",
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": "2023-01-31T13:04:33.963Z",
                 "layout": {
                     "padding": {
                         "left": 0,
@@ -402,65 +350,27 @@
             ]
         },
         "boundaries": {
-            "C03849V04599": {
-                "name": "Local Authorities (County Councils)",
-                "matrix": "SAP2016T1T1ACTY"
-            },
-            "C03903V04655": {
-                "name": "Constituencies (2017)",
-                "matrix": "SAP2016T1T1ACON17"
-            },
-            "C03852V04602": {
-                "name": "Constituencies (2013)",
-                "matrix": "SAP2016T1T1ACON13"
-            },
             "C03786V04535": {
                 "name": "Electoral Divisions",
-                "matrix": "SAP2016T1T1AED"
-            },
-            "C03850V04600": {
-                "name": "Gaeltacht Areas",
-                "matrix": "SAP2016T1T1AGAEL"
-            },
-            "C03851V04601": {
-                "name": "Limistéir Pleanála Teanga",
-                "matrix": "SAP2016T1T1ALPT"
-            },
-            "C03909V04661": {
-                "name": "Local Electoral Areas (2014)",
-                "matrix": "SAP2016T1T1ALEA14"
-            },
-            "C03855V04605": {
-                "name": "Local Electoral Areas (2019)",
-                "matrix": "SAP2016T1T1ALEA19"
-            },
-            "C03880V04631": {
-                "name": "Regional Authorities (NUTS3)",
-                "matrix": "SAP2016T1T1ANUTS"
-            },
-            "C03853V04603": {
-                "name": "Provinces",
-                "matrix": "SAP2016T1T1APROV"
-            },
-            "C03899V04650": {
-                "name": "Settlement",
-                "matrix": "SAP2016T1T1ASET"
-            },
-            "C03736V04484": {
-                "name": "Small Areas",
-                "matrix": "SAP2016T1T1ASA"
+                "matrix": "FP009"
             }
         }
     },
     {
-        "title": "Population by Marital Status",
+        "title": "Population by Age",
         "table": {
             "autoupdate": true,
+            "fluidTime": [
+                0
+            ],
             "copyright": true,
-            "title": false,
-            "link": "https://data.cso.ie/table/",
+            "title": "",
+            "link": "https://demo-pxstat.cso.ie/table/SAP2016T1T1AED",
             "pivot": "C03738V04487",
-            "removeRedundantColumns": true,
+            "hideColumns": [
+                "STATISTIC",
+                "UNIT"
+            ],
             "internationalisation": {
                 "unit": "Unit",
                 "value": "Value"
@@ -469,7 +379,7 @@
             "data": {
                 "api": {
                     "query": {
-                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "url": "https://ws-demo-pxstat.cso.ie/public/api.jsonrpc",
                         "data": {
                             "jsonrpc": "2.0",
                             "method": "PxStat.Data.Cube_API.ReadDataset",
@@ -489,8 +399,30 @@
                                     },
                                     "matrix": null
                                 },
-                                "version": "2.0"
+                                "version": "2.0",
+                                "m2m": false
                             }
+                        }
+                    },
+                    "response": {}
+                }
+            },
+            "metadata": {
+                "api": {
+                    "query": {
+                        "url": "https://ws-demo-pxstat.cso.ie/public/api.jsonrpc",
+                        "data": {
+                            "jsonrpc": "2.0",
+                            "method": "PxStat.Data.Cube_API.ReadMetadata",
+                            "params": {
+                                "matrix": null,
+                                "language": "en",
+                                "format": {
+                                    "type": "JSON-stat",
+                                    "version": "2.0"
+                                }
+                            },
+                            "version": "2.0"
                         }
                     },
                     "response": {}
@@ -524,37 +456,66 @@
                 "search": {
                     "search": ""
                 },
-                "dom": "fltip",
-                "scrollX": false,
+                "dom": "t",
                 "responsive": true,
-                "order": [
-                    [
-                        0,
-                        "asc"
-                    ]
+                "buttons": [
+                    {
+                        "extend": "csv",
+                        "text": "Download CSV",
+                        "className": "export-button",
+                        "title": "SAP2016T1T1AED.20230131T150130",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    },
+                    {
+                        "extend": "print",
+                        "text": "Print",
+                        "className": "export-button",
+                        "title": "",
+                        "exportOptions": {
+                            "columns": []
+                        }
+                    }
                 ],
-                "options": {}
+                "order": [],
+                "paging": false
             }
         },
         "chart": {
             "autoupdate": true,
-            "type": "doughnut",
+            "type": "bar",
             "copyright": true,
-            "link": "https://data.cso.ie/table/",
+            "link": "https://demo-pxstat.cso.ie/table/",
+            "sort": false,
             "metadata": {
                 "xAxis": {
-                    "C03739V04488": [
-                        "WID",
-                        "DIV",
-                        "SEP",
-                        "MAR",
-                        "SGL"
+                    "C03737V04485": [
+                        "AGE0-4",
+                        "AGE5-9",
+                        "AGE10-14",
+                        "AGE15-19",
+                        "AGE20-24",
+                        "AGE25-29",
+                        "AGE30-34",
+                        "AGE35-39",
+                        "AGE40-44",
+                        "AGE45-49",
+                        "AGE50-54",
+                        "AGE55-59",
+                        "AGE60-64",
+                        "AGE65-69",
+                        "AGE70-74",
+                        "AGE75-79",
+                        "AGE80-84",
+                        "AGE85andover"
                     ],
                     "role": "classification"
                 },
+                "fluidTime": [],
                 "api": {
                     "query": {
-                        "url": "https://ws.cso.ie/public/api.jsonrpc",
+                        "url": "https://ws-demo-pxstat.cso.ie/public/api.jsonrpc",
                         "data": {
                             "jsonrpc": "2.0",
                             "method": "PxStat.Data.Cube_API.ReadMetadata",
@@ -576,10 +537,13 @@
                 "labels": [],
                 "datasets": [
                     {
-                        "label": "Both Sexes",
+                        "label": "Population",
+                        "pointRadius": 2,
+                        "pointHoverRadius": 4,
+                        "maxBarThickness": 90,
                         "api": {
                             "query": {
-                                "url": "https://ws.cso.ie/public/api.jsonrpc",
+                                "url": "https://ws-demo-pxstat.cso.ie/public/api.jsonrpc",
                                 "data": {
                                     "jsonrpc": "2.0",
                                     "method": "PxStat.Data.Cube_API.ReadDataset",
@@ -594,7 +558,7 @@
                                             "STATISTIC": {
                                                 "category": {
                                                     "index": [
-                                                        "SAP2016T1T2C01"
+                                                        "SAP2016T1T1C01"
                                                     ]
                                                 }
                                             },
@@ -631,21 +595,23 @@
                             "response": {}
                         },
                         "data": [],
+                        "unit": [],
+                        "decimal": [],
+                        "fluidTime": [
+                            0
+                        ],
                         "fill": false
                     }
                 ],
                 "null": ".."
             },
             "options": {
-                "cutoutPercentage": 60,
                 "responsive": true,
                 "maintainAspectRatio": false,
                 "title": {
                     "display": true,
-                    "position": "bottom",
-                    "fontSize": 18,
                     "text": [
-                        "Additional data shown in table"
+                        ""
                     ]
                 },
                 "tooltips": {
@@ -655,6 +621,41 @@
                 "hover": {
                     "mode": "nearest",
                     "intersect": true
+                },
+                "scales": {
+                    "xAxes": [
+                        {
+                            "ticks": {
+                                "beginAtZero": false,
+                                "maxTicksLimit": null,
+                                "reverse": true
+                            },
+                            "gridLines": {
+                                "display": false
+                            },
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ],
+                    "yAxes": [
+                        {
+                            "display": true,
+                            "position": "left",
+                            "id": "y-axis-1",
+                            "ticks": {
+                                "beginAtZero": false
+                            },
+                            "callback": null,
+                            "scaleLabel": {
+                                "display": false,
+                                "labelString": null
+                            },
+                            "stacked": false
+                        }
+                    ]
                 },
                 "plugins": {
                     "stacked100": {
@@ -668,7 +669,12 @@
                     "display": true,
                     "position": "bottom"
                 },
-                "updated": "2021-10-05T11:00:00Z",
+                "elements": {
+                    "line": {
+                        "tension": 0.4
+                    }
+                },
+                "updated": "2023-01-31T15:36:19.027Z",
                 "layout": {
                     "padding": {
                         "left": 0,
@@ -683,53 +689,9 @@
             ]
         },
         "boundaries": {
-            "C03849V04599": {
-                "name": "Local Authorities (County Councils)",
-                "matrix": "SAP2016T1T2CTY"
-            },
-            "C03903V04655": {
-                "name": "Constituencies (2017)",
-                "matrix": "SAP2016T1T2CON17"
-            },
-            "C03852V04602": {
-                "name": "Constituencies (2013)",
-                "matrix": "SAP2016T1T2CON13"
-            },
             "C03786V04535": {
                 "name": "Electoral Divisions",
-                "matrix": "SAP2016T1T2ED"
-            },
-            "C03850V04600": {
-                "name": "Gaeltacht Areas",
-                "matrix": "SAP2016T1T2GAEL"
-            },
-            "C03851V04601": {
-                "name": "Limistéir Pleanála Teanga",
-                "matrix": "SAP2016T1T2LPT"
-            },
-            "C03909V04661": {
-                "name": "Local Electoral Areas (2014)",
-                "matrix": "SAP2016T1T2LEA14"
-            },
-            "C03855V04605": {
-                "name": "Local Electoral Areas (2019)",
-                "matrix": "SAP2016T1T2LEA19"
-            },
-            "C03880V04631": {
-                "name": "Regional Authorities (NUTS3)",
-                "matrix": "SAP2016T1T2NUTS"
-            },
-            "C03853V04603": {
-                "name": "Provinces",
-                "matrix": "SAP2016T1T2PROV"
-            },
-            "C03899V04650": {
-                "name": "Settlement",
-                "matrix": "SAP2016T1T2SET"
-            },
-            "C03736V04484": {
-                "name": "Small Areas",
-                "matrix": "SAP2016T1T2SA"
+                "matrix": "SAP2016T1T1AED"
             }
         }
     }
