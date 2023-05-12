@@ -23,18 +23,18 @@
     },
     "boundaries": [
         {
-            "name": "Local Electoral Area 2019",
-            "classification": "C03855V04605",
-            "url": "https://ws-demo-pxstat.cso.ie/public/api.static/PxStat.Data.GeoMap_API.Read/6d9a106dc19f179bab9fca3c6d8f1454",
+            "name": "Electoral Divisions",
+            "classification": "C03786V04535",
+            "url": "https://ws-demo-pxstat.cso.ie/public/api.static/PxStat.Data.GeoMap_API.Read/147110d4542a423b199abe31a4b1096b",
             "weight": 1
         }
     ],
     "themes": [
         {
-            "title": "Ukraine Response",
+            "title": "Population",
             "colour": "primary",
             "icon": "fas fa-address-card",
-            "config": "entity/las/config/theme/ukraine.config.json"
+            "config": "entity/las/config/theme/population.config.json"
         },
         {
             "title": "Housing",
@@ -43,16 +43,10 @@
             "config": "entity/las/config/theme/housing.config.json"
         },
         {
-            "title": "Renters",
+            "title": "Agriculture",
             "colour": "primary",
             "icon": "fas fa-address-card",
-            "config": "entity/las/config/theme/renters.config.json"
-        },
-        {
-            "title": "COVID-19 Vaccination Rates",
-            "colour": "primary",
-            "icon": "fas fa-address-card",
-            "config": "entity/las/config/theme/covid19Vaccination.config.json"
+            "config": "entity/las/config/theme/agriculture.config.json"
         }
     ]
 }

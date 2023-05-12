@@ -107,7 +107,9 @@ app.cpi.callback.drawContributionsTable = function () {
 
 
 app.cpi.ajax.getEurostatData = function () {
-    api.ajax.static("https://ec.europa.eu/eurostat/wdds/rest/data/v2.1/json/en/prc_hicp_manr?precision=1&lastTimePeriod=49&unit=RCH_A&coicop=CP00", app.cpi.callback.getEurostatData)
+    //  api.ajax.static("https://ec.europa.eu/eurostat/wdds/rest/data/v2.1/json/en/prc_hicp_manr?precision=1&lastTimePeriod=49&unit=RCH_A&coicop=CP00", app.cpi.callback.getEurostatData)
+    api.ajax.static("https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_manr?lang=en&lastTimePeriod=50&coicop=CP00", app.cpi.callback.getEurostatData)
+
 };
 
 app.cpi.callback.getEurostatData = function (response) {
@@ -139,6 +141,7 @@ app.cpi.callback.getEurostatData = function (response) {
 
     //preselect Eurozone
     $("#visual-cpi").find("[name=compare-country][data-compare=EA]").trigger("click");
+    debugger
 };
 
 

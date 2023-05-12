@@ -204,7 +204,7 @@ app.library.utility.formatMonthCode = function () {
 
 //#region get JSON data
 
-app.library.pxStat.getMetaData = function (matrix, callback, callbackParams) {
+app.library.pxStat.getMetaData = function (matrix, callback, callbackParams, url) {
 
     // TODO: Temp change of api endpoint for COA
 
@@ -215,14 +215,14 @@ app.library.pxStat.getMetaData = function (matrix, callback, callbackParams) {
           app.config.url.api.pxStat.jsonrpc = "https://ws.cso.ie/public/api.jsonrpc";
       } */
 
-
+    url = url || app.config.url.api.pxStat.jsonrpc;
     callbackDetails = {
         "function": callback,
         "params": callbackParams || null
     };
 
     api.ajax.jsonrpc.request(
-        app.config.url.api.pxStat.jsonrpc,
+        url,
         "PxStat.Data.Cube_API.ReadMetadata",
         {
             "matrix": matrix,
@@ -239,7 +239,8 @@ app.library.pxStat.getMetaData = function (matrix, callback, callbackParams) {
         { async: false });
 }
 
-app.library.pxStat.getData = function (params, callback, callbackParams) {
+app.library.pxStat.getData = function (params, callback, callbackParams, url) {
+    url = url || app.config.url.api.pxStat.jsonrpc;
     // TODO: Temp change of api endpoint for COA
     /*  if (api.uri.getParam("body") == "entity/ima/coa") {
          app.config.url.api.pxStat.jsonrpc = "https://dev-ws.cso.ie/public/api.jsonrpc"
@@ -253,7 +254,7 @@ app.library.pxStat.getData = function (params, callback, callbackParams) {
     };
 
     api.ajax.jsonrpc.request(
-        app.config.url.api.pxStat.jsonrpc,
+        url,
         "PxStat.Data.Cube_API.ReadDataset",
         params,
         "app.library.pxStat.callback.getJSON",

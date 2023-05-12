@@ -155,14 +155,14 @@ app.las.theme.renderTheme = function (theme) {
                 valueDataset.api.query.data.params.extension.matrix = indicatorTable;
 
             });
-
+            debugger
             pxWidget.draw.init(
                 'chart',
                 "sapmap-pxwidget-chart-indicator-" + theme + "-" + index,
                 chartConfig
             );
             var snippetChart = app.las.snippetCode;
-            snippetChart = snippetChart.sprintf([C_APP_URL_PXWIDGET_ISOGRAM_1_1_2, "chart", app.library.utility.randomGenerator('pxwidget'), JSON.stringify(chartConfig)]);
+            snippetChart = snippetChart.sprintf([C_APP_URL_PXWIDGET_ISOGRAM_2_4_6, "chart", app.library.utility.randomGenerator('pxwidget'), JSON.stringify(chartConfig)]);
             $("#theme-indicator-accordion-chart-embed-code-" + theme + "-" + index).text(snippetChart.trim());
 
             $("#theme-indicator-accordion-chart-download-button-" + theme + "-" + index).once("click", function () {
@@ -183,12 +183,17 @@ app.las.theme.renderTheme = function (theme) {
                 }
             };
             tableConfig.data.api.query.data.params.extension.matrix = indicatorTable;
+            if (tableConfig.metadata.api.query.data) {
+                tableConfig.metadata.api.query.data.params.matrix = indicatorTable;
+            }
+
+            tableConfig.hideColumns.push($("#visual-las-boundary-select").find("[name=boundaries]").val());
 
             //if we have to manually hide columns because we only have one row in the table, we then need to dynamically add the region code to our array
-            if (tableConfig.hiddenDimensions && tableConfig.hiddenDimensions.length) {
-                tableConfig.hiddenDimensions.push(classificationCode)
-            };
-
+            /*  if (tableConfig.hiddenDimensions && tableConfig.hiddenDimensions.length) {
+                 tableConfig.hiddenDimensions.push(classificationCode)
+             }; */
+            debugger
             pxWidget.draw.init(
                 'table',
                 "sapmap-pxwidget-table-indicator-" + theme + "-" + index,
@@ -229,7 +234,7 @@ app.las.theme.renderTheme = function (theme) {
             });
 
             var snippetTable = app.las.snippetCode;
-            snippetTable = snippetTable.sprintf([C_APP_URL_PXWIDGET_ISOGRAM_2_4_2, "table", app.library.utility.randomGenerator('pxwidget'), JSON.stringify(tableConfig)]);
+            snippetTable = snippetTable.sprintf([C_APP_URL_PXWIDGET_ISOGRAM_2_4_6, "table", app.library.utility.randomGenerator('pxwidget'), JSON.stringify(tableConfig)]);
             $("#theme-indicator-accordion-table-embed-code-" + theme + "-" + index).text(snippetTable.trim());
 
             $("#theme-indicator-accordion-table-download-button-" + theme + "-" + index).once("click", function () {
